@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+@font-face {
+    font-family: "Blessed";
+    src: url("../fonts/BaskervilleBT.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Lobster";
+    src: url("../fonts/Lobster-Regular.ttf") format("truetype");
+}
+
+.invitation-card {
+    width: 562px;
+    height: 787px;
+    flex-direction: column;
+    display: flex;
+    padding: 30px 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: start;
+    margin: 0 auto;
+}
+
+.invitation-title {
+    text-align: center;
+    font-size: 50px;
+    color: #612525;
+    max-width: 400px;
+    font-weight: 400;
+    margin-top: 20px;
+    font-family: "Great Vibes", cursive;
+}
+
+.invitation-description {
+    max-width: 300px;
+    text-align: center;
+    font-size: 16px;
+    color: #612525;
+    font-family: "poppins";
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+ .your-name {
+    font-size: 55px;
+    color: #612525;
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    text-align: center;
+}
+
+.partner-name {
+    font-size: 55px;
+    color: #612525;
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    text-align: center;
+}
+
+ .and {
+    font-size: 18px;
+    color: #612525;
+    font-family: "poppins";
+    font-weight: 500;
+    text-align: center;
+}
+
+.invitation-time {
+    text-align: center;
+    font-size: 16px;
+    color: #612525;
+    font-family: "poppins";
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.invitation-address{
+    text-align: center;
+    font-size: 16px;
+    color: #612525;
+    font-family: "poppins";
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    max-width: 250px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.invitation-date-section {
+    text-align: center;
+    font-size: 16px;
+    color: #612525;
+    font-family: "poppins";
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.following-party {
+    text-align: center;
+    color: #612525;
+    text-transform: capitalize;
+    font-style: italic;
+    letter-spacing: 2px;
+}

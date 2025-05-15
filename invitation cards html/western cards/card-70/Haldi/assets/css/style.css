@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Rachela";
+  src: url("../fonts/Rachela.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Things";
+  src: url("../fonts/Things.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-transform: capitalize;
+  text-align: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  margin: 0 auto;
+  color: #000;
+}
+
+.invitation-date-section {
+  text-align: center;
+  font-family: "Rachela";
+  text-transform: capitalize;
+  font-size: 36px;
+  letter-spacing: 3px;
+  line-height: 0.9;
+}
+
+.invitation-time {
+  font-family: "Things";
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.invitation-title {
+  text-align: center;
+  font-family: "Things";
+  text-transform: uppercase;
+  font-weight: 500;
+  word-spacing: 20px;
+  letter-spacing: 10px;
+  font-size: 46px;
+}
+
+.groom-bride-section {
+  text-align: center;
+  font-family: "Rachela";
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 50px;
+  line-height: 1;
+}
+
+.couple-img {
+  width: 100%;
+  max-width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.invitation-address {
+  text-align: center;
+  font-family: "Things";
+  color: #000000;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 18px;
+  max-width: 300px;
+  margin: 0 auto;
+  font-weight: 600;
+}
+

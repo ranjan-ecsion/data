@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "NewBskvllBT";
+  src: url("../fonts/NewBaskervilleBT.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Parslay";
+  src: url("../fonts/Parslay.ttf") format("truetype");
+}
+
+.invitation-card {
+  height: 787px;
+  width: 562px;
+  padding: 0px;
+  margin: 0 auto;
+  color: #BBA677;
+  background-color: #f3f1f2;
+  font-family: "Montserrat", sans-serif;
+  justify-content: start;
+  box-shadow: 1px 1px 7px 1px lightgray;
+}
+.couple-img {
+  width: 100%;
+  height: 100%;
+}
+
+.invitation-date-section {
+  line-height: 2;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: "NewBskvllBT";
+  font-style: italic;
+  font-weight: 700;
+}
+
+.invitation-address {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.invitation-title {
+  font-size: 20px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+  font-family: "NewBskvllBT";
+  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+.invitation-title span {
+  font-family: "Parslay";
+  text-transform: lowercase;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+.groom-bride-section {
+  margin-top: 40px;
+  letter-spacing: 3px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.and {
+  padding-left: 10px;
+}
+
+.invitation-time {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 10px 0px;
+  max-width: 240px;
+}
+.divider {
+  border: 1px solid;
+  display: flex;
+  margin: 10px 0px;
+  width: 85px;
+}
+img.couple-img2 {
+  width: 100%;
+  height: 100%;
+  max-height: 360px;
+  object-fit: cover;
+}
+img.couple-img1 {
+  width: 100%;
+  height: 100%;
+  max-height: 336px;
+  object-fit: cover;
+}
+img.couple-img3 {
+  width: 100%;
+  height: 100%;
+  max-height: 440px;
+  object-fit: cover;
+  margin-top: 10px;
+}

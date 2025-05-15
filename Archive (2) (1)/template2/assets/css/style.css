@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.red-section {
+    background-color: #A20909;
+    padding: 40px 0;
+    color: white;
+    margin: 0 auto;
+
+}
+.brown-section {
+    background-color: #7E664B;
+    padding: 40px;
+    color: white;
+}
+.btn-custom {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+.banner{
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main-section{
+    max-width: 768px;
+    margin: 0 auto;
+}
+.brown-section .col-md-6{
+    padding: 0 4px;
+}
+.fa-facebook {
+    color: #1877F2; /* Facebook Blue */
+}
+
+.fa-instagram {
+    color: #E4405F; /* Instagram Pink-Red */
+}
+
+.fa-x-twitter {
+    color: #000000; /* Black for X (formerly Twitter) */
+}
+section{
+    padding: 20px 0;
+}
+@media (max-width: 562px) {
+    .text-end{
+        text-align: left !important;
+    }
+    .red-section-content{
+        text-align: end;
+        padding-right: 30px;
+    }
+    .img-fluid{
+        width: 100%;
+    height: auto;
+    }
+}
+.section-1{
+    box-shadow: 0px 2px 4px 0px #00000029;
+}

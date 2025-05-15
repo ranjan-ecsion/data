@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+<link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+    <title>Hello, world!</title>
+    
+    <style>
+
+        /* @font-face {
+          font-family: 'laurentine';
+          src: url('./assets/fonts/laurentine.ttf') format('truetype');
+        } */
+        
+        .main-section {
+            max-width: 562px;
+            width: 100%;
+            height: 787px;
+            flex-direction: column;
+            display: flex;
+            padding: 30px 30px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: start;
+            justify-content: center;
+            margin: 0 auto;
+            text-align: center;
+            background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/D1CC8F70-00C9-4A58-88E9-5107CAAD4A74.png);
+            font-family: "Open Sans", sans-serif;}
+        
+        
+        .title {
+            font-size: 50px;
+            font-family: 'laurentine';
+            color: #C03C34;
+            text-align: center;
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        
+        .description {
+            max-width: 290px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .description p {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        
+        @media (max-width: 562px) {
+            .main-section {
+                height: 100vh;
+                background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/E7CEB0EA-71E5-4CF7-8C41-CC7304663943.png);
+        
+            }
+            .description {
+                max-width: 270px;
+            }
+        }
+            </style>
+  </head>
+  <body>
+    
+    <div class="main-section">
+            <div class="title">${contentJson["title"]}</div>
+            <div class="description">
+                ${contentJson["description"]}            
+            </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>

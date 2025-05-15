@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+  <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+
+  <title>Hello, world!</title>
+
+
+  <style>
+    /* @font-face {
+     font-family: 'laurentine';
+     src: url('./assets/fonts/laurentine.ttf') format('truetype');
+   } */
+   
+       .main-section {
+         max-width: 562px;
+         width: 100%;
+         height: 787px;
+         flex-direction: column;
+         display: flex;
+         padding: 30px 30px;
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         align-items: start;
+         justify-content: center;
+         margin: 0 auto;
+         text-align: center;
+         background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/6DA56C69-8AC2-44B5-A1F9-F499B024FA74.png);
+         font-family: "georgia";
+       }
+   
+   
+       .title {
+         font-size: 56px;
+         font-family: 'laurentine';
+         color: #1B311B;
+         text-align: center;
+       }
+   
+       .description {
+         max-width: 180px;
+         margin-top: 30px;
+         text-align: left;
+       }
+   
+   
+   
+       @media (max-width: 562px) {
+         .main-section {
+           height: 100vh;
+   
+           background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/9E5F0618-8693-484D-BA2D-31D68D7FBF04.png);
+   
+         }
+       }
+     </style>
+</head>
+
+<body>
+
+  <div class="main-section">
+    <div class="title">${contentJson["title"]}</div>
+    <div class="description">
+      ${contentJson["description"]}
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

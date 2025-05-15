@@ -1,0 +1,231 @@
+@import "var.css";
+
+.media-label-container {
+  width: 200px;
+}
+.media-input-container {
+  width: calc(100% - 200px);
+  padding-left: 10px;
+  display: flex;
+}
+.media-icon-container {
+  width: 34px;
+}
+.media-icon-container i {
+  font-size: 28px;
+}
+.media-text-container {
+  width: calc(100% - 34px);
+}
+.fa-square-instagram {
+  background: linear-gradient(45deg, #833ab4, #e4405f, #f58529);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* saurabh css */
+
+.deals-card {
+  padding: 10px;
+  /* background-color: var(--lightgrey); */
+  border-radius: 8px;
+}
+
+.deals-card.card {
+  background-color: var(--extralightgrey);
+}
+
+.deals-title {
+  font-weight: bold;
+}
+
+.deals-subtitle {
+  margin-bottom: 0.5rem;
+}
+
+.deal-item {
+  /* margin-bottom: 0.5rem; */
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.deal-item.white-border {
+  border: 2px solid white;
+}
+
+.deal-body {
+  padding: 0.5rem;
+}
+
+.deal-title {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.deal-subtitle {
+  margin-bottom: 5px;
+}
+
+.deal-price {
+  font-weight: bold;
+}
+
+.deal-item:hover {
+  border: 2px dashed var(--primary);
+}
+
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+/* badges color */
+
+.badge-new {
+  background-color: #800080;
+  color: #ffffff;
+}
+
+.badge-in_progress {
+  background-color: #ffc107;
+  color: #000000;
+}
+
+.badge-pending {
+  background-color: #ff9800;
+  color: #ffffff;
+}
+
+.badge-completed {
+  background-color: #4caf50;
+  color: #ffffff;
+}
+
+.badge-on_hold {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+.badge-canceled {
+  background-color: #9e9e9e;
+  color: #ffffff;
+}
+
+.badge-archived {
+  background-color: #795548;
+  color: #ffffff;
+}
+
+.badge-rejected {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+.badge-approved {
+  background-color: #388e3c;
+  color: #ffffff;
+}
+
+.add-button {
+  background-color: var(--extralightgrey) !important;
+  border: 1px solid var(--extralightgrey) !important;
+  color: var(--black) !important;
+}
+
+.add-button:hover {
+  background-color: var(--lightgrey) !important;
+  /* border: 1px solid var(--lightgrey) !important; */
+  color: var(--black) !important;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  color: grey;
+  background-color: grey;
+  border-radius: 50%;
+}
+.campaign-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.campaign-listgroup .list-group-item {
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.btn-edit-setting {
+  width: 140px;
+}
+.sidebar-accordion .accordion-button {
+  font-size: 14px;
+  justify-content: center;
+  padding: 10px 12px 10px 12px;
+  margin-bottom: 0px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.show-sidebar .sidebar-accordion .accordion-button {
+  width: 78px;
+}
+
+.extend-sidebar .sidebar-accordion .accordion-button {
+  width: 100% !important;
+}
+.sidebar-accordion .accordion-button:not(.collapsed)::after {
+  display: none;
+}
+.sidebar-accordion .accordion-button::after {
+  display: none;
+}
+.extend-sidebar .sidebar-accordion .accordion-button:not(.collapsed)::after {
+  display: inline-block;
+}
+
+.extend-sidebar .sidebar-accordion .accordion-button::after {
+  display: inline-block;
+}
+
+.sidebar-accordion .accordion-item {
+  border: none;
+}
+
+.sidebar-accordion .accordion-button {
+  border-bottom: 1px solid var(--extralightgrey);
+  border-radius: 0 !important;
+}
+
+.sidebar-accordion .link-item-wrapper {
+  padding: 0px 12px 0px 12px;
+}
+.sidebar-accordion .link-name {
+  padding-left: 9px;
+}
+.sidebar-accordion .link-icon {
+  color: #aaa;
+  padding-left: 4px;
+}  
+.link-name-accordion {
+  padding-left: 30px !important;
+}
+input#custom-switch{
+  width: 30px;
+    border-radius: 10px;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid {
+  border-color: var(--lightgrey) !important;
+  padding-right: 0;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: right calc(.375em + .1875rem) center;
+  background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+  outline: 0;
+}
+.form-control:focus{
+box-shadow: 0 0 0 .25rem rgb(220 53 69 / 0%) !important;
+}
+.accordion{
+  --bs-accordion-border-color: none;
+}

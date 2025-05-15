@@ -1,0 +1,49 @@
+.main-section{
+    max-width: 768px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+.text-grey{
+    color: #707070;
+}
+section{
+    padding: 20px 0;
+}
+.text-black{
+    color: #000000;
+}
+.section-2 .description{
+    text-align: center;
+    padding: 0 40px;
+}
+.btn-danger{
+    background-color: #A20908 !important;
+    padding: 4px 18px;
+}
+.bg-dark-grey{
+    background-color: #2F2F2F;
+    padding: 20px 0;
+}
+.fa-facebook, .fa-instagram, .fa-x-twitter {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-right: 10px;
+}
+.bg-grey{
+    background-color: #393939;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.footer-section-contacts p{
+    margin-bottom: 6px;
+}
+.footer-section-contacts{
+    margin-top: 20px;
+}
+.section-1{
+    box-shadow: 0px 2px 4px 0px #00000029;
+}
+a:hover, a:active, a:focus{
+    color: #707070 !important;
+}

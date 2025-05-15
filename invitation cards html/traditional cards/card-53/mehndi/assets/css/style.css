@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 70px 30px 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content:flex-start;
+  margin: 0 auto;
+  text-align: center;
+}
+.invitation-description {
+  font-size: 16px;
+    color: #5E0A05;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 200px;
+   
+}
+.groom-bride-section {
+  display: flex;
+    margin-top: 20px;
+    border-bottom: 1px solid #68173c;
+    border-top: 1px solid #68173c;
+    align-items: center;
+}
+.your-name, .partner-name {
+  
+  font-family: "Playfair Display", serif;
+  color: #5E0A05;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: 2px;
+ 
+}
+.and{
+  font-family: "Playfair Display", serif;
+  color: #5E0A05;
+    font-size: 45px;
+    font-weight: 500;
+    margin: 0px 10px;
+   
+}
+
+.invitation-title {
+  font-family: "Playfair Display", serif;
+  color: #5E0A05;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 25px;
+  letter-spacing: 1px;
+  max-width: 370px;
+}
+
+.invitation-day {
+  font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #5E0A05;
+    font-weight: 600;
+    padding-right: 10px;
+
+}
+ .invitation-address {
+  font-size: 14px;
+  color: #5E0A05;
+  font-family: "Montserrat", sans-serif;
+ 
+  max-width: 215px;
+  font-weight: 600;
+  margin: 25px 0px;
+  line-height: 1.4;
+ 
+}
+.invitation-time{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #5E0A05;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.following-party {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #5E0A05;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  
+}
+.invitation-completedate {
+ 
+    padding: 0px 10px;
+    border-right: 1px solid #5E0A05;
+    border-left: 1px solid #5E0A05;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #5E0A05;
+}

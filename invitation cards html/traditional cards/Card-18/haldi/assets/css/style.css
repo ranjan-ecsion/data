@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+    font-family: "Birdlove";
+    src: url("../fonts/Birdlove.ttf") format("truetype");
+}
+
+
+.invitation-card {
+    width: 562px;
+    height: 787px;
+    flex-direction: column;
+    display: flex;
+    padding: 30px 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    text-align: center;
+}
+.invitation-title {
+    font-size: 50px;
+    color: #C96350;
+    font-weight: 400;
+    font-family: "Birdlove", serif;
+   
+    max-width: 300px;
+    margin-top: 50px;
+}
+
+.invitation-description {
+    font-size: 16px;
+    color: #696548;
+    font-family: "Poppins-SemiBold", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+  
+    max-width: 255px;
+   
+    margin-bottom: 30px;
+}
+
+.your-name {
+    font-size: 36px;
+    color: #C96350;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    
+    text-align: start;
+    
+}
+.partner-name {
+    font-size: 36px;
+    color: #C96350;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    text-align: end;
+   
+}
+.groom-bride-section{
+    max-width: 200px;
+    width: 100%;
+}
+.and {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.invitation-date-section {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+    .invitation-month{
+      font-size: 18px;
+      padding-right: 20px;
+      color: #C96350;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+  }
+  .invitation-time{
+    
+    font-size: 22px;
+    color: #000;
+    font-weight: 500;
+    font-family: "Gimetta";
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+}
+  .invitation-date {
+    font-size: 32px;
+    font-weight: 500;
+    
+    color: #c96350;
+    font-family: "Montserrat", sans-serif;
+    border-left: 1px solid #c96350;
+    border-right: 1px solid #c96350;
+    margin-bottom: 5px;
+    padding: 0px 8px;
+    line-height: 40px;
+  }
+  
+  .invitation-year {
+    font-size: 18px;
+    color: #C96350;
+    font-family: "Montserrat", sans-serif;
+    padding-left: 20px;
+    font-weight: 500;
+  
+  }
+ 
+.invitation-address {
+    font-weight: 500;
+    font-size: 14px;
+    color: #696548;
+    font-family: "Poppins-Regular", sans-serif;
+    line-height: 1.5;
+    font-style: italic;
+    max-width: 230px;
+    text-transform: capitalize;
+    padding: 5px 0px;
+}
+
+.following-party {
+    font-size: 14px;
+    color: #696548;
+    font-family: "Poppins-Regular", sans-serif;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top: 20px;
+}

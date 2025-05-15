@@ -1,0 +1,139 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "lovely-darling";
+  src: url(../fonts/Lovely\ Darling.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Bright";
+  src: url(../fonts/Bright\ Violet.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Blessed";
+  src: url("../fonts/Blessed\ Signature.ttf") format("truetype");
+}
+
+/* Invitation Card Styling */
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.invitation-title {
+  font-family: "lovely-darling";
+  max-width: 400px;
+  font-size: 50px;
+  color: #f7c57e;
+}
+
+.invitation-description {
+  font-family: "lovely-darling";
+  font-size: 23px;
+  max-width: 300px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.groom-bride-section {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.your-name {
+  font-weight: 400;
+  font-size: 60px;
+  font-family: "Bright";
+  color: #f7c57e;
+  line-height: 0.5;
+}
+
+.and img {
+  width: 40px;
+}
+
+.partner-name {
+  font-weight: 400;
+  font-size: 60px;
+  font-family: "Bright";
+  color: #f7c57e;
+  line-height: 0.5;
+}
+
+.invitation-date-section {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.invitation-time {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.invitation-day {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.invitation-date {
+  color: #f7c57e;
+  font-family: "Blessed";
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0 20px;
+  line-height: 0.6;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  padding: 15px 25px;
+}
+
+.invitation-year {
+  font-weight: 600;
+}
+.invitation-month {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+img.img-top,
+img.img-bottom {
+  width: 50%;
+}
+
+.invitation-address {
+  font-size: 14px;
+  font-weight: 600;
+  max-width: 300px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  margin-top: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.following-party {
+  font-family: "lovely-darling";
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}

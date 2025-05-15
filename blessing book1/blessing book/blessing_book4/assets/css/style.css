@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'louvre-and-venus';
+    src: url('../fonts/louvre-and-venus.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'la-beauties';
+    src: url('../fonts/la-beauties.ttf') format('truetype');
+}
+
+.main-section {
+    max-width: 562px;
+    width: 100%;
+    height: 787px;
+    flex-direction: column;
+    display: flex;
+    padding: 30px 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: start;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/FEB095F4-13E2-4AF2-9789-DF1E5FB84053.png);
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.title {
+    margin-top: 50px;
+    font-size: 70px;
+    font-family: 'la-beauties';
+    text-align: center;
+    width: 100%;
+    color: #4B007C;
+}
+
+.description {
+    max-width: 330px;
+    margin: 0 auto;
+    width: 100%;
+    color: #4B007C;
+}
+
+.description p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.couple-image {
+    text-align: center;
+    width: 100%;
+}
+
+.couple-image img {
+    margin: 0 auto;
+    object-fit: contain;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 6px;
+}
+
+
+
+@media (max-width: 562px) {
+    .main-section {
+        height: 100vh;
+        background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/5A143553-8BD3-40B0-AD71-4A0DA3299860.png);
+    }
+}

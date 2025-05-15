@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'AcademyEngravedLetPlain';
+  src: url('../fonts/AcademyEngravedLetPlain.ttf') format('truetype');
+}
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.groom-bride-section {
+  display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+}
+.invitation-title {
+  font-size: 55px;
+  color: #ab593b;
+  font-family: "AcademyEngravedLetPlain", serif;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.invitation-description {
+ 
+  font-size: 14px;
+  color: #4D672F;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  word-break: break-all;
+  max-width: 270px;
+
+}
+ .your-name {
+  font-size: 40px;
+    color: #C5942C;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 40%;
+    text-align: end;
+
+}
+.partner-name {
+  font-size: 40px;
+    color: #C5942C;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 40%;
+    text-align: start;
+}
+ .and {
+  font-size: 40px;
+  color: #C5942C;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  text-align: center;
+  padding: 0px 14px;
+
+}
+
+.invitation-time {
+  
+  font-size: 14px;
+  color: #4D672F;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+.invitation-address{
+  text-align: center;
+  font-size: 14px;
+  color: #4D672F;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 25px;
+  max-width: 203px;
+  line-height: 1.4;
+  word-break: break-all;
+}
+ 
+.invitation-date-section {
+  display: flex;
+    align-items: center;
+    border-bottom: 1px solid #C5942C;
+    margin-top: 10px;
+   
+}
+  .invitation-day {
+    font-size: 18px;
+    
+    color: #4c724e;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    width: 110px;
+    text-align: center;
+}
+
+.invitation-date {
+  font-size: 32px;
+  font-weight: 600;
+  color: #4c724e;
+  font-family: "Montserrat", sans-serif;
+  border-left: 1px solid #91593b;
+  border-right: 1px solid #91593b;
+  margin-bottom: 5px;
+  padding: 0px 10px;
+  line-height: 38px;
+}
+
+.invitation-month {
+  font-size: 18px;
+ 
+  color: #4c724e;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+  width: 110px;
+  text-align: center;
+}
+
+.following-party {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+  color: #4D672F;
+  font-weight: 600;
+}

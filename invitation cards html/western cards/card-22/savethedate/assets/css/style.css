@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: "NewBaskervilleBT";
+  src: url("../fonts/NewBaskervilleBT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Housing";
+  src: url("../fonts/Blinkwomen.ttf") format("truetype");
+}
+
+.invitation-card {
+  height: 787px;
+    width: 562px;
+    flex-direction: column;
+    display: flex;
+    padding: 0px 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: #F3F1F2;
+    font-family: "NewBaskervilleBT";
+    color: #383B34;
+}
+.couple-img1 {
+  width: 272px;
+  height: 220px;
+  object-fit: cover;
+  rotate: -10deg;
+}
+.couple-img2 {
+  width: 236px;
+  height: 220px;
+  rotate: 10deg;
+  object-fit: cover;
+}
+.couple-img3 {
+  width: 252px;
+  height: 250px;
+  object-fit: cover;
+  rotate: 10deg;
+}
+.couple-img4 {
+  rotate: -10deg;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.invitation-date {
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  font-size: 16px;
+  line-height: 2;
+  text-transform: capitalize;
+}
+
+.invitation-time {
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 2;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.invitation-address{
+  letter-spacing: 2px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    max-width: 160px;
+    text-align: center;
+}
+.invitation-title {
+  font-weight: 500;
+  font-size: 54px;
+  word-spacing: 2px;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  font-family: "Housing";
+  text-align: center;
+}
+.invitation-title-section {
+ border-right: 1px solid ;
+ border-left: 1px solid ;
+}
+.groom-bride-section {
+ text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-style: italic;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}

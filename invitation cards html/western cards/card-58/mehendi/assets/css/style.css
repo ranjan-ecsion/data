@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@font-face {
+  font-family: "Things";
+  src: url("../fonts/Things.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Millania";
+  src: url("../fonts/Millania.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  padding: 30px 50px;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 1px 1px 7px 1px lightgray;
+}
+
+.couple-img {
+  width: 400px;
+  height: 550px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.invitation-date {
+  font-family: "Things";
+  font-size: 140px;
+  line-height: 1;
+  text-align: center;
+}
+.invitation-date span {
+  font-size: 45px;
+
+  top: 43%;
+  font-weight: 400;
+  left: 57%;
+}
+.invitation-year   {
+    font-size: 110px;
+    line-height: 1;
+    padding: 5px 0px;
+    font-family: "Things";
+    text-align: center;
+    position: absolute;
+    top: 16%;
+    left: 27%;
+    color: #fff;
+    font-weight: 500;
+
+}
+.invitation-month {
+  margin: 0 auto;
+  font-family: "Things";
+  font-size: 110px;
+  line-height: 1;
+  position: absolute;
+  z-index: 111;
+  color: #fff;
+  left: 63%;
+  bottom: 146px;
+}
+.invitation-year span {
+  font-size: 140px;
+
+  padding: 5px 0px;
+  font-family: "Things";
+  text-align: center;
+}
+.invitation-address, .invitation-time {
+  letter-spacing: 4px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+ max-width: 300px;
+  text-align: center;
+  font-family: "Things";
+}
+
+
+.invitation-title {
+  margin-top: 10px;
+  font-size: 24px;
+  word-spacing: 2px;
+  line-height: 1.7;
+  letter-spacing: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Millania";
+  font-weight: 500;
+  color: #000;
+  border-bottom: 2px solid  #707070;
+  padding: 5px 0px;
+  width: 70%;
+  margin: 0 auto;
+}
+.invitation-title span {
+  font-family: "Housing";
+  text-transform: capitalize;
+  line-height: 1;
+  padding-right: 13px;
+  padding-top: 3px;
+  font-size: 16px;
+}
+.groom-bride-section {
+  text-transform: uppercase;
+  position: relative;
+  letter-spacing: 7px;
+  margin-top: 20px;
+  font-family: "Things";
+  text-align: center;
+  line-height: 2;
+  font-size: 28px;
+}
+.invitation-date-section {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+
+  font-family: "Things";
+  text-align: center;
+  font-size: 18px;
+}
+.divider {
+  text-align: end;
+  border: 2px solid #707070;
+  width: 8%;
+  float: inline-end;
+}
+.your-name {
+  writing-mode: vertical-lr;
+  font-size: 90px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  line-height: 0.6;
+}
+.partner-name {
+  writing-mode: vertical-lr;
+  position: absolute;
+  font-size: 90px;
+  line-height: 0.8;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.couple-bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+@font-face {
+  font-family: "Blessed";
+  src: url("../fonts/Coronet.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lobster";
+  src: url("../fonts/Lobster-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Baskerville";
+  src: url("../fonts//BaskervilleBT.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.invitation-title {
+  text-align: center;
+  font-size: 50px;
+  text-transform: capitalize;
+  max-width: 400px;
+  color: #5a4a42;
+  font-weight: 400;
+  font-family: "Great Vibes", cursive;
+}
+
+.invitation-description {
+  text-align: center;
+  font-size: 16px;
+  color: #76476f;
+  max-width: 300px;
+  font-family: "Baskerville";
+  text-transform: uppercase;
+}
+
+.your-name {
+  font-size: 40px;
+  color: #5a4a42;
+  font-family: "Great Vibes", cursive;
+  font-weight: 500;
+  text-align: center;
+}
+
+.partner-name {
+  font-size: 40px;
+  color: #5a4a42;
+  font-family: "Great Vibes", cursive;
+  font-weight: 500;
+  text-align: center;
+}
+
+.and {
+  font-size: 20px;
+  line-height: 1;
+  color: #5a4a42;
+  font-family: "Baskerville";
+  font-weight: 300;
+  text-align: center;
+}
+
+.invitation-time {
+  text-align: center;
+  font-size: 16px;
+  max-width: 300px;
+  color: #5a4a42;
+  font-family: "Baskerville";
+  margin-bottom: 10px;
+}
+
+.invitation-address {
+  text-align: center;
+  font-size: 16px;
+  color: #5a4a42;
+  font-family: "Baskerville";
+  max-width: 250px;
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+
+.invitation-date-section {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.invitation-day {
+  font-size: 18px;
+  color: #5a4a42;
+  font-family: "Baskerville";
+}
+
+.invitation-date {
+  font-size: 42px;
+  line-height: 0.8;
+  padding: 0 10px;
+  margin: 0 10px;
+  font-weight: 800;
+  text-align: center;
+  color: #5a4a42;
+  font-family: "Baskerville";
+  border-right: 1px solid #91593b;
+  border-left: 1px solid #91593b;
+}
+
+.invitation-month {
+  font-size: 18px;
+  font-family: "Baskerville";
+  color: #5a4a42;
+}
+
+.invitation-year {
+  font-size: 18px;
+  font-family: "Baskerville";
+  color: #5a4a42;
+}
+
+.following-party {
+  text-align: center;
+  color: #76476f;
+  text-transform: capitalize;
+  font-family: "Baskerville";
+  font-style: italic;
+}

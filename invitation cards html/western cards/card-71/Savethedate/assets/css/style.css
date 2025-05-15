@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Jaqartall";
+  src: url("../fonts/Jaqartall-gxXzP.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Things";
+  src: url("../fonts/Things.ttf") format("truetype");
+}
+
+.invitation-card {
+  font-family: "Things";
+  width: 600px;
+  height: 1350px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin: 0 auto;
+  color: #000;
+}
+
+.invitation-date-section, .invitation-time {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+
+.invitation-title {
+  text-align: center;
+  font-family: "Jaqartall";
+  text-transform: uppercase;
+  font-weight: 500;
+  word-spacing: 20px;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+  font-size: 52px;
+}
+
+.groom-bride-section {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 68px;
+  line-height: 1.4;
+}
+
+.couple-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.invitation-address {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 42px;
+}

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'bailey';
+    src: url('../fonts/bailey.ttf') format('truetype');
+}
+
+.main-section {
+    max-width: 562px;
+    width: 100%;
+    height: 787px;
+    flex-direction: column;
+    display: flex;
+    padding: 30px 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/C21F7711-274D-48CC-84F2-F004DE68BB1D.png);
+    font-family: "Poppins", sans-serif;
+}
+
+
+.title {
+    font-size: 70px;
+    font-family: 'bailey';
+    color: #1B311B;
+    text-align: center;
+    width: 100%;
+}
+
+.description {
+    max-width: 230px;
+    width: 100%;
+    margin: 0 auto;
+}
+.description p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 562px) {
+    .main-section {
+        height: 100vh;
+        background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/90376197-B9BE-4D2C-8064-BAC7470146F6.png);
+
+    }
+    .description {
+        max-width: 220px;
+    }
+}

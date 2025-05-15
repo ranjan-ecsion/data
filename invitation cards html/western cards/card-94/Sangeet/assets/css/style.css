@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "Mshtakan";
+  src: url("../fonts/MshtakanRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Omeliana";
+  src: url("../fonts/Omeliana.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 787px;
+  height: 562px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  font-family: "Mshtakan";
+  color: #1b1818;
+}
+
+.invitation-date-section {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+
+.invitation-month,
+.invitation-year {
+  font-size: 180px;
+  position: relative;
+  font-weight: 600;
+  left: 90px;
+  color: #c4c4c6;
+  letter-spacing: 10px;
+  line-height: 1.2;
+}
+
+.invitation-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+}
+
+.groom-bride-section {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+.couple-img {
+  width: 100%;
+  height: 100%;
+}
+
+.invitation-address {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 24px;
+}

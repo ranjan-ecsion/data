@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+    <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/* :root {
+      --primary-color: #FFFFFF;
+  --secondary-color: #B06356;
+  --font-color: #000000;
+      --primary-font: "winlove";
+      --secondary-font: "Playfair Display";
+      --body-font: "Montserrat";
+    } */
+
+    :root {
+      --primary-color: #FFEFB1;
+  --secondary-color: #000000;
+  --font-color: #000000;
+     --primary-font: "winlove";
+      --secondary-font: "Playfair Display";
+      --body-font: "Montserrat";
+    }
+
+    /* :root {
+      --primary-color: #381813;
+  --secondary-color: #FFFFFF;
+  --font-color: #FFFFFF;
+     --primary-font: "winlove";
+      --secondary-font: "Playfair Display";
+      --body-font: "Montserrat";
+    } */
+
+    /* :root {
+      --primary-color: #202108;
+--secondary-color: #FFFFFF;
+--font-color: #FFFFFF;
+      --primary-font: "winlove";
+      --secondary-font: "Playfair Display";
+      --body-font: "Montserrat";
+    } */
+
+.invitation-card {
+  max-width: 562px;
+  width: 100%;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-image: url("https://ecsiondevstorage.blob.core.windows.net/wedding-storage/9DC84283-836B-4051-B148-54134A914A23.png");
+  background-color: var(--primary-color);
+}
+
+.invitation-description {
+  font-size: 14px;
+  font-family: var(--body-font);
+  color: var(--font-color);
+  max-width: 250px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.invitation-time {
+  font-size: 14px;
+  font-family: var(--body-font);
+  color: var(--font-color);
+  font-weight: 500;
+  margin-top: 25px;
+  font-style: italic;
+}
+
+.invitation-address {
+  font-size: 14px;
+  font-family: var(--body-font);
+  color: var(--font-color);
+  max-width: 205px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.4;
+  margin: 20px 0px;
+  font-style: italic;
+}
+
+.invitation-title {
+  font-size: 26px;
+  color: var(--font-color);
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  max-width: 370px;
+  text-align: center;
+}
+
+.invitation-date {
+  font-size: 18px;
+  color: var(--font-color);
+  font-family: var(--body-font);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border-top: 1px solid var(--font-color);
+  border-bottom: 1px solid var(--font-color);
+  max-width: 210px;
+  width: 100%;
+  padding: 7px 0px;
+  text-align: center;
+}
+
+.following-party {
+  color: var(--font-color);
+  font-size: 14px;
+  font-family: var(--body-font);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.groom-bride-section {
+    line-height: 1;
+    padding: 15px 0px;
+}
+
+.your-name{
+  font-size: 42px;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    font-weight: 500;
+    text-align: center;
+}
+
+.partner-name {
+  font-size: 42px;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.and {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-family: var(--primary-font);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.your-parent-name{
+  margin-top: 20px;
+  font-size: 14px;
+  max-width: 500px;
+  color: var(--font-color);
+  font-family: var(--body-font);
+}
+.partner-parent-name {
+  margin-top: 10px;
+  font-size: 14px;
+  max-width: 500px;
+  color: var(--font-color);
+  font-family: var(--body-font);
+}
+
+@media screen and (max-width: 562px) {
+  .invitation-card{
+    min-height: 100vh;;
+    background-image: url("https://ecsiondevstorage.blob.core.windows.net/wedding-storage/282E4A93-CFCA-4658-A16B-31861A11011A.png");
+  }
+  .invitation-title {
+    font-size: 24px;
+}
+.your-name, .partner-name {
+    font-size: 34px;
+}
+
+}
+  </style>
+</head>
+
+<body>
+  <div class="invitation-card"
+    >
+   
+    <div class="invitation-title mt-5">
+        <!-- ${contentJson["invitation-title"]} -->
+      Wedding Invitation
+    </div>
+    <div class="your-parent-name">
+          <!-- ${contentJson["your-parent-name"]} -->
+      D/O Smt. Rupa Devi & Sri. Radhey Shyam
+    </div>
+    <div class="invitation-description ">
+      <!-- ${contentJson["invitation-description"]} -->
+
+      Request your grorious oresence at the Wedding of there daugher
+    </div>
+    <div class="groom-bride-section ">
+      <div class="your-name">
+        <!-- ${contentJson["your-name"]} -->
+        
+        Eesha
+      </div>
+      <div class="your-parent-name">
+        <!-- ${contentJson["your-parent-name"]} -->
+        
+        (D/O Smt. Rupa Devi & Sri. Radhey Shyam)
+      </div>
+      <div class="and">
+        <div class="divider me-2">
+        </div>
+        With
+        <div class="divider ms-2">
+        </div>
+      </div>
+      <div class="partner-name">
+        <!-- ${contentJson["partner-name"]} -->
+        
+        Chirag
+      </div>
+      <div class="partner-parent-name">
+        <!-- ${contentJson["partner-parent-name"]} -->
+        
+        (S/O Smt. Rupa Devi & Sri. Radhey Shyam)
+      </div>
+    </div>
+    <div class="invitation-date  ">
+      <!-- ${contentJson["invitation-full-date"]} -->
+      23 August 2027
+    </div>
+    <div class="invitation-time ">
+       <!-- ${contentJson["invitation-time"]} -->
+      From 4:00 pm Saturday onwards
+    </div>
+    <div class="invitation-address">
+       <!-- ${contentJson["invitation-address"]} -->
+      Ceremony Sta. Mery Church Reception Hotel Palace
+    </div>
+    <div class="following-party"> 
+      <!-- ${contentJson["following-party"]} -->
+      Following The Party
+    </div>
+   
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

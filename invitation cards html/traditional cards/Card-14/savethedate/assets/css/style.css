@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "Lobster";
+  src: url("../fonts/Lobster.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Academy";
+  src: url("../fonts/AcademyEngravedLetPlain.ttf") format("truetype");
+}
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Poppins-Regular", sans-serif;
+  color: #3e3e3e;
+  justify-content: center;
+  margin: 0 auto;
+}
+.invitation-title {
+max-width: 400px;
+  font-size: 40px;
+  color: #c07800;
+  font-weight: 600;
+  font-family: "Academy";
+  text-transform: capitalize;
+}
+
+.invitation-description {
+  font-size: 14px;
+  max-width: 300px;
+  text-transform: uppercase;
+  font-family: "Poppins-SemiBold", sans-serif;
+}
+
+.groom-bride-section {
+  font-size: 40px;
+  color: #c07800;
+  font-family: "Lobster", serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+}
+
+.partner-name {
+  line-height: 1;
+}
+
+.and {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Playfair Display", serif;
+  margin: 0 auto;
+  width: 120px;
+}
+
+.invitation-date-section,
+.invitation-time {
+  font-size: 16px;
+  color: #3e3e3e;
+  letter-spacing: 2px;
+}
+
+.invitation-date-time {
+  color: #3e3e3e;
+  font-weight: 600;
+}
+
+.invitation-massege,
+.following-party,
+.invitation-address {
+  font-size: 14px;
+  color: #3e3e3e;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin: 20px 0;
+  max-width: 300px;
+  font-weight: 600;
+}
+
+.following-party {
+  margin: 0;
+}

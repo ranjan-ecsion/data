@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+    font-family: "Blessed";
+    src: url("../fonts/Blessed\ Signature.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "AbrilFatface-Regular";
+    src: url("../fonts/AbrilFatface-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lobster";
+    src: url("../fonts/Lobster.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+.invitation-card {
+    width: 562px;
+    height: 787px;
+    flex-direction: column;
+    display: flex;
+    padding: 30px 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+    justify-content: start;
+    margin: 0 auto;
+}
+   
+.invitation-title {
+    text-align: center;
+    font-size: 34px;
+    color: #91593b;
+    font-weight: 800;
+    margin-top: 35px;
+    margin-bottom: 40px;
+    max-width: 400px;
+    text-transform: uppercase;
+    font-family: "Playfair Display", serif;
+}
+
+.invitation-title span{
+    font-family: "Poppins-Regular";
+    text-transform: lowercase;
+}
+
+.invitation-description {
+    text-align: center;
+    font-size: 14px;
+    max-width: 300px;
+    color: #000;
+    font-family: "Poppins-SemiBold", sans-serif;
+    margin-bottom: 20px;
+}
+
+.groom-bride-section {
+  display: flex;
+  font-size: 25px;
+  gap: 10px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+}
+
+.invitation-date-section {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.invitation-time {
+    font-size: 14px;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+
+.invitation-date-time {
+    line-height: 1.8;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.invitation-massege,
+.invitation-address {
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    max-width: 270px;
+}
+
+.invitation-massege{
+    text-transform: uppercase;
+}
+.following-party {
+    text-transform: capitalize;
+}

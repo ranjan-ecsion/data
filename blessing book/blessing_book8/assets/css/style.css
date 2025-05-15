@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'birallina-regular';
+    src: url('../fonts/birallina-regular.ttf') format('truetype');
+}
+
+.main-section {
+    max-width: 562px;
+    width: 100%;
+    height: 787px;
+    flex-direction: column;
+    display: flex;
+    padding: 30px 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: start;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/B1BF3541-3433-4FFE-B43B-43FF13A85459.png);
+    font-family: "Poppins", sans-serif;
+}
+
+
+.title {
+    font-size: 50px;
+    font-family: 'birallina-regular';
+    color: #42567B;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.description {
+    width: 100%;
+    padding: 0 10px;
+}
+.description p {
+    text-align: center;
+    margin-top: 20px;
+    color: #000000;
+}
+.relation-name{
+    color: #333333;
+    font-weight: 600;
+    font-size: 18px;
+}
+.relative-name{
+    color: #333333;
+}
+.couple-image {
+    text-align: center;
+    width: 100%;
+}
+
+.couple-image img {
+    margin: 0 auto;
+    object-fit: contain;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 6px;
+}
+
+
+@media (max-width: 562px) {
+    .main-section {
+        min-height: 100vh;
+        background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/1576C37A-703A-4F44-9DC7-2C6946FDDFFF.png);
+
+    }
+    .couple-image {
+        text-align: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Quillia";
+  src: url("../fonts/Quillia.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GimettaMarriage";
+  src: url("../fonts/Gimetta\ Marriage.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  padding:20px 0;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0 auto;
+  color: #000;
+  font-family: "GimettaMarriage";
+}
+
+.icon-date-section{
+  background-color: #606c52;
+text-align: center;
+}
+
+.invitation-date-section {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 50px;
+  line-height: 1.1;
+  letter-spacing: 8px;
+}
+
+.invitation-time{
+  font-size: 20px;
+}
+
+.invitation-title {
+  font-family: "Quillia";
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 1;
+}
+
+.groom-bride-section {
+  font-size: 56px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.your-name{
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  font-size: 90px;
+  line-height: 1;
+}
+
+.partner-name{
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  font-size: 90px;
+  line-height: 1;
+}
+
+.invitation-address {
+  text-transform: capitalize;
+  font-size: 24px;
+  margin-bottom: 180px;
+}

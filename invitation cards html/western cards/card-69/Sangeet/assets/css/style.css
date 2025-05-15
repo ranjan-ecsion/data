@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Jaqartall Regular";
+  src: url("../fonts/Jaqartall-gxXzP.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Things";
+  src: url("../fonts/Things.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin: 0 auto;
+  color: #b59e72;
+}
+
+.invitation-date-section {
+  font-family: "Jaqartall Regular";
+  text-transform: capitalize;
+  font-size: 36px;
+  letter-spacing: 3px;
+  line-height: 0.9;
+}
+
+
+.invitation-time {
+  font-family: 'Jaqartall Regular';
+  letter-spacing: 3px;
+  color: #b59e72;
+  font-size: 26px;
+}
+
+.invitation-title {
+  font-family: "Jaqartall Regular";
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  font-size: 46px;
+}
+
+.groom-bride-section {
+  color: #000;
+  font-family: "Things";
+  font-size: 50px;
+  margin: 0 130px;
+  padding: 20px 0;
+  line-height: 1;
+}
+
+.couple-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.couple-bg-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50%;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.invitation-address {
+  font-family: "Things";
+  color: #000000;
+  text-transform: capitalize;
+  max-width: 300px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.invitation-card-content {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  text-align: center;
+  width: 430px;
+}
+
+.custom-border{
+  border: 2px solid #fff;
+  max-width: fit-content;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 250px;
+}

@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Things";
+  src: url("../fonts/Things.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Jelytta";
+  src: url("../fonts/Jelytta.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 787px;
+  height: 562px;
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-size: contain;
+  text-transform: capitalize;
+  text-align: start;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  color: #fff;
+  font-family: "Things";
+}
+
+.invitation-date-section {
+  text-align: start;
+  text-transform: capitalize;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.invitation-time{
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.invitation-title {
+  font-family: "Jelytta";
+  text-align: start;
+  letter-spacing: 5px;
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: 70px;
+  line-height: 1;
+}
+
+.groom-bride-section {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  font-size: 50px;
+}
+
+.couple-img-wrapper {
+    border: 5px solid #fff;
+    width: 260px;
+    height: 270px;
+}
+
+.couple-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.invitation-address {
+  text-transform: capitalize;
+  font-size: 20px;
+  max-width: 400px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "BlessedSignature";
+  src: url("../fonts/Blessed\ Signature.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Birdlove";
+  src: url("../fonts/Birdlove.ttf") format("truetype");
+}
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.invitation-title {
+  font-size: 42px;
+  color: #c5942c;
+  font-family: "BlessedSignature";
+  font-weight: 500;
+  max-width: 330px;
+}
+.invitation-description {
+  font-size: 16px;
+  color: #4d672f;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  max-width: 270px;
+}
+.groom-bride-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.partner-name {
+  font-family: "Birdlove";
+  color: #000;
+  font-size: 42px;
+  font-weight: 500;
+}
+.your-name {
+  font-family: "Birdlove";
+  color: #000;
+  font-size: 42px;
+  font-weight: 500;
+}
+.and {
+  font-family: "Montserrat-SemiBold";
+  font-size: 16px;
+  border-top: 2px solid #91593b;
+  border-bottom: 2px solid #91593b;
+  width: 50px;
+  color: #4d672f;
+  font-weight: 600;
+}
+.invitation-day,
+.invitation-year {
+  border-top: 2px solid #c5942c;
+  font-size: 14px;
+  border-bottom: 2px solid #c5942c;
+  padding: 5px 5px;
+  color: #4d672f;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  width: 20%;
+}
+.invitation-date {
+  font-size: 34px;
+  color: #4d672f;
+  line-height: 32px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+.following-party {
+  font-size: 14px;
+  color: #4d672f;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+.invitation-time {
+  font-size: 14px;
+  color: #4d672f;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+.invitation-address {
+  font-size: 14px;
+  color: #4d672f;
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  margin-top: 18px;
+  max-width: 210px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+.invitation-date-section {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  width: 100%;
+}
+.couple-img {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.invitation-month {
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Montserrat-Medium";
+  text-transform: uppercase;
+  color: #4d672f;
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wedding invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+    <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        :root {
+            --primary-color: #112B40;
+            --secondary-color: #FF8224;
+            --font-color: #fff;
+            --primary-font: "laurentine";
+            --secondary-font: "Playfair", serif;
+            --body-font: "Montserrat", serif;
+        }
+
+        :root {
+            --primary-color: #344012;
+            --secondary-color: #FF8224;
+            --font-color: #FFFFFF;
+            --primary-font: "laurentine";
+            --secondary-font: "Playfair", serif;
+            --body-font: "Montserrat", serif;
+        }
+
+        :root {
+            --primary-color: #FFEDED;
+            --secondary-color: #000000;
+            --font-color: #000000;
+            --primary-font: "laurentine";
+            --secondary-font: "Playfair", serif;
+            --body-font: "Montserrat", serif;
+        }
+
+        :root {
+            --primary-color: #FFFFFF;
+            --secondary-color: #000000;
+            --font-color: #000000;
+            --primary-font: "laurentine";
+            --secondary-font: "Playfair", serif;
+            --body-font: "Montserrat", serif;
+        }
+
+
+        .invitation-card {
+            max-width: 562px;
+            width: 100%;
+            height: 787px;
+            flex-direction: column;
+            display: flex;
+            padding: 30px 30px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            text-align: center;
+            background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/43A098EF-C27D-467D-B53F-ED9890EB000E.png');
+            background-color: var(--primary-color)
+        }
+
+        .invitation-title {
+            font-size: 46px;
+            color: var(--font-color);
+            font-weight: 400;
+            font-family: var(--primary-font);
+            margin-top: 15px;
+        }
+
+        .invitation-description {
+            font-size: 16px;
+            font-family: "Montserrat", serif;
+            color: var(--font-color);
+            font-weight: 500;
+            max-width: 250px;
+        }
+
+        .event1-title {
+            font-size: 32px;
+            color: var(--font-color);
+            font-family: var(--primary-font);
+            font-weight: 600;
+            margin-top: 10px;
+            text-align: center;
+
+        }
+
+        .partner-name {
+            font-size: 38px;
+            color: var(--font-color);
+            font-family: var(--primary-font);
+            font-weight: 600;
+            line-height: 40px;
+            margin-bottom: 10px;
+        }
+
+        .invitation-details {
+            font-size: 18px;
+            color: var(--font-color);
+            font-family: var(--body-font);
+        }
+
+        .invitation-time {
+            color: var(--font-color);
+            font-size: 16px;
+            font-weight: 500;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            padding: 5px;
+        }
+
+
+        .event1-address {
+            font-size: 16px;
+            color: var(--font-color);
+            font-family: var(--body-font);
+            line-height: 1.4;
+            max-width: 210px;
+            font-weight: 500;
+            margin: 15px 0px;
+        }
+
+        .following-party {
+            color: var(--font-color);
+            font-size: 14px;
+            font-family: var(--body-font);
+            font-weight: 500;
+
+        }
+
+        .event1-full-date {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 8px;
+            font-family: var(--body-font);
+            color: var(--font-color);
+            justify-content: center;
+        }
+
+        .invitation-month {
+            font-size: 16px;
+            color: var(--font-color);
+
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+
+        .invitation-date {
+            font-size: 32px;
+            font-weight: 600;
+            color: var(--font-color);
+
+            padding: 0px 8px;
+            line-height: 38px;
+        }
+
+        .invitation-year {
+            font-size: 16px;
+            color: var(--font-color);
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .event1-day {
+            font-size: 16px;
+            font-family: var(--body-font);
+            color: var(--font-color);
+            font-weight: 500;
+
+        }
+
+        .and {
+            color: var(--font-color);
+            font-family: var(--primary-font);
+            font-weight: 500;
+            font-size: 18px;
+            margin-top: 10px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .invitation-week-day {
+            border-top: 1px solid var(--font-color);
+            border-bottom: 1px solid var(--font-color);
+            padding: 5px;
+            color: var(--font-color);
+        }
+
+        @media (max-width: 562px) {
+            .invitation-card {
+                background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/43A098EF-C27D-467D-B53F-ED9890EB000E.png');
+                background-color: var(--primary-color)
+            }
+
+
+            .withlove {
+                font-size: 30px;
+
+            }
+
+            .following-party {
+                font-size: 18px
+            }
+
+            .invitation-text {
+                font-size: 16px;
+            }
+
+
+            .invitation-title {
+                font-size: 44px;
+                padding: 10px 0px;
+            }
+
+            .your-name,
+            .partner-name {
+                font-size: 30px;
+            }
+
+            .and {
+                font-size: 30px;
+            }
+
+            .groom-bride-section {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="invitation-card">
+        <div class="invitation-title">
+            <!-- ${contentJson["invitation-title"]} -->
+            Events
+            <!--  -->
+        </div>
+        <div class="event-details-section border-bottom py-3">
+            <div class="event1-title">
+                Welcome Dinner
+            </div>
+            <div class="event-details-section">
+                <div class="event1-full-date">
+                    21 Aug 2026
+                </div>
+                <div class="event1-day">
+                    6pm Saturday Onwards
+                </div>
+            </div>
+            <div class="event1-address">
+                Pride Hotel Wardha Road, Nagpur
+            </div>
+        </div>
+
+        <div class="event-details-section border-bottom py-3">
+            <div class="event1-title">
+                Haldi Ceremony
+            </div>
+            <div class="event-details-section">
+                <div class="event1-full-date">
+                    21 Aug 2026
+                </div>
+                <div class="event1-day">
+                    6pm Saturday Onwards
+                </div>
+
+
+            </div>
+            <div class="event1-address">
+                Pride Hotel Wardha Road, Nagpur
+            </div>
+        </div>
+
+        <div class="event-details-section py-3">
+            <div class="event1-title">
+                Sangeet
+            </div>
+            <div class="event-details-section">
+                <div class="event1-full-date">
+                    21 Aug 2026
+                </div>
+                <div class="event1-day">
+                    6pm Saturday Onwards
+                </div>
+
+
+            </div>
+            <div class="event1-address">
+                Pride Hotel Wardha Road, Nagpur
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

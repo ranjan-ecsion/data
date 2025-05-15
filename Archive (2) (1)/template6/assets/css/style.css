@@ -1,0 +1,17 @@
+        .main-section {
+            max-width: 768px;
+            margin: 0 auto;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        .bg-image-section {
+            background-image: url("https://ecsiondevstorage.blob.core.windows.net/wedding-storage/1734A183-B69E-477C-80C3-C83B00A4DA88.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 30px 0;
+        }
+
+        .section-shipping {
+            background-color: lightgrey;
+        }

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Housing";
+  src: url("../font/Housing.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 787px;
+  height: 562px;
+  background-color: #eceaea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.invitation-date-section,
+.groom-bride-section,
+.invitation-address,
+.invitation-time {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.invitation-address {
+  max-width: 400px;
+}
+
+.groom-bride-section {
+  display: flex;
+  gap: 10px;
+}
+
+.invitation-title {
+    display: flex;
+    align-items: center;
+  font-size: 46px;
+  font-family: "Housing";
+  color: #d0a959;
+  width: 100%;
+  letter-spacing: 5px;
+  height: 200px;
+}
+
+.couple-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

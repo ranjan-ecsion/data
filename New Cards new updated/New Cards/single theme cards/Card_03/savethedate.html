@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+    <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bonheur+Royale&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        .invitation-card {
+            width: 100%;
+            max-width: 562px;
+            height: 787px;
+            flex-direction: column;
+            display: flex;
+            padding: 10px 30px 30px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            background-image: url("https://ecsiondevstorage.blob.core.windows.net/wedding-storage/642EBAFD-DAC8-4E3B-8ADD-304974ACA0DA.png");
+        }
+
+        .groom-bride-section {
+
+            margin-bottom: 10px;
+
+            justify-content: center;
+        }
+
+        .invitation-title {
+            font-size: 44px;
+            color: #910302;
+            font-family: "laurentine";
+            margin-bottom: 16px;
+
+
+        }
+
+        .invitation-description {
+            font-size: 16px;
+            color: #303030;
+            font-family: "Poppins", serif;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .groom-bride-parents-section {
+            display: flex;
+            gap: 5px;
+            font-size: 16px;
+            color: #303030;
+            font-family: "Poppins", serif;
+        }
+
+        .your-name {
+            font-size: 40px;
+            color: #303030;
+            font-family: "Playfair Display", serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .partner-name {
+            font-size: 40px;
+            color: #303030;
+            font-family: "Playfair Display", serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+
+        .and {
+            font-size: 24px;
+            font-family: "laurentine";
+            color: #303030;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+            margin-top: 22px;
+        }
+
+        .parents-name {
+            font-size: 16px;
+            color: #303030;
+            font-family: "Poppins", serif;
+            text-align: center;
+        }
+
+        .your-parent-name {
+            font-size: 16px;
+            color: #303030;
+            font-family: "Poppins", serif;
+            text-align: center;
+        }
+
+        .invitation-time {
+            font-size: 16px;
+            color: #303030;
+            font-family: "Poppins", serif;
+
+            margin-bottom: 14px;
+
+        }
+
+        .invitation-address {
+            text-align: center;
+            font-size: 16px;
+            color: #303030;
+            font-family: "Poppins", serif;
+
+
+            margin-bottom: 25px;
+            max-width: 250px;
+            line-height: 1.4;
+        }
+
+        .invitation-date-section {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #91593b;
+            font-weight: 600;
+
+        }
+
+        .invitation-year {
+            font-size: 18px;
+
+            color: #303030;
+            font-family: "Poppins", serif;
+
+            text-transform: capitalize;
+            width: 110px;
+            text-align: center;
+        }
+
+        .invitation-date {
+            font-size: 32px;
+
+            color: #910302;
+            font-family: "Poppins", serif;
+            border-left: 1px solid #303030;
+            border-right: 1px solid #303030;
+            margin-bottom: 5px;
+            padding: 0px 10px;
+            line-height: 38px;
+        }
+
+        .invitation-month {
+            font-size: 18px;
+
+            color: #303030;
+            font-family: "Poppins", serif;
+
+            text-transform: capitalize;
+            width: 110px;
+            text-align: center;
+        }
+
+        .following-party {
+            text-transform: uppercase;
+            font-size: 16px;
+
+            font-family: "Poppins", serif;
+            color: #303030;
+
+        }
+
+        .initial-partner-name {
+            font-family: "laurentine";
+            color: #910302;
+            font-size: 25px;
+            margin-left: 15px;
+        }
+
+        .initial-your-name {
+            font-family: "laurentine";
+            color: #910302;
+            font-size: 25px;
+        }
+
+        img.icon-bg {
+            max-width: 110px;
+            max-height: 40px;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .flower-bg {
+            background-size: cover;
+            padding: 23px 52px;
+        }
+
+
+        @media screen and (max-width: 562px) {
+            .invitation-card {
+                min-height: 100vh;
+                background-image: url("https://ecsiondevstorage.blob.core.windows.net/wedding-storage/B661C8CE-45ED-42EA-9C7C-450FF1A672A2.png");
+            }
+
+        .invitation-title {
+            font-size: 32px;
+
+        }
+
+        .your-name,
+        .partner-name {
+            font-size: 30px;
+
+        }
+
+        .and {
+            font-size: 18px;
+
+        }
+
+        .invitation-date {
+            font-size: 26px;
+
+        }
+
+        .invitation-month,
+        .invitation-year {
+            font-size: 16px;
+
+        }
+
+        .your-parent-name,
+        .parents-name,
+        .invitation-description,
+        .invitation-time,
+        .invitation-address,
+        .following-party {
+            font-size: 14px;
+        }
+    }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="invitation-card "
+        >
+
+
+        <div class="mb-2 flower-bg"
+            style="background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/1220419E-B8A9-4847-8DC3-4F3130F79CE9.png);">
+            <div class="initial-your-name ">
+                <!-- ${contentJson["yourInitial"]} -->
+
+            </div>
+            <div class="initial-partner-name">
+                <!-- ${contentJson["partnerInitial"]} -->
+
+            </div>
+        </div>
+
+        <div class="invitation-title">
+            <!-- ${contentJson["invitation-title"]} -->
+            Save the Date
+
+        </div>
+        
+        <div class="invitation-description">you are invited to the wedding of </div>
+        <div class="groom-bride-section">
+            <div>
+                <div class="your-name">
+                    <!-- ${contentJson["your-name"]} -->
+                    EESHA
+                </div>
+                
+            </div>
+
+            <div class="and">With</div>
+            <div>
+                <div class="partner-name">
+                    <!-- ${contentJson["partner-name"]} -->
+                    CHIRAG
+
+                </div>
+                
+            </div>
+        </div>
+        <div class="invitation-date-section">
+            <div class="invitation-month">
+                <!-- ${contentJson["invitation-month-text"]} -->
+                October
+
+            </div>
+
+            <div class="invitation-date">
+                <!-- ${contentJson["invitation-date"]} -->
+                24
+
+            </div>
+            <div class="invitation-year">
+                <!-- ${contentJson["invitation-year"]} -->
+                2027
+
+            </div>
+
+        </div>
+        <div class="invitation-time mt-4">
+            <!-- ${contentJson["invitation-time"]} -->
+            From 4:00pm Saturday onwards
+        </div>
+        <div class="invitation-address">
+            <!-- ${contentJson["invitation-address"]} -->
+            Ceremony Sta. Mery Church Reception Hotel Palace
+        </div>
+        <div class="following-party">
+            <!-- ${contentJson["following-party"]} -->
+            Following The Party
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

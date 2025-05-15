@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+    <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+
+    
+   
+   <style>
+       :root {
+        --primary-color: #F0F0F0;
+    --secondary-color: #000000;
+    --font-color: #000000;
+        --primary-font: "laurentine";
+        --secondary-font: "georgia";
+        --body-font: "georgia";
+      } 
+
+        /* Invitation Card Styling */
+        .invitation-card {
+            max-width: 562px;
+            width: 100%;
+            height: 787px;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            border-radius: 8px;
+            text-transform: capitalize;
+            text-align: center;
+            background-image: url("https://ecsiondevstorage.blob.core.windows.net/wedding-storage/CD8528A2-B97B-48D7-A871-189A95A719F2.png");
+        }
+
+        .invitation-title {
+            font-family: "laurentine";
+            font-size: 40px;
+            max-width: 400px;
+            color: #000000;
+            font-weight: 500;
+        }
+
+        .invitation-description {
+            font-size: 14px;
+            font-family: "georgia";
+            font-weight: 500;
+            max-width: 250px;
+        }
+
+        .groom-bride-section {
+            margin-top: 15px;
+            margin-bottom: 30px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .your-name {
+            font-weight: 500;
+            font-size: 36px;
+            font-family: "laurentine";
+            color: #000000;
+        }
+
+        .partner-name {
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: 36px;
+            font-family: "laurentine";
+            color: #000000;
+        }
+
+        .and {
+            margin-top: 10px;
+            font-weight: 500;
+            font-size: 20px;
+            font-family: "laurentine";
+            color: #000000;
+        }
+
+        .invitation-date-section {
+            font-family: "georgia";
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .invitation-day-time {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "georgia";
+            line-height: 1.4;
+        }
+
+        .invitation-day {
+            font-size: 16px;
+            font-weight: 600;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+
+        .invitation-date {
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 1.3;
+            letter-spacing: 2px;
+        }
+
+        .invitation-year {
+            line-height: 0.3;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 16px;
+        }
+
+        .invitation-month {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 0.3;
+            letter-spacing: 1px;
+        }
+
+        .invitation-time {
+            font-family: "georgia";
+            font-size: 16px;
+            font-weight: 600;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+        }
+
+        .invitation-address {
+            font-size: 14px;
+            font-family: "georgia";
+            font-weight: 500;
+            max-width: 220px;
+            color: #342E34;
+            margin: 10px 0px;
+        }
+
+        .following-party {
+            font-family: "georgia";
+            font-size: 14px;
+            font-weight: 500;
+            color: #342E34;
+        }
+
+        .your-parent-name,
+        .partner-parent-name {
+            font-size: 14px;
+            font-family: "georgia";
+            font-weight: 500;
+            max-width: 500px;
+            padding-top: 5px;
+        }
+
+        @media (max-width: 562px) {
+            .invitation-card {
+                background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/A9DEB29B-931F-4443-ACE4-B5C6026B9016.png');
+      }
+            
+
+            .following-party {
+                font-size: 16px
+            }
+
+            .invitation-text {
+                font-size: 16px;
+            }
+
+        
+            .invitation-title {
+                font-size: 38px;
+            }
+
+            .your-name,
+            .partner-name {
+                font-size: 40px;
+            }
+
+            .and {
+                font-size: 28px;
+            }
+
+            .groom-bride-section {
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invitation-card">
+        <div class="invitation-title"> 
+            Wedding Invitation
+            <!-- ${contentJson["invitation-title"]} -->
+        </div>
+        <div class="your-parent-name "> 
+            Smt. Rupa Devi & Sri. Radhey Shyam
+            <!-- ${contentJson["your-parent-name"]} -->
+        </div>
+        <div class="invitation-description">
+            Request your gracious presence at the Wedding of their daughter
+            <!-- ${contentJson["invitation-description"]} -->
+        </div>
+        <div class="groom-bride-section text-center">
+            <div class="your-name">
+                Deepika Linda
+                <!-- ${contentJson["your-name"]} -->
+            </div>
+            <div class="your-parent-name"> 
+                (D/O Smt. Rupa Devi & Sri. Radhey Shyam)
+                <!-- ${contentJson["your-parent-name"]} -->
+            </div>
+            <div class="and">With</div>
+            <div class="partner-name">
+                Ranbir Indrawan
+                <!-- ${contentJson["partner-name]} -->
+            </div>
+            <div class="partner-parent-name"> 
+                (D/O smt. Parvati & shri Mohan bajoria)
+                <!-- ${contentJson["partner-parent-name"]} -->
+            </div>
+        </div>
+        <div class="invitation-date-section mb-3">
+            <div class="invitation-day px-1">
+                SATURDAY
+                <!-- ${contentJson["invitation-week-day"]} -->
+            
+            </div>
+            <div>
+                <div class="invitation-month"> 
+                    FEBRUARY
+                    <!-- ${contentJson["invitation-month-text"]} -->
+                </div>
+                <div class="invitation-date"> 
+                    28
+                    <!-- ${contentJson["invitation-date"]} -->
+                </div>
+                <div class="invitation-year"> 
+                    2025
+                    <!-- ${contentJson["invitation-year"]} -->
+                </div>
+            </div>
+            <div class="invitation-time px-3"> 
+                AT 5 PM
+                <!-- ${contentJson["invitation-time"]} -->
+            </div>
+        </div>
+        <div class="invitation-address text-center">
+            Ceremony Sta. Mery Church Reception Hotel Palace
+            <!-- ${contentJson["invitation-address"]} -->
+        </div>
+        <div class="following-party text-center"> 
+            Reception to follow
+            <!-- ${contentJson["ollowing-party"]} -->
+        </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

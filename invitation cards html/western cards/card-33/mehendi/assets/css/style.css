@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: "NewBaskervilleBT";
+  src: url("../fonts/NewBaskervilleBT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "new-peninim-mt-2";
+  src: url("../fonts/new-peninim-mt-2.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+  background-color: #fff;
+  color: #000;
+  text-transform: lowercase;
+  font-size: 9px;
+}
+.invitation-card {
+  height: 787px;
+  width:  563px ;
+  flex-direction: column;
+  display: flex;
+  padding: 0px;
+  background-size: cover;
+ background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #F3F1F2;
+}
+.couple-img{
+  width: 100%;
+}
+
+.invitation-date {
+  text-align: center;
+   line-height: 2;
+ font-size: 80px;
+ font-family: 'new-peninim-mt-2';
+ line-height: 1;
+}
+.invitation-month {
+  text-align: center;
+   line-height: 2;
+ font-size: 80px;
+ font-family: 'new-peninim-mt-2';
+ line-height: 1;
+}
+.invitation-year {
+  text-align: center;
+   line-height: 2;
+ font-size: 80px;
+ font-family: 'new-peninim-mt-2';
+ line-height: 1;
+}
+.invitation-address {
+  text-align: center;
+  text-transform:uppercase;
+  letter-spacing: 2px;
+  font-family: 'new-peninim-mt-2';
+  font-size: 12px;
+}
+.invitation-ttile {
+  
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'new-peninim-mt-2';
+  letter-spacing: 3px;
+  line-height: 20px;
+}
+.invitation-title-section {
+ border-right: 1px solid ;
+ border-left: 1px solid ;
+}
+.groom-bride-section {
+  text-align: center;
+  text-transform:uppercase;
+  letter-spacing: 2px;
+  font-family: 'new-peninim-mt-2';
+  font-size: 12px;
+  
+}

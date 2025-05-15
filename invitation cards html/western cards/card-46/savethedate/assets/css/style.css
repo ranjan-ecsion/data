@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('../font/PlayfairDisplay-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Blinkwomen';
+    src: url('../font/Blinkwomen.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'samantha';
+    src: url('../font/samantha.ttf') format('truetype');
+}
+
+
+
+
+
+.invitation-card {
+    width: 562px;
+    height: 787px;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ECEAEA;
+    align-items: center;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.invitation-title {
+
+    color: #4a4747;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 5.3px;
+    text-transform: uppercase;
+    font-family: 'PlayfairDisplay';
+
+}
+
+.bride-groom-section {
+    font-size: 28px;
+    font-family: 'Blinkwomen';
+    letter-spacing: 6px;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.img-fluid {
+    max-width: 100%;
+    object-fit: cover;
+    padding: 30px;
+}
+

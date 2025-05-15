@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: "Blinkwomen";
+  src: url(../fonts/Blinkwomen.ttf) format("truetype");
+}
+
+.invitation-card {
+  font-family: "Playfair Display", serif;
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-transform: capitalize;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  color: #6B4E12;
+}
+
+.name-logo{
+  font-size: 30px;
+  color: #000000;
+  font-weight: 800;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 38px 68px;
+}
+
+.small-divider{
+  border-bottom: 1px solid gray;
+  width: 34px;
+}
+
+.invitation-date-section {
+  text-transform: capitalize;
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 0.9;
+}
+
+.invitation-month-year{
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.invitation-date{
+  text-align: center;
+  font-size: 200px;
+  margin-bottom: 70px;
+  line-height: 0.5;
+}
+
+.invitation-time, .invitation-day{
+  color: #000000;
+  line-height: 1.5;
+}
+
+.divider{
+  border-bottom: 2px dotted;
+  width: 220px;
+}
+
+.invitation-title {
+  font-family: "Blinkwomen";
+  color: #000000;
+  letter-spacing: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 56px;
+}
+
+.groom-bride-section {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+    font-size: 26px;
+  line-height: 1.2;
+}
+
+.invitation-address {
+  color: #000000;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  font-size: 16px;
+  font-style: italic;
+  max-width: 300px;
+  margin-top: 20px;
+  font-weight: 600;
+}

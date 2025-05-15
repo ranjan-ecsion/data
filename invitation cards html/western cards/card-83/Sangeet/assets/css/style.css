@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "GimettaMarriage";
+  src: url("../fonts/Gimetta\ Marriage.ttf") format("woff");
+}
+
+@font-face {
+  font-family: "Things";
+  src: url("../fonts/Things.ttf") format("truetype");
+}
+
+.invitation-card {
+  font-family: "Things";
+  width: 600px;
+  height: 1350px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  color: #000;
+}
+
+.invitation-date-section {
+  font-family: "GimettaMarriage";
+  font-size: 270px;
+  letter-spacing: 40px;
+  line-height: 1.2;
+}
+
+.invitation-time{
+  font-size: 40px;
+}
+
+.invitation-title {
+  font-family: "GimettaMarriage";
+  text-transform: uppercase;
+  font-weight: 500;
+  word-spacing: 20px;
+  font-size: 50px;
+  letter-spacing: 10px;
+}
+
+.groom-bride-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 60px;
+  line-height: 1.4;
+}
+
+.couple-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.invitation-address {
+  font-size: 42px;
+}

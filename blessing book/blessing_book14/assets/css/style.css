@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'romantic-couple-bold';
+    src: url('../fonts/romantic-couple-bold.ttf') format('truetype');
+}
+
+.main-section {
+    max-width: 562px;
+    width: 100%;
+    height: 787px;
+    flex-direction: column;
+    display: flex;
+    padding: 30px 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: start;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/4716907E-3484-4CCD-BFF3-91BFBA1A2AEB.png);
+    font-family: "Poppins", sans-serif;
+}
+
+
+.title {
+    font-size: 42px;
+    font-family: 'romantic-couple-bold';
+    color: #42567B;
+    margin-bottom: 10px;
+}
+
+.description p {
+    text-align: left;
+    margin-top: 20px;
+    color: #42567B;
+}
+.relation-name{
+    color: #42567B;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+}
+.relative-name{
+    color: #42567B;
+    text-align: left;
+    
+}
+
+.couple-image img {
+    margin: 0 auto;
+    object-fit: contain;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    border-radius: 6px;
+}
+
+
+@media (max-width: 562px) {
+    .main-section {
+        min-height: 100vh;
+        background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/0E99C71A-A3DF-47A0-974E-ACA8BBB90B63.png);
+    }
+}

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: "NewBaskervilleBT";
+  src: url("../fonts/NewBaskervilleBT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "new-peninim-mt-2";
+  src: url("../fonts/new-peninim-mt-2.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+ 
+  background-color: #fff;
+  color: #FFF;
+  text-transform: lowercase;
+  font-size: 9px;
+}
+.invitation-card {
+  height: 563px;
+  width:  787px ;
+  flex-direction: column;
+  display: flex;
+  padding: 0px;
+  background-size: cover;
+ background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #F3F1F2;
+}
+
+
+.invitation-address {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-family: 'NewBaskervilleBT';
+  color: #000;
+  
+}
+.invitation-date {
+   line-height: 47px;
+  height: 460px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  font-size: 120px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  font-family: 'new-peninim-mt-2';
+}
+.groom-bride-section {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-family: 'NewBaskervilleBT';
+  color: #000;
+}
+.invitation-ttile{
+  text-align: center;
+    font-size: 14px;
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'NewBaskervilleBT';
+}

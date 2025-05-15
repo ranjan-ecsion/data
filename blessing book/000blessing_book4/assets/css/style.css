@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'laurentine';
+    src: url('../fonts/laurentine.ttf') format('truetype');
+}
+
+.main-section {
+    max-width: 562px;
+    width: 100%;
+    height: 787px;
+    flex-direction: column;
+    display: flex;
+    padding: 30px 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: start;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/D1CC8F70-00C9-4A58-88E9-5107CAAD4A74.png);
+    font-family: "Open Sans", sans-serif;}
+
+
+.title {
+    font-size: 50px;
+    font-family: 'laurentine';
+    color: #C03C34;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.description {
+    max-width: 290px;
+    width: 100%;
+    margin: 0 auto;
+}
+.description p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 562px) {
+    .main-section {
+        height: 100vh;
+        background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/E7CEB0EA-71E5-4CF7-8C41-CC7304663943.png);
+
+    }
+    .description {
+        max-width: 270px;
+    }
+}

@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Things";
+  src: url("../fonts/Things.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Jelytta";
+  src: url("../fonts/Jelytta.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 787px;
+  height: 562px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: start;
+  text-align: center;
+  text-transform: capitalize;
+  align-items: center;
+  background-color: #a47257;
+  margin: 0 auto;
+  color: #000;
+  font-family: "Things";
+}
+
+.invitation-date-section {
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.invitation-time{
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.invitation-title {
+  text-align: start;
+  font-family: "Jelytta";
+  color: #fff;
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: 70px;
+  margin-top: 20px;
+  line-height: 1;
+}
+
+.groom-bride-section {
+  display: flex;
+  gap: 10px;
+  font-size: 50px;
+  line-height: 1.4;
+}
+
+.groom-bride-address-section {
+  position: absolute;
+  left: -64px;
+}
+
+.couple-bg-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 410px;
+  width: 542px;
+  margin-right: 70px;
+  border: 5px solid #fff;
+}
+
+.couple-img-wrapper {
+  position: absolute;
+  right: -115px;
+  border: 5px solid #fff;
+  width: 230px;
+  height: 270px;
+}
+
+.couple-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.invitation-address {
+  text-transform: capitalize;
+  font-size: 20px;
+  text-align: start;
+  max-width: 300px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}

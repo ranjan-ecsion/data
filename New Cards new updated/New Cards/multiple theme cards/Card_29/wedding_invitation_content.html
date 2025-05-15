@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+  <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+ 
+ 
+ <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+
+    .invitation-card {
+      max-width: 562px;
+      width: 100%;
+      height: 787px;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      border-radius: 8px;
+      text-transform: capitalize;
+      text-align: center;
+      background-color: ${contentJson['bodyColor']};
+      background-image: url("\${contentJson['bgImage']}");
+
+    }
+
+    .invitation-title {
+      font-family: ${contentJson['primaryFont']};
+      color: ${contentJson['textColor']};
+      font-size: 60px;
+      font-weight: 600;
+      
+    }
+
+    .invitation-description {
+      color: ${contentJson['primaryColor']};
+      font-family: ${contentJson['secondaryFont']};   
+      font-size: 14px;
+      font-style: italic;
+      max-width: 300px;
+      font-weight: 500;
+    }
+
+    .groom-bride-section {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+      font-family: ${contentJson['primaryFont']};
+      color: ${contentJson['textColor']};      
+      font-size: 70px;
+      line-height: 1.0;
+      font-weight: 600;
+      
+    }
+
+   
+
+    .your-parent-name {
+      color: ${contentJson['primaryColor']};
+      font-family: ${contentJson['secondaryFont']};
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    .partner-parent-name {
+      color: ${contentJson['primaryColor']};
+      font-family: ${contentJson['secondaryFont']};
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    .and {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-family: ${contentJson['primaryFont']};
+      color: ${contentJson['textColor']};
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    .invitation-date-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      color: ${contentJson['primaryColor']};
+      font-family: ${contentJson['secondaryFont']};
+      font-weight: 500;
+    }
+
+    .invitation-year,
+    .invitation-month {
+      margin: 0 5px;
+      color: ${contentJson['primaryColor']};
+      font-family: ${contentJson['secondaryFont']};
+    }
+
+    .invitation-year {
+      font-size: 17px;
+      font-weight: 500;
+      color: ${contentJson['primaryColor']};
+      font-family: ${contentJson['secondaryFont']};
+    }
+
+    .invitation-date {
+      font-size: 27px;
+      font-weight: 600;
+      padding: 0 7px;
+      color: ${contentJson['primaryColor']};
+      font-family: ${contentJson['secondaryFont']};
+      margin: 0 10px;
+      border-left: 1px solid;
+      border-right: 1px solid;
+    }
+
+    .invitation-month {
+      font-size: 17px;
+      font-weight: 500;
+      color: ${contentJson['primaryColor']};
+      font-family: ${contentJson['secondaryFont']};
+    }
+
+    .invitation-time {
+      color: ${contentJson['primaryColor']};
+      font-family: ${contentJson['secondaryFont']};
+      font-size: 14px;
+      font-weight: 500;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    .invitation-address {
+      font-size: 14px;
+      font-weight: 500;
+      font-style: italic;
+      color: ${contentJson['primaryColor']};
+      font-family: ${contentJson['secondaryFont']};
+      margin-bottom: 25px;
+      max-width: 260px;
+    }
+
+    .following-party {
+      color: ${contentJson['primaryColor']};
+      font-family: ${contentJson['secondaryFont']};
+      font-size: 15px;
+      text-transform: capitalize;
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    @media (max-width: 562px) {
+
+      .invitation-card{
+        background-image: url("\${contentJson['bgResponsiveImage']}");       
+        min-height: 100vh;
+      }
+     
+      .invitation-title {
+        font-size: 44px;
+        margin-top: 10px;
+        max-width: 500px;
+      }
+
+      .invitation-description {
+        font-size: 14px;
+        max-width: 260px;
+      }
+
+      .groom-bride-section {
+        font-size: 60px;
+      }
+
+      .your-parent-name,
+      .partner-parent-name {
+        font-size: 14px;
+      }
+
+      .and {
+        margin-top: 5px;
+        margin-bottom: 0px;
+        font-size: 30px;
+      }
+
+      .invitation-year,
+      .invitation-month {
+        font-size: 14px;
+      }
+
+      .invitation-date {
+                font-size: 26px;
+                padding: 5px 8px;
+            }
+
+      .invitation-time {
+        font-size: 14px;
+      }
+
+      .invitation-address {
+        font-size: 14px;
+        max-width: 220px;
+      }
+
+      .following-party {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="invitation-card"
+    >
+    <div class="mb-2"><img class="img-fluid"
+        src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/82AD0271-EF1C-4587-832B-B3587F3FCD13.png"
+        alt=""></div>
+    <div class="invitation-title">
+      ${contentJson["invitation-title"]}
+      <!-- Wedding Invitation -->
+    </div>
+    <div class="your-parent-name ">
+      ${contentJson["your-parent-name"]}
+      <!-- D/O Smt. Rupa Devi & Shri Radhey Shyam -->
+    </div>
+    <div class="invitation-description ">
+      ${contentJson["invitation-description"]}
+      <!-- Request Your Gracious Presence At The Wedding Of Their Daughter -->
+    </div>
+    <div class="groom-bride-section">
+      <div>
+        <div class="your-name">
+          ${contentJson["your-name"]}
+          <!-- Ridhima -->
+        </div>
+        <div class="your-parent-name  ">
+          ${contentJson["your-parent-name"]}
+          <!-- (D/O Smt. Rupa Devi & Shri Radhey Shyam) -->
+        </div>
+      </div>
+      <div class="and"
+        style="background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/B3712B5F-EF83-4F92-9976-88E7F0616336.png');">
+        &</div>
+      <div>
+        <div class="partner-name">
+          ${contentJson["partner-name"]}
+          <!-- Shubham -->
+        </div>
+        <div class="partner-parent-name  mt-1 ">
+          ${contentJson["partner-parent-name"]}
+          <!-- (S/O Smt. Rupa Devi & Shri Radhey Shyam) -->
+        </div>
+      </div>
+    </div>
+    <div class="invitation-date-section">
+      <div class="invitation-month">
+        ${contentJson["invitation-month-text"]}
+        <!-- October -->
+      </div>
+      <div class="invitation-date">
+        ${contentJson["invitation-date"]}
+        <!-- 26 -->
+      </div>
+      <div class="invitation-year">
+        ${contentJson["invitation-year"]}
+        <!-- 2025 -->
+      </div>
+    </div>
+    <div class="invitation-time"><span>
+        ${contentJson["invitation-week-day"]}
+        <!-- Saturday -->
+      </span>
+
+      <span>
+        ${contentJson["invitation-time"]}
+        <!-- From 4:00pm onwards -->
+
+      </span>
+    </div>
+    <div class="invitation-address">
+      ${contentJson["invitation-address"]}
+      <!-- Ceremony Sta. Mery Church Reception Hotel Palace -->
+    </div>
+    <div class="following-party">
+      ${contentJson["following-party"]}
+      <!-- FOLLOWING THE PARTY -->
+    </div>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

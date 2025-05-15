@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Munellisa";
+  src: url("../fonts/Munellisa.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Things";
+  src: url("../fonts/Things.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  padding:0 20px;
+  justify-content: start;
+  text-transform: capitalize;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 0 auto;
+  color: #000;
+}
+
+.icon-date-section{
+  background-color: #f1dbdd;
+text-align: center;
+}
+
+.invitation-date-section {
+  font-family: "Things";
+  margin-top: 60px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 60px;
+  line-height: 1.1;
+  letter-spacing: 8px;
+}
+
+.invitation-time{
+  font-family: "Munellisa";
+  font-size: 20px;
+  margin-left: 90px;
+margin-top: 40px;
+margin-bottom: 10px;
+}
+
+.invitation-title {
+  font-family: "Things";
+  text-align: end;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 10px;
+  margin-right: 80px;
+  margin-bottom: 56px;
+  font-size: 42px;
+  line-height: 0.4;
+}
+
+.groom-bride-section {
+  font-family: "Munellisa";
+  text-align: end;
+  font-size: 56px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.your-name{
+  margin-right: 50px;
+  margin-bottom: 30px;
+  line-height: 0.5;
+}
+
+.partner-name{
+  margin-right: 96px;
+  line-height: 0.5;
+}
+
+.and{
+  text-transform: uppercase;
+  font-family: "Things";
+  font-size: 40px;
+  margin-right: 50px;
+}
+
+.couple-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.invitation-address {
+  text-align: center;
+  font-family: "Things";
+  text-transform: capitalize;
+  font-size: 26px;
+ margin-left: 90px;
+  letter-spacing: 1px;
+}

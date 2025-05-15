@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  margin: 0 auto;
+}
+
+.invitation-title {
+  font-size: 32px;
+  color: #3c3c3a;
+  max-width: 400px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.invitation-description {
+  font-size: 14px;
+  color: #9fa390;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  max-width: 300px;
+  font-weight: 600;
+}
+
+.groom-bride-section {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.partner-name {
+  font-family: "Great Vibes", cursive;
+  color: #676d51;
+  font-size: 70px;
+  line-height: 0.2;
+}
+
+.your-name {
+  font-family: "Great Vibes", cursive;
+  color: #676d51;
+  font-size: 70px;
+  line-height: 0.7;
+}
+
+.and {
+  font-family: "Great Vibes", cursive;
+  color: #676d51;
+  font-size: 50px;
+  line-height: 1;
+  text-align: center;
+}
+
+.following-party {
+  color: #676d51;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.invitation-address {
+  font-size: 14px;
+  text-transform: capitalize;
+  color: #9fa390;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.8;
+  font-weight: 600;
+  max-width: 300px;
+}
+
+.invitation-title-date {
+  border-bottom: 2px solid #a6824d;
+  border-top: 2px solid #a6824d;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+.invitation-date-section {
+  color: #9fa390;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.divider {
+  border-bottom: 2px solid #a6824d;
+  padding: 0 48px;
+}
+
+.invitation-day {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3c3c3a;
+  text-transform: uppercase;
+  border-bottom: 2px solid #a6824d;
+}
+
+.invitation-time {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3c3c3a;
+}
