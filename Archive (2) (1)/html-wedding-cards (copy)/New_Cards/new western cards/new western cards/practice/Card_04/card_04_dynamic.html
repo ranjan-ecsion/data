@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save the Date</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@font-face {
+  font-family: "Housing";
+  src: url(../fonts/Housing.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NewBskvllBT";
+  src: url(../fonts/BaskervilleBT.ttf) format("truetype");
+}
+
+.invitation-card {
+  font-family: "NewBskvllBT", serif;
+  max-width: 787px;
+  width: 100%;
+  height: 562px;
+  padding: 30px 60px;
+  text-transform: capitalize;
+  background: #F3F1F2;
+  text-align: center;
+  margin: 0 auto;
+  color: #000000;
+}
+
+.invitation-date-section,
+.invitation-time {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.couple-img img{
+  height: 380px;
+  max-width: 665px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.divider {
+  height: 70px;
+  border-left: 1px solid;
+}
+
+.invitation-title {
+  font-family: "Housing";
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+.groom-bride-section {
+  display: flex;
+  gap: 10px;
+  font-family: "NewBskvllBT";
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 5px;
+  margin-top: 6px;
+}
+
+.invitation-address {
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+
+@media (max-width: 562px) {
+            .invitation-card {
+                height: 100vh;
+                padding: 30px 40px;
+            }
+
+            .invitation-title {
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.divider {
+    height: 0;
+}
+.invitation-address {
+    margin-top: 20px;
+}
+
+
+        }
+
+    </style>
+</head>
+
+  <body>
+    <div class="invitation-card">
+     <div class="row">
+      <div class="col-12">
+        <div class="mx-auto couple-img">
+          <img   id="imgOne" src=${contentJson['couple-img1']} alt="" class="">
+         </div>
+      </div>
+     </div>
+     <div class="row mt-4">
+      <div class="col-md-3 p-0">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+          <div class="invitation-date-section mb-2">
+            <div class="invitation-month">
+                ${contentJson["invitation-month-text"]}
+            </div>
+            <div class="invitation-date">
+                ${contentJson["invitation-date"]}
+            </div>
+            <div class="invitation-year">
+                ${contentJson["invitation-year"]}
+            </div>
+          </div>
+          <div class="invitation-time">
+            ${contentJson["invitation-time"]}
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="divider"></div>
+          <div class="d-flex flex-column justify-content-center align-items-center h-100 px-4">
+
+            <div class="invitation-title">Save the date</div>
+            <div class="groom-bride-section">
+              <div class="your-name"> ${contentJson["your-name"]}</div>
+              <div class="and">&</div>
+              <div class="partner-name"> ${contentJson["partner-name"]}</div>
+            </div>
+            </div>
+          <div class="divider"></div>
+
+        </div>
+      </div>
+      <div class="col-md-3 p-0">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100">
+
+        <div class="invitation-address">
+            ${contentJson["invitation-address"]}
+        </div>
+        </div>
+      </div>
+     </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
