@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        @font-face {
+            font-family: "Georgia";
+            src: url("https://react-web-composer.ecsion.com/fonts/Georgia.ttf") format("truetype");
+        }
+
+        .invitation-card {
+            width: 480px;
+            height: 787px;
+            flex-direction: column;
+            display: flex;
+            padding: 30px 30px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .invitation-title {
+            font-size: 42px;
+            color: #c5942c;
+            font-family: "Alex Brush", serif;
+            font-weight: 500;
+            max-width: 330px;
+        }
+
+        .invitation-description {
+            font-size: 16px;
+            color: #464646;
+            font-family: "Georgia";
+            font-style: italic;
+            font-weight: 500;
+            max-width: 270px;
+        }
+
+        .groom-bride-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .partner-name {
+            font-family: "Alex Brush", serif;
+            color: #464646;
+            font-size: 42px;
+            font-weight: 500;
+        }
+
+        .your-name {
+            font-family: "Alex Brush", serif;
+            color: #464646;
+            font-size: 42px;
+            font-weight: 500;
+        }
+
+        .and {
+            font-family: "Alex Brush", serif;
+            font-size: 16px;
+            border-top: 2px solid #91593b;
+            border-bottom: 2px solid #91593b;
+            width: 50px;
+            color: #464646;
+            font-weight: 600;
+        }
+
+        .invitation-year {
+            border-top: 2px solid #c5942c;
+            font-size: 16px;
+            border-bottom: 2px solid #c5942c;
+            padding: 5px 5px;
+            color: #464646;
+            font-weight: 500;
+            font-family: "Georgia";
+            width: 20%;
+        }
+
+        .invitation-day {
+            border-top: 2px solid #c5942c;
+            font-size: 14px;
+            border-bottom: 2px solid #c5942c;
+            padding: 5px 5px;
+            color: #464646;
+            font-weight: 500;
+            font-family: "Georgia";
+            width: 20%;
+        }
+
+        .invitation-date {
+            font-size: 38px;
+            color: #464646;
+            line-height: 32px;
+            font-weight: 600;
+            font-family: "Georgia";
+            padding: 0px 5px;
+        }
+
+        .following-party {
+            font-size: 14px;
+            color: #464646;
+            font-family: "Georgia";
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .invitation-time {
+            font-size: 14px;
+            color: #464646;
+            font-family: "Georgia";
+            font-style: italic;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        .invitation-address {
+            font-size: 14px;
+            color: #464646;
+            font-family: "Georgia";
+            font-style: italic;
+            max-width: 210px;
+            line-height: 1.4;
+            font-weight: 500;
+            margin: 15px 0px;
+        }
+
+        .invitation-date-section {
+            align-items: flex-start;
+            display: flex;
+            margin-top: 40px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .couple-img {
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            max-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .invitation-month {
+            font-weight: 500;
+            font-size: 16px;
+            font-family: "Georgia";
+            text-transform: uppercase;
+            color: #464646;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invitation-card" style="
+    background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/3FC8341F-E9FB-4ECC-80DF-64F840089FAB.png');
+  ">
+        <div class="invitation-title" id="title"></div>
+        <div class="invitation-description mt-2 mb-4" id="message"></div>
+        <div class="couple-img" style="
+      background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/06BBEA1E-B950-4089-9894-EC4931D21828.png');
+    ">
+            <div class="groom-bride-section">
+                <div class="your-name" id="brideFirstName"></div>
+                <div class="and">AND</div>
+                <div class="partner-name" id="groomFirstName"></div>
+            </div>
+        </div>
+        <div class="invitation-date-section">
+            <div class="invitation-day" id="day"></div>
+            <div class="mx-2">
+                <div class="invitation-date" id="date"></div>
+                <div class="invitation-month" id="month"></div>
+            </div>
+            <div class="invitation-year" id="year"></div>
+        </div>
+        <div class="invitation-time mt-3">
+            <span id="time"></span>
+        </div>
+        <div class="invitation-address" id="address"></div>
+        <div class="invitation-address" id="venue"></div>
+        <div class="following-party mt-4"></div>
+    </div>
+
+</body>
+
+</html>

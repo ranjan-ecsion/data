@@ -1,0 +1,129 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+/* Font Faces */
+@font-face {
+  font-family: 'Coronet';
+  src: url('https://react-web-composer.ecsion.com/fonts/Coronet.ttf') format('truetype');
+}
+
+/* Invitation Card Styling */
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  color: #B52A58;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.invitation-title {
+  font-family: "Coronet";
+  font-size: 40px;
+  max-width: 400px;
+  font-weight: 500;
+}
+
+.invitation-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  max-width: 300px;
+  font-weight: 600;
+}
+
+.groom-bride-section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  font-family: "Coronet";
+  font-size: 50px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+.your-parent-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+.partner-parent-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+.and {
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: contain;
+ 
+}
+
+.invitation-date-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.invitation-year,
+.invitation-month {
+  margin: 0 5px;
+}
+
+.invitation-year {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.invitation-date {
+  font-size: 27px;
+  font-weight: 600;
+  padding: 0 7px;
+  margin: 0 7px;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.invitation-month {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.invitation-time {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.invitation-address {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 25px;
+  max-width: 260px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.following-party {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-style: italic;
+}

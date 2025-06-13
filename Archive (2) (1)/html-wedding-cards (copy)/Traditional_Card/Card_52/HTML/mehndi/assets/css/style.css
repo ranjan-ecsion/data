@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "BlessedSignature";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Blessed_Signature.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.groom-bride-section {
+  padding-left: 20px;
+  display: flex;
+  margin-bottom: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.your-name {
+  font-size: 40px;
+  color: #91593B;
+  font-family: "Playfair Display";
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.partner-name {
+  font-size: 36px;
+  color: #91593B;
+  font-family: "Playfair Display";
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.and {
+  font-size: 36px;
+  color: #91593B;
+  font-family: "Playfair Display";
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.invitation-title {
+  font-size: 48px;
+  color: #91593B;
+  font-family: "BlessedSignature";
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  max-width: 370px;
+}
+
+.invitation-description {
+  font-size: 16px;
+  color: #696548;
+  font-family: "Montserrat";
+  line-height: 1.8;
+  font-style: italic;
+  font-weight: 500;
+  max-width: 280px;
+}
+
+.invitation-time {
+  font-size: 14px;
+  color: #696548;
+  font-family: "Montserrat";
+  line-height: 1.8;
+  font-style: italic;
+  font-weight: 500;
+  max-width: 280px;
+  margin-top: 25px;
+}
+
+.invitation-address {
+
+  font-size: 14px;
+  color: #696548;
+  font-family: "Montserrat";
+  font-style: italic;
+  line-height: 1.8;
+  font-weight: 500;
+  margin: 25px 0px;
+  max-width: 203px;
+}
+
+.invitation-date-section {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.invitation-month {
+  font-size: 18px;
+  padding-right: 20px;
+  color: #91593B;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+
+.invitation-date {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  color: #91593B;
+  font-family: "Montserrat";
+  border-left: 1px solid #91593b;
+  border-right: 1px solid #91593b;
+  margin-bottom: 5px;
+  padding: 0px 7px;
+  line-height: 37px;
+}
+
+.invitation-year {
+  font-size: 18px;
+  color: #91593B;
+  font-family: "Montserrat";
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.following-party {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-style: italic;
+  font-family: "Montserrat";
+  color: #696548;
+  font-weight: 500;
+}

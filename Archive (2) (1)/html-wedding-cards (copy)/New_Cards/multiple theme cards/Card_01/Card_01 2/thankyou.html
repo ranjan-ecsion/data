@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Thank You</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+    <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+
+    <style>
+    
+     :root {
+            --primary-color: #FFFAD9;
+            --secondary-color: #464646;
+            --font-color: #c5942c;
+            --primary-font: "birallinaRegular";
+          --secondary-font: "";
+            --body-font: "georgia";
+           
+        } 
+    /* :root {
+            --primary-color: #FFEDDB;
+            --secondary-color: #464646;
+            --font-color: #c5942c;
+            --primary-font: "birallinaRegular";
+          --secondary-font: "";
+            --body-font: "georgia";
+          
+        }  */
+
+    /* :root {
+            --primary-color: #362D2D;
+            --secondary-color: #F4F2F2;
+            --font-color: #F8CE73;
+            --primary-font: "birallinaRegular";
+            --secondary-font: "";
+            --body-font: "georgia";
+           
+        }  */
+
+    /* :root {
+      --primary-color: #2F3939;
+      --secondary-color: #FFD477;
+      --font-color: #F4F2F2;
+      --primary-font: "birallinaRegular";
+      --secondary-font: "";
+      --body-font: "georgia";
+
+    } */
+
+
+        .invitation-card {
+            max-width: 562px;
+            width: 100%;
+            height: 787px;
+            flex-direction: column;
+            display: flex;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            padding: 20px 54px;
+            justify-content: center;
+            margin: 0 auto;
+            background-color: var(--primary-color);
+            background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/3053EC9D-CD74-4B44-A040-BDD9B5D34E9E.png');
+        }
+
+        .invitation-description {
+            font-size: 20px;
+            font-family: var(--secondary-font);
+            font-weight: 500;
+            max-width: 280px;
+            color: var(--font-color);
+            padding: 10px 0px;
+        }
+
+        .following-party {
+            font-size: 16px;
+            font-family: var(--secondary-font);
+            font-weight: 500;
+            max-width: 350px;
+            color: var(--font-color);
+            text-align: center;
+        }
+
+        .invitation-title {
+            font-size: 30px;
+            color: var(--secondary-color);
+            font-family: var(--primary-font);
+            font-weight: 500;
+            font-style: italic;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+
+        .groom-bride-section {
+
+            line-height: 1.2;
+            display: flex
+        }
+
+        .your-name {
+            font-size: 26px;
+            color: var(--font-color);
+            font-family: var(--secondary-font);
+            font-weight: 500;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+
+        .partner-name {
+            font-size: 26px;
+            color: var(--font-color);
+            font-family: var(--secondary-font);
+            font-weight: 500;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+        }
+
+        .and {
+            font-size: 26px;
+            color: var(--font-color);
+            font-family: var(--secondary-font);
+            font-weight: 500;
+            padding: 0px 10px;
+        }
+
+        .divider {
+            border: 1px solid var(--font-color);
+            width: 80px;
+            margin-top: 20px;
+        }
+
+        .withlove {
+            font-size: 30px;
+            color: var(--secondary-color);
+            font-family: var(--primary-font);
+            font-weight: 500;
+            font-style: italic;
+            margin: 15px;
+
+        }
+
+
+
+        @media (max-width: 562px) {
+            .invitation-card {
+                min-height: 100vh;
+                background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/F5428269-CE4D-457E-B7E6-BF0B99D055A9.png');
+            }
+
+
+            .withlove {
+                font-size: 30px;
+
+            }
+
+            .following-party {
+                font-size: 20px
+            }
+
+            .invitation-text {
+                font-size: 16px;
+            }
+
+            .img-fluid {
+                max-width: 60%;
+                height: auto;
+            }
+
+            .invitation-title {
+                font-size: 34px;
+                padding: 10px 0px;
+            }
+
+            .your-name,
+            .partner-name {
+                font-size: 30px;
+            }
+
+            .and {
+                font-size: 30px;
+            }
+
+            .groom-bride-section {
+                margin-top: 5px;
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="invitation-card ">
+        <div class="invitation-title">
+            <!-- ${contentJson["invitation-title"]} -->
+            Thank You
+        </div>
+        <div class="invitation-description mb-2">
+            <!-- ${contentJson["invitation-description"]} -->
+            Dear family and friends
+        </div>
+        <div class="following-party">
+            <!-- ${contentJson["following-party"]} -->
+            Thank you for being an important part of our wedding day.
+            It was the most wonderful day of our lives. Thank
+            you for the love and laughter you shared with us.
+        </div>
+        <div class="divider"></div>
+        <div class="withlove">
+            With Love
+        </div>
+        <div class="groom-bride-section">
+            <div>
+                <div class="your-name ">
+                    <!-- ${contentJson["your-name"]} -->
+                    Vinita
+                </div>
+            </div>
+            <div class="and ">&</div>
+            <div>
+                <div class="partner-name ">
+                    <!-- ${contentJson["partner-name"]} -->
+                    Chirag
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

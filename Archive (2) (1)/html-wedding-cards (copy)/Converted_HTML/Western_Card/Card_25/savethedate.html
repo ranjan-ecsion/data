@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Invitation</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: "BlessedSignature";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Blessed_Signature.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #fff;
+  color: #383B34;
+}
+
+.invitation-card {
+  height: 562px;
+  width: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 65px 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #F3F1F2;
+}
+
+.couple-img1 img {
+  width: 100%;
+  max-width: 470px;
+  height: 330px;
+  object-fit: cover;
+}
+
+.invitation-date {
+  color: #454444;
+  font-family: "Montserrat";
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.invitation-time {
+  color: #454444;
+  font-family: "Montserrat";
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.invitation-address {
+  color: #454444;
+  font-family: "Montserrat";
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.invitation-title {
+  margin: 20px 0;
+  font-family: "BlessedSignature";
+  font-size: 48px;
+  word-spacing: 2px;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  line-height: 0;
+  text-transform: capitalize;
+}
+
+.invitation-title span {
+  margin: 20px 0;
+  font-size: 44px;
+  font-family: "BlessedSignature";
+  line-height: 0.8;
+  letter-spacing: 2px;
+  font-weight: 600;
+
+}
+
+.your-name {
+  rotate: -90deg;
+  font-size: 75px;
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+}
+
+.partner-name {
+  rotate: 90deg;
+  font-size: 85px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: end;
+  font-family: "Playfair Display";
+}
+
+    </style>
+</head>
+
+<body>
+        <div class="invitation-card">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="invitation-title">
+                        ${contentJson["invitation-title"]}
+
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-end justofy-content-center ">
+                <div class="col-md-2 col-2 text-center">
+                    <div class="your-name">
+                        ${contentJson["your-name"]}
+
+                    </div>
+
+                </div>
+                <div class="col-md-8 col-8">
+                    <div class="couple-img1">
+                        <img  id="imgOne" src=${contentJson['couple-img1']} alt="">
+                    </div>
+                   
+                </div>
+
+                <div class="col-md-2 col-2 text-start">
+                    <div class="partner-name "> ${contentJson["partner-name"]}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row ">
+                <div class="col-md-12 text-center mt-4">
+                    <div class="d-flex align-items-center justify-content-center gap-4">
+                        <div class="invitation-date"> 
+                            <span id="month">
+                                ${contentJson["invitation-month-text"]}
+                            </span>
+                            <span id="date">
+                                ${contentJson["invitation-date"]}
+                            </span>
+                            
+                            
+                            <span id="year">
+                                ${contentJson["invitation-year"]}
+                            </span>
+                        </div> | 
+                        <div class="invitation-address">${contentJson["invitation-address"]}</div> | 
+                        <div class="invitation-time">${contentJson["invitation-time"]}</div>
+                    </div>
+     
+                    
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+</body>
+
+</html>

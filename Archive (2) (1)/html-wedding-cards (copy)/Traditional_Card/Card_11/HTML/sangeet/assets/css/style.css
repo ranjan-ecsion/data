@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "FlashDLig";
+  src: url("../fonts/FlashDLig\ Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Blessed";
+  src: url("../fonts/Blessed\ Signature.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BRODY";
+  src: url("../fonts/Brody\ D\ Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Birdlove";
+  src: url("../fonts/Birdlove.ttf") format("truetype");
+}
+
+.invitation-card {
+  background-size: cover;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.invitation-title {
+  font-family: "Blessed";
+  font-size: 42px;
+  text-transform: capitalize;
+  color: #2f86a0;
+  max-width: 400px;
+  font-weight: 600;
+}
+
+.invitation-description {
+  color: #696548;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-family: "Montserrat-Regular", serif;
+  font-style: italic;
+  max-width: 400px;
+  margin-bottom: 24px;
+}
+
+.groom-bride-section {
+  margin: 30px 0;
+  font-family: "FlashDLig";
+  background-repeat: no-repeat;
+  height: 125px;
+  text-transform: uppercase;
+  background-position: center;
+  background-size: contain;
+}
+
+.couple-img-section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 165px;
+  height: 186px;
+  margin-bottom: 10px;
+}
+
+.your-name {
+  font-size: 50px;
+  color: #2f86a0;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-right: 52px;
+}
+
+.partner-name {
+  line-height: 1;
+  font-size: 50px;
+  color: #2f86a0;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-align: center;
+  margin-left: 52px;
+}
+
+.invitation-date-section {
+  font-size: 16px;
+  color: #696548;
+  text-transform: capitalize;
+  font-family: "Montserrat-Regular", sans-serif;
+  text-align: center;
+}
+
+.invitation-time {
+  font-size: 16px;
+  color: #696548;
+  font-family: "Montserrat-Regular", sans-serif;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.invitation-date-time {
+  line-height: 2px;
+}
+
+.img-bottom,
+.img-top {
+  width: 50%;
+}
+
+.couple-img {
+  width: 200px;
+  height: 236px;
+  position: absolute;
+  background-size: cover;
+  left: -18px;
+  bottom: -26px;
+}
+
+.invitation-time-day,
+.invitation-address,
+.invitation-following-party {
+  font-size: 14px;
+  color: #696548;
+  font-family: "Montserrat-Regular", sans-serif;
+  line-height: 23px;
+  font-weight: 500;
+  text-transform: capitalize;
+  max-width: 300px;
+}
+
+.following-party {
+  font-size: 24px;
+  color: #696548;
+  font-family: "Birdlove";
+  text-transform: capitalize;
+  line-height: 23px;
+  letter-spacing: 2px;
+}

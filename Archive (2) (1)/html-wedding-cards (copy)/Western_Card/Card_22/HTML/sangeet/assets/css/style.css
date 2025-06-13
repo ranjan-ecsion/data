@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "NewBaskervilleBT";
+  src: url("../fonts/NewBaskervilleBT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Housing";
+  src: url("../fonts/Blinkwomen.ttf") format("truetype");
+}
+
+.invitation-card {
+  height: 787px;
+  width: 562px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #f3f1f2;
+  padding-left: 20px;
+  font-family: "NewBaskervilleBT";
+  color: #383b34;
+}
+.couple-img1 img {
+  width: 272px;
+  height: 220px;
+  object-fit: cover;
+  rotate: -10deg;
+}
+.invitation-time {
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+.couple-img2 img {
+  width: 250px;
+  height: 220px;
+  rotate: 10deg;
+  object-fit: cover;
+}
+
+.couple-img3 img {
+  rotate: 10deg;
+  width: 250px;
+  height: 260px;
+  object-fit: cover;
+}
+
+.invitation-date-section {
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  font-size: 18px;
+  line-height: 2;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+.invitation-address {
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  max-width: 200px;
+}
+.invitation-title {
+  font-size: 38px;
+  word-spacing: 2px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-family: "Housing";
+  font-weight: 500;
+}
+.invitation-title-section {
+  border-right: 1px solid;
+  border-left: 1px solid;
+}
+.groom-bride-section {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-style: italic;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.invitation-main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 245px;
+}
+.heart-img {
+  width: 50px;
+
+  display: flex;
+  float: right;
+}

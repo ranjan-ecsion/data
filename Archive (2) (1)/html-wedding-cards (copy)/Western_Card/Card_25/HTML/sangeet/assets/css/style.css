@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: "NewBaskervilleBT";
+  src: url("../fonts/NewBaskervilleBT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mandalaz";
+  src: url("../fonts/Mandalaz\ Sensei\ Alternate.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Housing";
+  src: url("../fonts/Housing.ttf") format("truetype");
+}
+
+.invitation-card {
+  height:562px;
+  width:  787px  ;
+  flex-direction: column;
+  display: flex;
+  padding: 65px 0px;
+  background-size: cover;
+ background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #F3F1F2;
+  font-family: "NewBaskervilleBT";
+  color: #383B34;
+}
+.couple-img img {
+  width: 100%;
+  max-width: 420px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.invitation-month {
+  font-family: "NewBaskervilleBT";
+  font-style: italic;
+  text-align: center;
+  font-size: 200px;
+  line-height: 1;
+}
+.invitation-date {
+  font-family: "NewBaskervilleBT";
+  font-style: italic;
+  text-align: center;
+  font-size: 200px;
+  line-height: 1;
+}
+.invitation-year {
+  font-family: "NewBaskervilleBT";
+  font-style: italic;
+  text-align: center;
+  font-size: 200px;
+  line-height: 1;
+}
+
+.invitation-address{
+  color: #454444;
+  letter-spacing: 2px;
+ margin-top: 10px;
+  font-size: 16px;
+}
+.invitation-title {
+  margin: 20px 0;
+  font-size: 62px;
+  word-spacing: 2px;
+  line-height: 0.8;
+  letter-spacing: 2px;
+ font-family: 'Housing';
+}
+
+.your-name {
+ letter-spacing: 5px;
+    font-size:42px;
+    text-transform: uppercase;
+}
+.partner-name {
+  letter-spacing: 5px;
+  font-size: 42px;
+  text-transform: uppercase;
+ 
+}
+.invitation-date-address-time {
+  font-size: 20px;
+    letter-spacing: 2px;
+}
+.groom-bride-section {
+  border: 2px solid red;
+  padding: 30px 30px;
+  background-color: #fff;
+  border-right: 0px;
+}
+.and {
+  line-height: 0.8;
+  font-size: 42px;
+}

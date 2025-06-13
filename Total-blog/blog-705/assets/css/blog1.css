@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bonheur+Royale&family=Great+Vibes&family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Great+Vibes&family=Love+Light&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face {
+    font-family: "Georgia";
+    src: url("https://react-web-composer.ecsion.com/fonts/Georgia.ttf") format("truetype");
+  }
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", serif;
+}
+/* section-01 */
+.section-01 .banner-content {
+    background-color: #950000;
+    color: #ffffff;
+    padding: 50px 30px;
+    text-align: end;
+    opacity: 0.83;
+    font-family: "Playfair Display", serif;
+    max-width: 600px;
+    float: inline-end;
+    margin-top: -150px;
+}
+.section-01 .image-source {
+    position: relative;
+}
+.section-01 {
+    max-width: 780px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: auto;
+    padding: 50px 50px;
+    background-color: #f8f9f9;
+}
+
+.section-01 .image-1 img {
+    width: 100%;
+    height: 730px;
+    object-fit: cover;
+    border: 1px solid #707070;
+}
+
+.section-01 h5 {
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+}
+
+.section-01 h3 {
+    font-size: 91px;
+    font-weight: 600;
+    line-height: 0.9;
+}
+.section-01 h2 {
+    font-size: 52px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.2;
+}
+.section-01 h1 {
+    font-size: 44px;
+}
+
+@media (max-width: 480px) {
+    .section-01 {
+     
+        margin-bottom: 5px;   
+        padding: 20px 0px;
+    }
+    .section-01 h3 {
+        font-size: 40px;
+       
+    }
+    .section-01 h2 {
+        font-size: 26px;
+    }
+    .section-01 h1 {
+        font-size: 26px;
+    }
+    .section-01 .image-1 img {
+    
+        height: 530px;
+       
+    }
+}
+
+
+
+/* section-02 */
+.section-02 {
+    max-width: 780px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: auto;
+    
+    background-color: #f8f9f9;
+}
+.section-02  .divider {
+    background-color: #A0824A;
+    padding: 28px 0px;
+    margin-top: 70px;
+}
+.section-02 h6 {
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+.section-02 h5 {
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+}
+
+.section-02 .image-1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    max-height: 380px;
+    object-fit: cover;
+}
+.section-02 .image-2 img {
+    width: 100%;
+    height: 100%;
+    max-height: 490px;
+    object-fit: cover;
+}
+.section-02 h3 {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 50px 50px;
+    line-height: 1.5;
+    background-color: #950000;
+    color: #ffffff;
+    border-radius: 18px;
+    margin: 80px 50px;
+}
+.section-02 h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.1;
+    font-family: "Georgia";
+}
+.section-02 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.5;
+    padding-left: 30px;
+   
+}
+
+.section-02 .image-source {
+    position: relative;
+}
+.section-02 h1 {
+    font-size: 56px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    color: #000000;
+    margin-bottom: 80px;
+}
+.section-02 h1 span {
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    color: #950000;
+    font-style: italic;
+}
+
+@media (max-width: 480px) {
+.section-02 h3 {
+  
+    padding: 20px 20px;
+  
+    background-color: #950000;
+    color: #ffffff;
+    border-radius: 18px;
+    margin: 25px 0px;
+    text-align: center;
+}
+.section-02 .image-1 img {
+    margin-bottom: 15px;
+}
+.section-02 .divider {
+ 
+    margin-top: 0px;
+}
+.section-02 h5 {
+    
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+}
+.section-02 h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    padding: 0px 20px;
+    text-align: center;
+}
+.section-02 p {
+   
+    line-height: 1.5;
+    padding: 0px 20px;
+    text-align: center;
+}
+.section-02 h1 span {
+    font-size: 26px;
+    
+}
+}
+
+
+
+/* section-03 */
+.section-03 {
+    max-width: 780px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: auto;
+    padding: 50px 50px;
+    background-color: #f8f9f9;
+}
+
+.section-03 h6 {
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    position: absolute;
+    bottom: 105px;
+    right: 17px;
+}
+.section-03 h5 {
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    position: absolute;
+    bottom: 11px;
+    right: 18px;
+}
+
+.section-03 .image-1 img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    max-width: 380px;
+    max-height: 415px;
+    margin-bottom: 95px;
+}
+.section-03 .image-2 img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    max-width: 380px;
+    max-height: 410px;
+}
+.section-03 h3 {
+    font-size: 107px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-family: "Italianno", serif;
+}
+.section-03 h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #950000;
+    line-height: 1.1;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+}
+.section-03 p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    margin-top: 15px;
+   
+}
+.section-03 .image-source {
+    position: relative;
+}
+.section-03 h1 {
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    color: #000000;
+    line-height: 1;
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+.section-03 h1 {
+    font-size: 34px;
+}
+.section-03 {
+    padding: 0px 0px;
+    text-align: center;
+    
+}
+.section-03 .image-2 img {
+   
+    margin-top: 5px;
+}
+.section-03 p {
+   
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 0px 20px;
+}
+.section-03 .image-1 img {
+    
+    margin-bottom: 5px;
+}
+.section-03 h6 {
+   
+    position: absolute;
+    bottom: 17px;
+    right: 0px;
+}
+.section-03 h5 {
+    
+    position: absolute;
+    bottom: 11px;
+    right: 0px;
+}
+}
+
+.section-04 {
+    max-width: 780px;
+    margin: 0 auto;
+    height: auto;
+    padding: 50px 50px;
+    background-color: #f8f9f9;
+    margin-bottom: 10px;
+}
+.section-04 .divider {
+    background-color: #A0824A;
+    padding: 28px 0px;
+    margin-top: 70px;
+}
+.section-04 h6 {
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    position: absolute;
+    bottom: 10px;
+    right: 31px;
+}
+.section-04 h5 {
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    position: absolute;
+    right: 0px;
+    top: 250px;
+}
+
+.section-04 .image-1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    max-height: 380px;
+    object-fit: cover;
+    max-width: 365px;
+}
+.section-04 .image-2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    max-height: 290px;
+    object-fit: cover;
+    max-width: 555px;
+    float: inline-end;
+    margin-bottom: 30px;
+}
+.section-04 h3 {
+    font-size: 42px;
+    color: #950000;
+    font-style: italic;
+    font-weight: 600;
+   
+}
+.section-04 h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 90px;
+   
+}
+.section-04 p {
+ 
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+.section-04 .image-source {
+    position: relative;
+}
+.section-04 h1 {
+    font-size: 38px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    color: #000000;
+    
+}
+.section-04 h1 span {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    color: #950000;
+    font-style: italic;
+}
+
+@media (max-width: 480px) {
+ 
+
+.section-04 {
+   
+    padding: 20px 0px;
+  
+    margin-bottom: 5px;
+    text-align: center;
+}
+.section-04 .image-1 img {
+    margin-bottom: 25px;
+  
+}
+.section-04 .divider {
+ 
+    margin-top: 0px;
+}
+
+.section-04 h1 {
+    font-size: 30px;
+  
+}
+.section-04 h1 span {
+    font-size: 32px;
+   
+}
+.section-04 p {
+   
+    padding: 0px 20px;
+}
+.section-04 h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    padding: 0px 20px;
+}
+.section-04 h6 {
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    position: absolute;
+    bottom: 44px;
+    right: 6px;
+}
+.section-04 .image-2 img {
+   
+    max-height: 400px;
+  
+}
+.section-04 h5 {
+   
+    position: absolute;
+    right: 0px;
+    top: 355px;
+}
+}
+
+.section-05  {
+    max-width: 780px;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 80px;
+    background-color: #f8f9f9;
+}
+.section-05  .divider {
+    background-color: #A0824A;
+    padding: 28px 0px;
+    margin-top: 70px;
+}
+.section-05  h6 {
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    position: absolute;
+    left: 0px;
+    bottom: 15px;
+}
+.section-05  h5 {
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    position: absolute;
+    right: 0px;
+    top: -100px;
+}
+
+.section-05 .image-1 img {
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+    max-width: 255px;
+    height: 340px;
+}
+.section-05 .image-2 img {
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    height: 440px;
+}
+.section-05  h3 {
+    font-size: 56px;
+    color: #950000;
+    font-style: italic;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+}
+.section-05  h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 1.5;
+    max-width: 308px;
+}
+.section-05  p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 95px;
+}
+
+.section-05 .image-source {
+    position: relative;
+}
+.section-05  h1 {
+    font-size: 54px;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+    color: #000000;
+}
+.section-05  h1 span {
+    font-size: 42px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    color: #950000;
+    font-style: italic;
+}
+
+@media (max-width: 480px) {
+    .section-05 h3 {
+        font-size: 46px;
+      
+        
+    }
+    .section-05 h5 {
+     
+        position: absolute;
+        right: 0px;
+        top: -45px;
+    }
+.section-05 .image-1 img {
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+    max-width: 380px;
+    height: 460px;
+    margin-bottom: 15px;
+  
+}
+.section-05 .image-2 img {
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    height: 440px;
+}
+.section-05 .divider {
+ 
+    margin-top: 0px;
+}
+
+.section-05  h1 {
+    font-size: 42px;
+  
+}
+.section-05 p {
+    margin-bottom: 20px;
+    padding: 0px 20px;
+}
+.section-05 h2 {
+    line-height: 1.5;
+    max-width: 400px;
+    padding: 30px 20px;
+    text-align: center;
+}
+.section-05 {
+    max-width: 780px;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 0px;
+    background-color: #f8f9f9;
+    text-align: center;
+}
+.section-05 .order1 {
+    order: 2;
+}
+.section-05 h6 {
+   
+    position: absolute;
+    left: 0px;
+    bottom: 32px;
+}
+}

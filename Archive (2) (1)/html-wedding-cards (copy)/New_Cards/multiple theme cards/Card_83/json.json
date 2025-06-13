@@ -1,0 +1,87 @@
+[
+
+    {
+        "primaryColor": "#000000",
+        "secondaryColor": "#333333",
+        "bodyColor": "#FFFFFF",
+        "textColor": "#000000",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "winlove",
+        "secondaryFont": "Montserrat",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "Playfair Display",
+        "headingFont": "BonheurRoyale-Regular",
+        "imageTop": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/7B5C0003-9326-47B1-9448-8C0A98C7AD1E.png",
+        "imageBottom": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/19BAA197-2D7B-404F-9838-752E826AC543.png",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/F8B50DAD-5A3A-4AC2-875B-D54D9F90CAFE.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/965ECE09-5915-4E77-B5A9-EF94BC156DDE.png"
+        },
+    
+        {
+        "primaryColor": "#000000",
+        "secondaryColor": "#333333",
+        "bodyColor": "#FFDEE2",
+        "textColor": "#000000",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "winlove",
+        "secondaryFont": "Montserrat",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "Playfair Display",
+        "headingFont": "BonheurRoyale-Regular",
+        "imageTop": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/7B5C0003-9326-47B1-9448-8C0A98C7AD1E.png",
+        "imageBottom": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/19BAA197-2D7B-404F-9838-752E826AC543.png",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/F8B50DAD-5A3A-4AC2-875B-D54D9F90CAFE.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/965ECE09-5915-4E77-B5A9-EF94BC156DDE.png"
+        },
+    
+        
+        {
+        "primaryColor": "#FFFFFF",
+        "secondaryColor": "#333333",
+        "bodyColor": "#3E000F",
+        "textColor": "#FFFFFF",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "winlove",
+        "secondaryFont": "Montserrat",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "Playfair Display",
+        "headingFont": "BonheurRoyale-Regular",
+        "imageTop": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/7B5C0003-9326-47B1-9448-8C0A98C7AD1E.png",
+        "imageBottom": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/19BAA197-2D7B-404F-9838-752E826AC543.png",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/F8B50DAD-5A3A-4AC2-875B-D54D9F90CAFE.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/965ECE09-5915-4E77-B5A9-EF94BC156DDE.png"
+        },
+    
+        {
+        "primaryColor": "#FFFFFF",
+        "secondaryColor": "#333333",
+        "bodyColor": "#0D0105",
+        "textColor": "#FFFFFF",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "winlove",
+        "secondaryFont": "Montserrat",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "Playfair Display",
+        "headingFont": "BonheurRoyale-Regular",
+        "imageTop": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/7B5C0003-9326-47B1-9448-8C0A98C7AD1E.png",
+        "imageBottom": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/19BAA197-2D7B-404F-9838-752E826AC543.png",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/F8B50DAD-5A3A-4AC2-875B-D54D9F90CAFE.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/965ECE09-5915-4E77-B5A9-EF94BC156DDE.png"
+        }
+    ]

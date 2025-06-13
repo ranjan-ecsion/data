@@ -1,0 +1,79 @@
+[
+
+    {
+        "primaryColor": "#FF8224",
+        "secondaryColor": "#333333",
+        "bodyColor": "#261E0D",
+        "textColor": "#FFFFFF",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "Alex Brush",
+        "secondaryFont": "Montserrat",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "abrilfatfaceRegular",
+        "headingFont": "BonheurRoyale-Regular",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/4BBFE02D-BDFC-4505-99CE-3FE54F1A82ED.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/29C73463-4632-4F4C-B2B3-FAE445242713.png"
+        },
+    
+        {
+       "primaryColor": "#FF8224",
+        "secondaryColor": "#333333",
+        "bodyColor": "#FFF2F2",
+        "textColor": "#000000",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+       "primaryFont": "Alex Brush",
+        "secondaryFont": "Montserrat",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "abrilfatfaceRegular",
+        "headingFont": "BonheurRoyale-Regular",
+         "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/4BBFE02D-BDFC-4505-99CE-3FE54F1A82ED.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/29C73463-4632-4F4C-B2B3-FAE445242713.png"
+        },
+    
+        
+        {
+       "primaryColor": "#FF8224",
+        "secondaryColor": "#333333",
+        "bodyColor": "#FCE8BE",
+        "textColor": "#000000",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "Alex Brush",
+        "secondaryFont": "Montserrat",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "abrilfatfaceRegular",
+        "headingFont": "BonheurRoyale-Regular",
+         "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/4BBFE02D-BDFC-4505-99CE-3FE54F1A82ED.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/29C73463-4632-4F4C-B2B3-FAE445242713.png"
+        },
+    
+        {
+       "primaryColor": "#FF8224",
+        "secondaryColor": "#333333",
+        "bodyColor": "#112B40",
+        "textColor": "#FFFFFF",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+       "primaryFont": "Alex Brush",
+        "secondaryFont": "Montserrat",  
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "abrilfatfaceRegular",
+        "headingFont": "BonheurRoyale-Regular",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/4BBFE02D-BDFC-4505-99CE-3FE54F1A82ED.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/29C73463-4632-4F4C-B2B3-FAE445242713.png"
+        }
+    ]

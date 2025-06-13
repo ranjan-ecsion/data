@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+<<<<<<< HEAD
+@font-face {
+  font-family: "Rachela";
+  src: url("../fonts/Rachela.ttf") format("truetype");
+}
+=======
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hurricane&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+>>>>>>> d94bf38ce6be069b76a5574307f5ab0d3d6075af
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 55px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+<<<<<<< HEAD
+=======
+  font-size: 16px;
+  font-weight: 400;
+>>>>>>> d94bf38ce6be069b76a5574307f5ab0d3d6075af
+  
+}
+
+.invitation-title {
+<<<<<<< HEAD
+  font-family: "Rachela";
+  font-size: 54px;
+  color: #959595;
+}
+.invitation-description span {
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  color: #959595;
+}
+.invitation-description {
+  font-family: "Things";
+  line-height: 20px;
+  color: #959595;
+}
+.groom-bride-section {
+  line-height: 0.7;
+  margin-top: 55px;
+  color: #959595;
+}
+.your-name {
+  font-family: "Rachela";
+  font-size: 65px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  color: #959595;
+}
+.partner-name {
+  font-family: "Rachela";
+  font-size: 65px;
+  letter-spacing: 2px;
+  color: #959595;
+}
+.and {
+  font-family: "Rachela";
+  font-size: 65px;
+  letter-spacing: 2px;
+  color: #959595;
+}
+.invitation-date {
+  padding-right: 10px;
+  font-family: "Playfair Display", serif;
+  color: #959595;
+}
+.invitation-time.me-2 {
+  font-family: "Playfair Display", serif;
+  color: #959595;
+}
+.invitation-address.mt-5 {
+  width: 82%;
+  display: flex;
+  float: inline-end;
+  padding-right: 10px;
+  font-family: "Playfair Display", serif;
+  color: #959595;
+}
+
+.following-party {
+  font-family: "Rachela";
+  font-size: 32px;
+  text-align: end;
+  margin-top: 50px;
+  color: #959595;
+=======
+  text-align: center;
+    font-family: "Style Script", serif;
+    font-size: 54px;
+    color: #959595;
+}
+.invitation-description{
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-family: "Playfair Display", serif;
+  color: #959595;
+  max-width: 210px;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+}
+.your-parent-name {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-top: 10px;
+  font-family: "Playfair Display", serif;
+}
+.partner-parent-name{
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-top: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.groom-bride-section {
+  line-height: 1;
+  margin-top: 45px;
+  color: #959595;
+}
+.your-name {
+  font-family: "Style Script", serif;
+  font-size: 55px;
+  letter-spacing: 1px;
+ 
+  color: #959595;
+  font-weight: 500;
+}
+.partner-name {
+  font-family: "Style Script", serif;
+  font-size: 55px;
+  letter-spacing: 1px;
+  color: #959595;
+  font-weight: 400;
+}
+.and {
+  font-family: "Style Script", serif;
+  font-size: 64px;
+  color: #959595;
+  margin-top: 20px;
+  line-height: 0.8;
+  font-weight: 500;
+}
+.invitation-date {
+  font-family: "Playfair Display", serif;
+  color: #959595;
+  max-width: 193px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.invitation-time {
+  font-family: "Playfair Display", serif;
+  color: #959595;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+.invitation-address{
+  font-family: "Playfair Display", serif;
+  color: #959595;
+  max-width: 185px;
+  font-weight: 400;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.following-party {
+  font-family: "Style Script", serif;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 25px;
+  color: #959595;
+  font-weight: 500;
+>>>>>>> d94bf38ce6be069b76a5574307f5ab0d3d6075af
+}

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "Housing";
+  src: url("../fonts/Housing.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 787px;
+  height: 562px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  align-items: center;
+  margin: 0 auto;
+  color: #6a420c;
+  font-family: "Playfair Display", serif;
+}
+
+.invitation-title {
+  font-family: "Housing";
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+.invitation-date-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 90px;
+  margin-left: 30px;
+}
+
+.invitation-day-month {
+  position: relative;
+  letter-spacing: 1px;
+  top: 40px;
+  left: 80px;
+}
+
+.invitation-date {
+  position: relative;
+  font-size: 190px;
+  line-height: 0;
+}
+
+.invitation-date sup {
+  position: absolute;
+  font-size: 26px;
+  left: 64px;
+}
+
+.invitation-month {
+  font-family: "Housing";
+  font-size: 30px;
+  line-height: 0.4;
+}
+
+.invitation-day {
+  font-size: 14px;
+}
+
+.invitation-time {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.divider {
+  border-bottom: 3px solid;
+  width: 250px;
+  margin: 10px auto;
+}
+
+.groom-bride-section {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.and {
+  font-family: "Housing";
+  font-size: 50px;
+  line-height: 1;
+}
+
+.invitation-address {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 1px;
+  max-width: 200px;
+}

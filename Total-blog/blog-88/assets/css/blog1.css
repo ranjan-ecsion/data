@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bonheur+Royale&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* @font-face {
+    font-family: 'margille';
+    src: url('../fonts/margille.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'theMithan';
+    src: url('../fonts/theMithan.ttf') format('truetype');
+
+} */
+
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", serif;
+
+}
+
+/* section-1 */
+
+.section-01 {
+    max-width: 780px;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 50px;
+    background-color: #DD1C5E;
+}
+
+.section-01 .image-1 img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    border-radius: 19px;
+    object-position: center;
+}
+
+.section-01 h5 {
+    position: absolute;
+    left: 11px;
+    bottom: 8px;
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5f5;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.section-01 .image-2 img {
+    width: 100%;
+    height: 240px;
+    max-width: 285px;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    border-radius: 14px;
+    object-position: top;
+}
+
+
+.section-01 h6 {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5f5;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.section-01 .banner-content {
+    text-align: end;
+    margin-top: -75px;
+}
+
+.section-01 h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 60px;
+}
+
+.section-01 h2 {
+    font-size: 75px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 75px;
+    line-height: 0.8;
+    color: #ffffff;
+    font-family: 'theMithan';
+    letter-spacing: 2px;
+}
+
+.section-01 .image-source {
+    position: relative;
+}
+
+.section-01 h3 {
+    margin: 0 auto;
+    font-size: 95px;
+    text-align: center;
+    font-family: 'theMithan';
+    color: #ffffff;
+    line-height: 0.7;
+    font-weight: 500;
+}
+
+
+@media (max-width: 480px) {
+
+    .section-01 {
+        padding: 0px 0px;
+    }
+
+    .section-01 .banner-content {
+        margin-top: 5px;
+
+    }
+
+    .section-01 .image-1 img {
+        height: 450px;
+    }
+
+    .section-01 .image-2 img {
+        width: 100%;
+        height: 410px;
+        max-width: 390px;
+        object-fit: cover;
+        border: 5px solid white;
+        border-radius: 15px;
+        transform: none;
+
+
+    }
+
+    .section-01 h1 {
+        font-size: 30px;
+    }
+
+    .section-01 h2 {
+        font-size: 40px;
+        margin-top: 40px;
+        padding: 0px 20px;
+    }
+
+    .section-01 h3 {
+        font-size: 50px;
+        margin-bottom: 32px;
+
+    }
+
+}
+
+/* section-02 */
+
+.section-02 {
+    max-width: 780px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: auto;
+   
+    padding-top: 50px;
+}
+
+.section-02 p {
+    color: #1E1E1E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    padding-right: 50px;
+}
+
+.section-02 h4 {
+    color: #1E1E1E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.section-02 h2 {
+    font-size: 40px;
+    color: #030303;
+    font-weight: 500;
+    margin: 20px 0px;
+    font-family: 'theMithan';
+    line-height: 0.8;
+
+}
+
+.section-02 h1 {
+
+    font-size: 40px;
+    font-weight: 500;
+    color: #DD1C5E;
+    font-family: 'margille';
+    line-height: 1;
+}
+
+.section-02 h6 {
+    position: absolute;
+    left: 6px;
+    bottom: 10px;
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.section-02 h3 {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'theMithan';
+    line-height: 1;
+}
+
+.section-02 .image-1 img {
+    width: 100%;
+    height: 510px;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid #ffffff;
+    position: relative;
+    z-index: 0;
+    border-radius: 8px;
+}
+
+.section-02 .image-2 img {
+    width: 100%;
+    height: 100%;
+    max-height: 595px;
+    object-fit: cover;
+    object-position: center;
+    border: 4px solid #ffffff;
+    margin-top: -100px;
+    border-radius: 8px;
+}
+
+.section-02 .image-source {
+
+    position: relative;
+}
+
+.section-02 .divider {
+    background-color: #DD1C5E;
+    padding: 25px 0px;
+}
+
+@media (max-width: 480px) {
+    .section-02 p {
+        padding: 0px 20px;
+
+    }
+
+    .section-02 .order1 {
+        order: 2;
+    }
+
+    .section-02 .image-2 img {
+
+        margin-top: 0px;
+
+    }
+    .section-02 {
+        padding-top: 20px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .section-02 h1 {
+        font-size: 30px;
+        margin-top: 35px;
+    
+
+    }
+
+    .section-02 h3 {
+        font-size: 28px;
+        margin-top: 25px;
+
+    }
+    .section-02 h4 {
+       
+        padding: 0px 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-02  {
+       
+        
+        margin-bottom: 5px;
+    }
+}
+
+/* section-03 */
+.section-03 {
+    max-width: 780px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: auto;
+    padding-bottom: 27px;
+ 
+}
+
+.section-03 .order1 {
+    order: 2;
+}
+
+.section-03 .blog-content {
+    position: relative;
+    z-index: 3;
+    padding: 40px 50px;
+}
+
+.section-03 .image-source {
+    position: relative;
+}
+
+.section-03 h5 {
+    background: rgb(0 0 0 / 43%);
+    padding: 5px 15px;
+    max-width: 122px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b5b5b5c2;
+    position: absolute;
+    bottom: 10px;
+    left: 9px;
+}
+
+.section-03 h6 {
+    background: rgb(0 0 0 / 43%);
+    padding: 5px 15px;
+    max-width: 122px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b5b5b5c2;
+    bottom: 43px;
+    left: 4px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-03 .image-1 img {
+    width: 100%;
+    border: 4px solid #ffffff;
+    height: 470px;
+    object-fit: cover;
+
+    border-radius: 8px;
+    margin-top: 50px;
+}
+
+.section-03 .image-2 img {
+    width: 100%;
+    border: 4px solid #ffffff;
+    height: 499px;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    border-radius: 8px;
+}
+
+
+.section-03 h3 {
+    font-size: 40px;
+    color: #030303;
+    font-weight: 500;
+    margin: 20px 0px;
+    font-family: 'theMithan';
+    line-height: 0.8;
+}
+
+.section-03 .patch {
+    background-color: #FFDA76;
+    width: 290px;
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    height: 1078px;
+    margin: 0px 50px;
+    box-shadow: 2px 0px 8px #00000029;
+}
+
+.section-03 h1 {
+    font-size: 42px;
+    font-weight: 500;
+    color: #DD1C5E;
+    font-family: 'margille';
+    line-height: 1.2;
+}
+
+.section-03 p {
+    color: #1E1E1E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+ 
+}
+
+@media (max-width: 480px) {
+
+  
+.section-03 p {
+  
+    padding: 0px 20px;
+}
+   
+
+    .section-03 .image-1 img {
+        margin-top: 5px
+    }
+
+    .section-03 .patch {
+        background-color: #FFDA76;
+        width: 374px;
+        display: flex
+;
+        z-index: 1;
+        position: absolute;
+        height: 360px;
+        margin: 0px 0px;
+    }
+
+    .section-03 .image-2 img {
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+
+    .section-03 h3 {
+
+        margin: 10px 0px;
+
+    }
+
+    .section-03 h5 {
+
+        position: absolute;
+        bottom: 30px;
+        left: 6px;
+    }
+
+    .section-03 {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .section-03 h1 {
+        margin-top: 20px;
+        padding-top: 5px;
+    }
+
+    .section-03 .blog-content {
+        position: relative;
+        z-index: 3;
+        padding: 0px 0px;
+    }
+
+    .section-03 h6 {
+        background: rgb(0 0 0 / 43%);
+        padding: 5px 15px;
+        max-width: 122px;
+        font-size: 12px;
+        font-weight: 300;
+        font-style: italic;
+        color: #b5b5b5c2;
+        bottom: 35px;
+        left: 4px;
+        position: absolute;
+        z-index: 2;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .section-03 {
+
+        margin-bottom: 5px;
+
+    }
+}
+
+/* .section-04  */
+.section-04 {
+    max-width: 780px;
+    margin: 0 auto;
+    height: auto;
+   
+}
+
+.section-04 .image-source {
+    position: relative;
+}
+
+.section-04 h5 {
+    background: rgb(0 0 0 / 43%);
+    padding: 5px 15px;
+    max-width: 122px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b5b5b5c2;
+    position: absolute;
+    bottom: 70px;
+    left: 4px;
+}
+
+.section-04 h6 {
+    background: rgb(0 0 0 / 43%);
+    padding: 5px 15px;
+    max-width: 122px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b5b5b5c2;
+    position: absolute;
+    bottom: 10px;
+    left: 4px;
+}
+
+.section-04 .image-1 img {
+    width: 100%;
+    border: 4px solid #ffffff;
+    height: 570px;
+    object-fit: cover;
+    margin-bottom: 55px;
+    object-position: center;
+    border-radius: 8px;
+
+}
+
+.section-04 .image-2 img {
+    width: 100%;
+    border: 4px solid #FFFFFF;
+    height: 395px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.section-04 h3 {
+    font-size: 40px;
+    color: #000000;
+    font-weight: 400;
+    font-family: 'theMithan';
+    line-height: 0.9;
+}
+
+.section-04 h4 {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 400;
+    font-family: 'theMithan';
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.section-04 h1 {
+
+    font-size: 41px;
+    font-weight: 500;
+    color: #DD1C5E;
+    font-family: 'margille';
+    line-height: 1.2;
+}
+
+.section-04 p {
+    color: #1E1E1E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .section-04 h5 {
+
+        position: absolute;
+        bottom: 30px;
+        left: 6px;
+    }
+
+    .section-04 h3 {
+        margin-bottom: 10px;
+    }
+    .section-04 p {
+      
+        padding: 0px 20px;
+    }
+    .section-04 .image-1 img {
+        height: 340px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+
+    .section-04 h1 {
+        font-size: 30px;
+
+    }
+    .section-04 { 
+        text-align: center;
+    }
+   
+}

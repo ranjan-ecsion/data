@@ -1,0 +1,133 @@
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Font Faces */
+@font-face {
+  font-family: "Georgia";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Georgia.ttf") format("truetype");
+}
+/* Font Faces */
+@font-face {
+  font-family: "BlessedSignature";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Blessed_Signature.ttf") format("truetype");
+}
+/* Font Faces */
+@font-face {
+  font-family: "AbrilFatface";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Abril_Fatface.ttf") format("truetype");
+}
+
+
+/* Invitation Card Styling */
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-transform: capitalize;
+  border-radius: 8px;
+  text-align: center;
+  color: #742a33;
+}
+
+.invitation-title {
+  font-family: "BlessedSignature";
+  font-size: 46px;
+  margin-bottom: 10px;
+  max-width: 400px;
+}
+
+.invitation-description {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  max-width: 300px;
+}
+
+.groom-bride-section {
+  font-family: "Georgia", serif;
+  font-size: 36px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.and {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+}
+
+.invitation-date-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat";
+}
+
+.invitation-year,
+.invitation-date,
+.invitation-month {
+  margin: 0 5px;
+}
+
+.invitation-day {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.invitation-date {
+  font-family: "AbrilFatface";
+  position: relative;
+  font-size: 70px;
+}
+
+.invitation-date sup {
+  position: absolute;
+  font-size: 14px;
+  top: 30px;
+}
+
+.invitation-time {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.invitation-address {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  max-width: 250px;
+  margin-bottom: 16px;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.following-party {
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  text-align: center;
+}

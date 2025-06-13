@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save the Date</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+@font-face {
+  font-family: "Bonheur Royale";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Bonheur_Royale.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  text-transform: capitalize;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  color: #6B4E12;
+}
+
+.invitation-date-section {
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-family: "Playfair Display";
+}
+
+.invitation-date{
+  font-family: "Playfair Display";
+  font-size: 200px;
+  line-height: 1;
+  border-bottom: 2px dotted;
+  margin-bottom: 20px;
+}
+
+.invitation-month-year{
+  font-family: "Playfair Display";
+  font-size: 36px;
+  text-align: center;
+}
+
+.invitation-title {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  font-size: 30px;
+  font-family: "Playfair Display";
+}
+
+.invitation-title span{
+  font-family: "Bonheur Royale";
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.groom-bride-section {
+  font-family: "Bonheur Royale";
+  display: flex;
+  font-size: 60px;
+  letter-spacing: 7px;
+  margin: 20px 0px;
+  gap: 20px;
+}
+
+.divider{
+  border-bottom: 2px dotted;
+  width: 120px;
+}
+
+.invitation-time, .invitation-day{
+  letter-spacing: 2px;
+  color: #763d0a;
+  font-weight: 600;
+  font-family: "Playfair Display";
+}
+
+.invitation-address {
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  font-size: 16px;
+  max-width: 400px;
+  font-style: italic;
+  font-family: "Playfair Display";
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+</style>  </head>
+
+  <body>
+    <div class="invitation-card" style="background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/2C5F7DF3-F738-4931-8DC8-735609E1E788.png');">
+      <div>
+        <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/1A0B953B-1EBA-4541-8C63-5104FC4A89F8.png" alt="" class="top-icon">
+      </div>
+      <div class="invitation-title"> ${contentJson["invitation-title"]}
+    </div>
+      <div class="invitation-date-section">
+        <div class="invitation-date"> ${contentJson["invitation-date"]}
+        </div>
+        <div class="invitation-month-year">
+            <span>
+                ${contentJson["invitation-month-text"]}
+
+            </span>
+            <span>
+                ${contentJson["invitation-year"]}
+
+            </span>
+        </div>
+        <div class="invitation-day"> ${contentJson["invitation-day"]}
+        </div>
+        <div class="invitation-time">
+            ${contentJson["invitation-time"]}
+
+        </div>
+      </div>
+      <div class="groom-bride-section">
+        <div class="your-name"> ${contentJson["your-name"]}
+        </div>
+        <div class="and">&</div>
+        <div class="partner-name">    ${contentJson["partner-name"]}
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="invitation-address">
+        ${contentJson["invitation-address"]}
+
+      </div>
+      <div class="divider"></div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haldi Ceremony Invitation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @font-face {
+  font-family: "StyleScript";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Style_Script.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+.invitation-title {
+  font-size: 42px;
+  color: #000;
+  font-family: "StyleScript";
+  font-weight: 500;
+  letter-spacing: 2px;
+  max-width: 370px;  
+  
+}
+.invitation-description {
+  font-size: 14px;
+  color: #606060;
+  font-family: "Poppins";
+  font-weight: 600;
+  margin-top: 10px;
+  max-width: 220px;
+ 
+}
+.groom-bride-section {
+ 
+  line-height: 1;
+  margin-top: 35px;
+}
+.your-name {
+  font-size: 40px;
+  font-family: "StyleScript";
+  color: #606060;
+  text-align: left;
+  
+  font-weight: 500;
+}
+.partner-name span {
+  margin-right: 10px;
+    color: #606060;
+    font-weight: 500;
+    font-family: "StyleScript";
+    font-size: 28px;
+}
+.partner-name {
+  margin-top: 5px;
+  font-size: 40px;
+  font-family: "StyleScript";
+  color:#606060;
+  
+  font-weight: 500;
+}
+
+.invitation-day {
+  border-top: 1px solid #606060;
+  border-bottom: 1px solid #606060;
+  font-size: 14px;
+  font-family: "Poppins";
+  color: #606060;
+  font-weight: 500;
+  padding: 0px 10px;
+}
+.invitation-date {
+  font-size: 45px;
+  color:#606060;
+  line-height: 32px;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+ .invitation-address {
+  font-size: 14px;
+  color: #606060;
+  font-family: "Poppins";
+  font-weight: 500;
+  max-width: 210px;
+  margin: 30px 0px;
+  letter-spacing: 0.5px;
+}
+
+
+.invitation-time{
+  border-top: 1px solid #606060;
+  border-bottom: 1px solid #606060;
+    font-size: 14px;
+    font-family: "Poppins";
+    color: #606060;
+    font-weight: 500;
+}
+.invitation-date-section{
+  align-items: center;
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+  margin-right: 20px;
+}
+.invitation-year {
+  font-size: 14px;
+    color: #606060;
+    font-weight: 500;
+    font-family: "Poppins";
+    line-height: 35px;
+    
+}
+.invitation-month {
+  line-height: 30px;
+  font-size: 14px;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #606060;
+  
+}
+.following-party{
+  font-family: "StyleScript";
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="invitation-card"
+    style="background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/E629D597-C3E0-4C38-9813-AA21340CA89A.png');">
+    <div class="invitation-title">${contentJson["invitation-title"]}</div>
+    <div class="invitation-description">${contentJson["invitation-description"]}</div>
+    <div class="groom-bride-section">
+      <div class="your-name">${contentJson["your-name"]}</div>
+      <div class="partner-name d-flex justify-content-center align-items-start"><span>and</span>${contentJson["partner-name"]}</div>
+    </div>
+    <div class="invitation-date-section">
+      <div class="invitation-day">${contentJson["invitation-week-day"]}</div>
+      <div class="invitation-completedate">
+        <div class="invitation-month ">${contentJson["invitation-month-text"]}</div>
+        <div class=" invitation-date">${contentJson["invitation-date"]}</div>
+        <div class="invitation-year ">${contentJson["invitation-year"]}</div>
+      </div>
+      <div class="invitation-time">${contentJson["invitation-time"]}</div>
+    </div>
+    <div class="invitation-address">${contentJson["invitation-address"]}</div>
+    <div class="following-party">${contentJson["following-party"]}</div>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

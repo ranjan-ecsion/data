@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "NewBaskervilleBT";
+  src: url("../fonts/NewBaskervilleBT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Bilaterral";
+  src: url("../fonts/Bilaterral.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "NewBaskervilleBT";
+  background-color: #fff;
+  color: #383b34;
+}
+.invitation-card {
+  width: 562px;
+  flex-direction: column;
+  display: flex;
+  padding: 65px 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #f3f1f2;
+}
+.couple-img img {
+  width: 100%;
+  max-width: 225px;
+  height: 240px;
+}
+.couple-img1 img {
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+}
+.invitation-time {
+  color: #454444;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Great Vibes", cursive;
+}
+
+.invitation-date {
+  font-family: "Great Vibes", cursive;
+
+  text-align: center;
+  font-size: 18px;
+  line-height: 2;
+  text-transform: capitalize;
+}
+
+.invitation-address {
+  color: #454444;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Great Vibes", cursive;
+}
+.invitation-title {
+  margin: 20px 0;
+  font-size: 140px;
+  word-spacing: 2px;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  font-family: "Bilaterral";
+  text-align: end;
+  color: #d19d27;
+  line-height: 80px;
+}
+.groom-bride-section {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 600;
+}

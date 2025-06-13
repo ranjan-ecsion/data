@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Import Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    @font-face {
+      font-family: "Georgia";
+      src: url("https://react-web-composer.ecsion.com/fonts/Georgia.ttf") format("truetype");
+    }
+
+    /* Invitation Card Styling */
+    .invitation-card {
+      width: 562px;
+      height: 787px;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      text-transform: capitalize;
+      font-family: "Georgia";
+      border-radius: 8px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .invitation-title {
+      font-family: "Abril Fatface", serif;
+      font-size: 36px;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      max-width: 400px;
+    }
+
+    .invitation-description {
+      font-size: 16px;
+      max-width: 300px;
+      font-weight: 400;
+    }
+
+    .your-parent-name {
+      font-size: 16px;
+      font-weight: 400;
+
+
+    }
+
+    .partner-parent-name {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .groom-bride-section {
+
+      font-size: 52px;
+      margin-top: 20px;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .your-name,
+    .partner-name,
+    .and {
+      font-family: "Abril Fatface", serif;
+    }
+
+    .invitation-date-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 20px;
+      font-family: "Georgia";
+    }
+
+    .invitation-year,
+    .invitation-date,
+    .invitation-month {
+      margin: 0 5px;
+    }
+
+    .invitation-day {
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .invitation-date {
+      font-family: "Abril Fatface", serif;
+      position: relative;
+      font-size: 80px;
+    }
+
+    .invitation-date sup {
+      position: absolute;
+      font-size: 14px;
+      top: 30px;
+    }
+
+    .invitation-time {
+      font-family: "Georgia";
+      font-size: 14px;
+      font-weight: 500;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .invitation-address {
+      font-size: 14px;
+      font-weight: 500;
+      font-style: italic;
+      max-width: 300px;
+      margin-bottom: 20px;
+      font-family: "Georgia";
+      text-align: center;
+    }
+
+    .following-party {
+      font-family: "Georgia";
+      font-size: 14px;
+      font-weight: 500;
+      font-style: italic;
+      text-transform: capitalize;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="invitation-card"
+    style="background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/7173884A-D22A-4E52-960C-0E4BB12D339A.png');">
+    <div class="invitation-title">${contentJson["invitation-title"]}</div>
+    <div class="your-parent-name ">
+      ${contentJson["your-parent-name"]}
+
+    </div>
+    <div class="invitation-description ">${contentJson["invitation-description"]}
+    </div>
+
+    <div class="groom-bride-section">
+      <div>
+        <div class="your-name mb-1">${contentJson["your-name"]}</div>
+        <div class="your-parent-name  ">
+          ${contentJson["your-parent-name"]}
+        </div>
+      </div>
+      <div class="d-flex gap-2 justify-content-center">
+        <div><img
+            src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/080C8504-6227-4C5E-B18B-57ED1E3470B8.png"
+            alt=""></div>
+        <div class="and">&</div>
+        <div><img
+            src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/E2FECF3E-EC31-4106-B427-58E002985CE1.png"
+            alt=""></div>
+      </div>
+      <div>
+        <div class="partner-name mt-2 mb-1">${contentJson["partner-name"]}</div>
+        <div class="partner-parent-name ">
+          ${contentJson["partner-parent-name"]}
+        </div>
+      </div>
+    </div>
+    <div class="invitation-date-section">
+      <div class="invitation-month">${contentJson["invitation-month-text"]}</div>
+      <div class="invitation-date">${contentJson["invitation-date"]} </div>
+      <div class="invitation-year">${contentJson["invitation-year"]}</div>
+    </div>
+    <div class="invitation-time"> <span>${contentJson["invitation-week-day"]}</span>
+      <span>${contentJson["invitation-time"]}</span>
+    </div>
+    <div class="invitation-address">
+      ${contentJson["invitation-address"]}
+    </div>
+    <div class="following-party">${contentJson["following-party"]}</div>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

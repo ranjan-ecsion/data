@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haldi Ceremony</title>
+  <style>
+    @font-face {
+  font-family: "AbrilFatface";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Abril_Fatface.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BlessedSignature";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Blessed_Signature.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Georgia";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Georgia.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #FEF7EF;
+  color: #454444;
+}
+
+.invitation-time {
+  font-family: "Georgia";
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  color: #454444;
+}
+
+.invitation-title {
+  word-wrap: break-word;
+  letter-spacing: 10px;
+  font-family: "AbrilFatface";
+  font-weight: 600;
+  color: #454444;
+}
+
+.your-name {
+  font-family: "AbrilFatface";
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  font-size: 95px;
+  color: #454444;
+}
+
+.and {
+  font-family: "AbrilFatface";
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  font-size: 100px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg) !important;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  line-height: 1.2;
+  color: #454444;
+  margin-left: 25px;
+}
+
+.partner-name {
+  font-family: "AbrilFatface";
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  font-size: 95px;
+  color: #454444;
+}
+
+.invitation-address {
+  font-family: "Georgia";
+  font-size: 18px;
+  margin-top: 2px;
+  letter-spacing: 2px;
+  color: #454444;
+  word-wrap: break-word;
+}
+
+.invitation-date-section {
+  line-height: 60px;
+  margin-right: 80px;
+}
+
+.invitation-date-year {
+  position: relative;
+  left: 76px;
+  bottom: 50px;
+}
+
+.invitation-date {
+  font-family: "AbrilFatface";
+  font-size: 45px;
+  letter-spacing: 8px;
+  color: #454444;
+}
+
+.invitation-month {
+  font-size: 80px;
+  font-family: "BlessedSignature";
+  margin-top: 70px;
+  position: relative;
+  right: 25px;
+  color: #454444;
+  letter-spacing: 10px;
+}
+
+.invitation-year {
+  color: #454444;
+  font-size: 30px;
+  font-family: "AbrilFatface";
+  letter-spacing: 10px;
+  line-height: 1;
+}
+  </style>
+</head>
+
+<body>
+  <div class="invitation-card">
+    <div class="invitation-title fs-3 mb-5">
+        ${contentJson["invitation-title"]}
+
+    </div>
+
+  
+   
+  <div class="row">
+    <div class="col-12">
+      <div class="your-name mb-2">
+        ${contentJson["your-name"]}
+
+      </div>
+    </div>
+  </div>
+  <div class="row w-100">
+    <div class="col-4">
+      <div class="and">And</div>
+    </div>
+    <div class="col-8">
+      
+      <div class=" invitation-date-section text-end">
+        
+        <div class="invitation-month">
+            ${contentJson["invitation-month-text"]}
+
+        </div>
+       
+      <div class="invitation-date-year d-flex flex-column">
+       <div class="invitation-date">
+        ${contentJson["invitation-date"]}
+
+       </div>
+       <div class="invitation-year">
+        ${contentJson["invitation-year"]}
+
+       </div>
+      </div>
+      </div>
+    </div>
+  
+  </div>
+  <div class="row w-100">
+    <div class="col-12">
+      <div class="partner-name">
+        ${contentJson["partner-name"]}
+
+      </div>
+    </div>
+  </div>
+ 
+
+  <div class="invitation-time">
+    ${contentJson["invitation-time"]}
+
+  </div>
+
+          <div class="invitation-address text-center">
+            ${contentJson["invitation-address"]}
+        </div>
+       
+
+      </div>
+    
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

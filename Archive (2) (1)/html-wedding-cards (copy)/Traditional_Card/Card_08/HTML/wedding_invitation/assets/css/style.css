@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: "BlessedSignature";
+  src: url("https://react-web-composer.ecsion.com/fonts/Blessed_Signature.ttf") format("truetype");
+}
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  text-align: center;
+}
+.invitation-description {
+  font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #464646;
+    font-weight: 600;
+    font-style: italic;
+    max-width: 330px;
+}
+.your-parent-name {
+  font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #464646;
+    font-weight: 600;
+    font-style: italic;
+    max-width: 330px;
+}
+.partner-parent-name {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #464646;
+  font-weight: 600;
+  font-style: italic;
+  max-width: 330px;
+  margin-top: 20px;
+}
+.groom-bride-section {
+  margin: 15px 0px;
+  line-height: 1.2;
+}
+ 
+.invitation-time {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #464646;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 25px;
+}
+
+.invitation-address {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #464646;
+  line-height: 1.5;
+  font-weight: 600;
+  font-style: italic;
+  margin: 10px 0px;
+  max-width: 270px;
+}
+
+.invitation-title {
+  font-size: 45px;
+  color: #91593B;
+  font-family: 'BlessedSignature';
+  font-weight: 600;
+  letter-spacing: 2px;
+
+}
+
+.invitation-date {
+  font-size: 20px;
+  color: #464646;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-top: 1px solid #91593ba1;
+  border-bottom: 1px solid #91593ba1;
+  padding: 10px 0px;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.following-party{
+  color: #464646;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+ 
+}
+
+.your-name, .partner-name, .and{
+  font-size: 40px;
+    font-family: "Playfair Display", serif;
+    color: #91593b;
+    font-weight: 500;
+  
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    line-height: 1;
+   
+ 
+}
+.couple-img {
+  background-size: contain;
+    background-position: center;
+    max-width: 310px;
+    max-height: 240px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}

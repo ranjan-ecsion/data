@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Font Faces */
+@font-face {
+  font-family: "AlexBrush";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Alex_Brush.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.invitation-description {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #4E4327;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 10px;
+  max-width: 250px;
+}
+
+.invitation-time {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #4E4327;
+  font-weight: 600;
+  font-style: italic;
+  margin: 10px 0px;
+  max-width: 250px;
+}
+
+.invitation-address {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #4E4327;
+  font-weight: 600;
+  font-style: italic;
+  margin: 10px 0px;
+  max-width: 250px;
+}
+
+.invitation-title {
+  font-size: 46px;
+  color: #BD6951;
+  font-family: "AlexBrush";
+  font-weight: 500;
+  max-width: 370px;
+}
+
+.invitation-date {
+  font-size: 18px;
+  color: #4E4327;
+  font-family: "Montserrat";
+  font-weight: 600;
+  text-transform: uppercase;
+  border-top: 1px solid #BD6951;
+  border-bottom: 1px solid #BD6951;
+  max-width: 210px;
+  padding: 8px 0px;
+  margin: 15px 0px;
+  width: 100%;
+}
+
+.following-party {
+  color: #4E4327;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: italic;
+  margin: 10px 0px;
+}
+
+.groom-bride-section {
+  line-height: 1.2;
+}
+
+.your-name,
+.partner-name {
+  font-size: 48px;
+  font-family: "AlexBrush";
+  color: #BD6951;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  line-height: 1.08;
+}
+
+.and {
+  font-size: 30px;
+  font-family: "AlexBrush";
+  color: #BD6951;
+  font-weight: 500;
+
+}

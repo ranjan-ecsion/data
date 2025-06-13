@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sangeet Ceremoony</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+@font-face {
+  font-family: "Bonheur Royale";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Bonheur_Royale.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  color: #000000;
+}
+
+.invitation-date-section {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Playfair Display";
+  letter-spacing: 3px;
+  border-top: 1px solid #92947B;
+  border-bottom: 1px solid #92947B;
+  max-width: fit-content;
+  margin: 30px auto 16px auto;
+  padding: 6px 0;
+}
+
+.invitation-title {
+  font-family: "Bonheur Royale";
+  letter-spacing: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 400px;
+  font-size: 40px;
+}
+
+.groom-bride-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Bonheur Royale";
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-align: center;
+  line-height: 1.2;
+  color: #92947B;
+}
+
+.invitation-day,.invitation-time{
+  font-family: "Playfair Display";
+  font-size: 14px;
+  max-width: 300px;
+}
+
+
+.invitation-address {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  max-width: 300px;
+  margin-top: 10px;
+}
+
+</style>  </head>
+
+  <body>
+    <div class="invitation-card" style="background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/25418A73-5D7E-4C6D-A756-6AA9399EB9AE.png');">
+
+      <div class="mt-4">
+        <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/347540C7-47FE-4D1E-9B4F-CC2867AAFD63.png" alt="" class="top-icon">
+      </div>
+      <div class="invitation-title"> ${contentJson["invitation-title"]}
+    </div>
+     
+      <div class="groom-bride-section" style="background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/13EA8FA7-3427-4975-8B9C-A109D85BE528.png);">
+        <div class="your-name">
+            ${contentJson["your-name"]}
+
+        </div>
+        <div class="and">&</div>
+        <div class="partner-name">
+            ${contentJson["partner-name"]}
+
+        </div>
+      </div>
+      <div class="invitation-date-section">
+        ${contentJson["invitation-full-date"]}
+    </div>
+        <div class="invitation-day"> ${contentJson["invitation-day"]}
+        </div>
+        <div class="invitation-time"> ${contentJson["invitation-time"]}
+        </div>
+
+      <div class="invitation-address">
+        ${contentJson["invitation-address"]}
+
+      </div>
+     </div>
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

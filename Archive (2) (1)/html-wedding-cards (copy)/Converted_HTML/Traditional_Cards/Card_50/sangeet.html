@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haldi Ceremony Invitation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Font Faces */
+@font-face {
+  font-family: "BlessedSignature";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Blessed_Signature.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.invitation-description {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #4E4327;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.invitation-time {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #4E4327;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.invitation-address {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #4E4327;
+  max-width: 270px;
+  line-height: 1.4;
+  font-weight: 500;
+  font-style: italic;
+  margin: 20px 0px;
+}
+
+
+.invitation-title {
+  font-size: 45px;
+  color: #02454B;
+  font-family: 'BlessedSignature';
+  font-weight: 600;
+  letter-spacing: 2px;
+  max-width: 370px;
+}
+
+
+.invitation-date {
+  font-size: 18px;
+  color: #4E4327;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 15px;
+  border-top: 1px solid #4E4327;
+  border-bottom: 1px solid #4E4327;
+  max-width: 210px;
+  width: 100%;
+  padding: 7px 0px;
+
+}
+
+.following-party {
+  color: #4E4327;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.groom-bride-section {
+  line-height: 1.2;
+}
+
+.your-name,
+.partner-name,
+.and {
+  font-size: 40px;
+  font-family: "Playfair Display";
+  color: #02454B;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+</style>
+</head>
+
+<body>
+  <div class="invitation-card"
+    style="background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/2E2118C6-C472-4857-8893-3CEBD88FC58C.png');">
+
+    <div class="invitation-title mt-5">
+      ${contentJson["invitation-description"]}
+    </div>
+    <div class="invitation-description ">
+      ${contentJson["invitation-description"]}
+    </div>
+    <div class="groom-bride-section mt-3">
+      <div class="your-name">${contentJson["your-name"]} </div>
+      <div class="and">&</div>
+      <div class="partner-name">${contentJson["partner-name"]}</div>
+    </div>
+    <div class="invitation-date ">${contentJson["invitation-full-date"]}</div>
+    <div class="invitation-time"><span class="invitation-week-day">${contentJson["invitation-week-day"]}</span> <span class="invitation-time">${contentJson["invitation-time]}</span></div>
+    <div class="invitation-address ">${contentJson["invitation-address"]}</div>
+    <div class="following-party ">${contentJson["following-party"]}</div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

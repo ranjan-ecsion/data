@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+/* Font Faces */
+@font-face {
+  font-family: "Garamond";
+  src: url("https://react-web-composer.ecsion.com/fonts/Garamond.ttf") format("truetype");
+}
+
+/* Invitation Card Styling */
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  margin: 0 auto;
+}
+
+.groom-bride-section {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.your-name {
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 50px;
+  font-family: "Charmonman", serif;
+  text-transform: capitalize;
+  color: #5a3d2b;
+}
+
+.and {
+  font-size: 20px;
+  color: #562F0B;
+  font-weight: 600;
+  font-family: "Charmonman", serif;
+  line-height: 1;
+  margin-top: 22px;
+}
+
+.partner-name {
+  line-height: 0.9;
+  font-weight: 600;
+  font-size: 50px;
+  font-family: "Charmonman", serif;
+  color: #562f0b;
+  text-transform: capitalize;
+}
+
+.invitation-title {
+  font-family: "Garamond";
+    font-size: 32px;
+    font-weight: 500;
+    max-width: 400px;
+    text-transform: uppercase;
+    color: #4C4C4C;
+    margin-top: 10px;
+}
+
+.invitation-date-section {
+  font-size: 34px;
+  font-family: "Charmonman", serif;
+  text-transform: capitalize;
+  color: #4C4C4C;
+  font-weight: 500;
+}
+
+.invitation-time {
+  font-family: "Garamond";
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #4C4C4C;
+    margin-bottom: 15px;
+}
+
+.invitation-description {
+  font-family: "Garamond";
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #562f0b;
+  font-weight: 700;
+  margin-top: 20px;
+  max-width: 215px;
+}
+
+.divider {
+  border-top: 1px solid #4C4C4C;
+  margin: 20px 0;
+}
+
+.invitation-address {
+  font-family: "Garamond";
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    max-width: 290px;
+    color: #562f0b;
+}
+
+.following-party {
+  background-size: auto;
+    background-position: center;
+    font-family: "Charmonman", serif;
+    letter-spacing: 1px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    color: #562f0b;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 25px 0;
+    font-style: italic;
+    font-weight: 500;
+}
+

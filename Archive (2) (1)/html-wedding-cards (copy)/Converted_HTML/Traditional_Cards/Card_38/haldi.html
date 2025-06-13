@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haldi Ceremony Invitation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+ <style>
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: 'Coronet';
+  src: url('https://react-web-composer.ecsion.com/fonts/Coronet.ttf') format('truetype');
+}
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 0px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.invitation-title {
+  text-align: center;
+  font-size: 50px;
+  color: #eba882;
+  max-width: 400px;
+  font-weight: 400;
+  font-family: 'Coronet';
+}
+.invitation-description {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  color: #eba882;
+  max-width: 300px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+.groom-bride-section {
+  line-height: 1.2;
+  font-size: 50px;
+  color: #eba882;
+  font-family: "Coronet";
+  font-weight: 500;
+  text-align: center;
+}
+
+.invitation-details {
+  font-size: 18px;
+  color: #eba882;
+  font-family: "Montserrat", sans-serif;
+}
+
+.invitation-address {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #eba882;
+  font-family: "Montserrat", sans-serif;
+text-transform: capitalize;
+  font-style: italic;
+  max-width: 300px;
+}
+
+.divider{
+    width: 170px;
+    border-bottom: 1px solid #eba882;
+}
+
+.invitation-date-section {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  text-transform: uppercase;
+  max-width: 256px;
+  width: 100%;
+}
+
+.invitation-year {
+  font-size: 36px;
+  font-weight: 500;
+  color: #eba882;
+  line-height: 1;
+}
+
+.invitation-date-year {
+  padding-right: 10px;
+}
+
+.invitation-date {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #eba882;
+}
+
+.invitation-date sup{
+    font-size: 8px;
+}
+
+.invitation-day-time {
+  padding-left: 10px;
+  font-size: 26px;
+  font-weight: 500;
+  color: #eba882;
+  border-left: 1px solid #eba882;
+}
+
+.following-party {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #eba882;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+ </style>
+</head>
+
+<body>
+  <div class="invitation-card" style="
+        background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/6A9CE05F-6CF7-477E-9621-50C4E631B08E.png');
+      ">
+    <div class="invitation-title ">${contentJson["invitation-title"]}</div>
+    <div class="invitation-description">${contentJson["invitation-description"]}</div>
+    <div class="groom-bride-section my-3">
+      <div class="your-name">${contentJson["your-name"]}</div>
+      <div class="and">&</div>
+      <div class="partner-name">${contentJson["partner-name"]}</div>
+    </div>
+    <div class="invitation-date-section my-3">
+      <div class="invitation-date-year">
+        <div class="invitation-date"><Span class="invitation-month">${contentJson["invitation-month-text"]}</Span> <span class="invitation-date"> ${contentJson["invitation-date"]}</span></div>
+        <div class="invitation-year">${contentJson["invitation-year"]}</div>
+      </div>
+      <div class="invitation-day-time">
+        <div class="invitation-time">${contentJson["invitation-time"]}</div>
+        <div class="invitation-day">${contentJson["invitation-week-day"]}</div>
+      </div>
+    </div>
+    <div class="invitation-address mt-2 mb-3">
+      ${contentJson["invitation-address"]}
+    </div>
+    <div class="divider"></div>
+    <div class="following-party mt-3">${contentJson["following-party"]}</div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haldi Ceremony Invitation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+    @font-face {
+      font-family: 'Coronet';
+      src: url('https://react-web-composer.ecsion.com/fonts/Coronet.ttf') format('truetype');
+    }
+
+    .invitation-card {
+      width: 562px;
+      height: 787px;
+      flex-direction: column;
+      display: flex;
+      padding: 30px 30px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: flex-start;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .invitation-description {
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      color: #B52A58;
+      font-weight: 500;
+      font-style: italic;
+      text-transform: capitalize;
+      max-width: 255px;
+
+    }
+
+    .invitation-time {
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      color: #B52A58;
+      font-weight: 600;
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    .couple-img {
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      max-width: 240px;
+      max-height: 272px;
+      height: 100%;
+    }
+
+    .invitation-address {
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      max-width: 210px;
+      margin: 15px 0px;
+      line-height: 1.4;
+      font-style: italic;
+      font-weight: 500;
+      color: #B52A58;
+
+    }
+
+    .invitation-title {
+      font-size: 50px;
+      color: #B52A58;
+      font-family: "Coronet", sans-serif;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: 1px;
+      max-width: 370px;
+      margin: 10px 0px;
+    }
+
+    .following-party {
+      color: #B52A58;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-style: italic;
+
+    }
+
+    .invitation-date {
+      font-size: 32px;
+      font-weight: 600;
+
+      color: #B52A58;
+      font-family: "Montserrat", sans-serif;
+      border-left: 1px solid #B52A58;
+      border-right: 1px solid #B52A58;
+      margin-bottom: 5px;
+      padding: 0px 7px;
+      line-height: 37px;
+    }
+
+    .invitation-date-section {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+
+    }
+
+    .invitation-month {
+      font-size: 18px;
+      padding-right: 20px;
+      color: #B52A58;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+    }
+
+    .invitation-year {
+      font-size: 18px;
+      color: #B52A58;
+      font-family: "Montserrat", sans-serif;
+      padding-left: 20px;
+      font-weight: 500;
+
+    }
+
+
+    .groom-bride-section {
+      line-height: 0.9;
+    }
+
+    .your-name,
+    .partner-name,
+    .and {
+      font-size: 48px;
+      font-family: "Coronet", sans-serif;
+      color: #B52A58;
+      font-weight: 600;
+
+      letter-spacing: 2px;
+      margin-bottom: 5px;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="invitation-card"
+    style="background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/4040020D-5F4A-4132-9983-2245B1DBA215.jpg');">
+    <div>
+      <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/64FCF194-17EC-49E6-880A-433937236575.png"
+        class="img-fluid" alt="Invitation Image" />
+    </div>
+    <div class="invitation-title ">
+      ${contentJson["invitation-title"]}
+    </div>
+    <div class="invitation-description ">
+      ${contentJson["invitation-description"]}
+    </div>
+    <div class="couple-img"
+      style="background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/C9352BBB-3A48-46AE-BB3F-0DE6BA45FB3A.png');">
+
+      <div class="groom-bride-section">
+        <div class="your-name mt-5"> ${contentJson["your-name"]} </div>
+        <div class="and">&</div>
+        <div class="partner-name "> ${contentJson["partner-name"]}</div>
+      </div>
+    </div>
+    <div class="invitation-date-section">
+      <div class="invitation-month"> ${contentJson["invitation-month-text"]}</div>
+      <div class="invitation-date"> ${contentJson["invitation-date"]}</div>
+      <div class="invitation-year"> ${contentJson["invitation-year"]}</div>
+    </div>
+    <div class="invitation-time "> ${contentJson["invitation-week-day"]} ${contentJson["invitation-time"]}</div>
+    <div class="invitation-address ">${contentJson["invitation-address"]} </div>
+    <div class="following-party "> ${contentJson["following-party"]}</div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

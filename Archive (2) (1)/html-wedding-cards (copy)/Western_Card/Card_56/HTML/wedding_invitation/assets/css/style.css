@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hurricane&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hurricane&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+
+
+.invitation-card {
+  font-family: "Playfair Display", serif;
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  justify-content: start;
+  background-color:   #FBFBFB;
+  margin: 0 auto;
+  color: #454444;
+  font-weight: 400;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+}
+.invitation-discription {
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
+  line-height: 1.2;
+  padding-bottom: 15px;
+}
+.invitation-date-section {
+  font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.invitation-title {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "Bonheur Royale", serif;
+}
+
+.groom-bride-section {
+  text-align: center;
+ 
+}
+.partner-parent-name {
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.2;
+  font-size: 18px;
+}
+.your-parent-name {
+  text-align: center;
+  margin: 0 auto;
+  line-height: 1.2;
+  font-size: 18px;
+}
+.your-name{
+  
+  font-family: "Bonheur Royale", serif;
+  font-size: 36px;
+  letter-spacing: 5px;
+}
+.partner-name{
+  
+  font-family: "Bonheur Royale", serif;
+  font-size: 36px;
+  letter-spacing: 5px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.and{
+  font-family: "Bonheur Royale", serif;
+  font-size: 38px;
+  margin-top: 10px;
+}
+
+.couple-img-1 img{
+  width: 100%;
+  height: 313px;
+  object-fit: cover;
+}
+
+.couple-img-2 img{
+  width: 100%;
+  height: 314px;
+  object-fit: cover;
+}
+
+.couple-img-3 img{
+  height: 235px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.invitation-time {
+  margin-bottom: 20px !important;
+}
+
+.invitation-address {
+  text-transform: capitalize;
+  max-width: 130px;
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.invitation-time{
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 16px;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mehndi Ceremony</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+@font-face {
+  font-family: "Bonheur Royale";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Bonheur_Royale.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  color: #000000;
+}
+
+.invitation-title {
+  font-size: 50px;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  font-family: "Bonheur Royale";
+  text-transform: capitalize;
+  text-align: center;
+  color: #000000;
+  padding: 20px 20px;
+  line-height: 1;
+}
+
+.invitation-date-section {
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+ color: #6B4E12; 
+  font-family: "Playfair Display";
+}
+
+
+.groom-bride-section {
+  font-family: "Bonheur Royal";
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  color: #6B4E12; 
+  letter-spacing: 2px;
+  font-family: "Bonheur Royale";
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.divider {
+  border-bottom: 2px dotted;
+  width: 120px;
+}
+
+.invitation-time,
+.invitation-day {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Playfair Display";
+}
+
+.invitation-address {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-style: italic;
+  font-family: "Playfair Display";
+  margin: 10px 0;
+  max-width: 400px;
+  font-weight: 600;
+}
+
+.invitation-description {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  line-height: 25px;
+  letter-spacing: 0.6px;
+  max-width: 250px;
+  color: #000000;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.your-parent-name,
+.partner-parent-name {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  letter-spacing: 0.6px;
+  max-width: 300px;
+  text-align: center;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.name-logo{
+  font-size: 20px;
+  color: #000000;
+  font-weight: 800;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 30px;
+  font-family: "Playfair Display";
+}
+
+.small-divider{
+  border-bottom: 1px solid gray;
+  width: 34px;
+}
+</style>  </head>
+
+  <body>
+    <div class="invitation-card" style="background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/B69CE58D-086C-490C-AE87-B899A224C0A0.png');">
+      <div>
+        <div class="name-logo" style="background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/2AAB4CC1-D479-442A-B955-CE50DB457403.png');">
+          <div> ${contentJson["your-initial"]}
+        </div>
+          <div class="small-divider"></div>
+          <div>    ${contentJson["partner-initial"]}
+        </div>
+        </div>
+      </div>
+      <div class="invitation-title"> ${contentJson["invitation-title"]}
+    </div>
+      <div class="invitation-description"> ${contentJson["invitation-description"]}
+    </div>
+      
+
+      <div class="groom-bride-section">
+        <div class="your-name"> ${contentJson["your-name"]}
+        </div>
+        <div class="your-parent-name"> ${contentJson["your-parent-name"]}
+        </div>
+        <div class="and">&</div>
+        <div class="partner-name">    ${contentJson["partner-name"]}
+        </div>
+        <div class="partner-parent-name"> ${contentJson["partner-parent-name"]}
+        </div>
+      </div>
+      <div class="divider mt-4"></div>
+      <div class="invitation-date-section">
+        ${contentJson["invitation-full-date"]}
+
+      </div>
+      <div class="invitation-day mt-2">
+        ${contentJson["invitation-day"]}
+
+      </div>
+      <div class="invitation-time mb-3 mt-1"> ${contentJson["invitation-time"]}
+    </div>
+      
+      
+      <div class="invitation-address"> ${contentJson["invitation-address"]}
+    </div>
+    </div>
+    
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

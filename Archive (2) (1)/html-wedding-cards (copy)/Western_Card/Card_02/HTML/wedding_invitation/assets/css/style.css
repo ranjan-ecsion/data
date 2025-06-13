@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+.invitation-card {
+  height: 787px;
+  width: 562px;
+  flex-direction: column;
+  display: flex;
+  padding: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #cfcac8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.your-name {
+  font-weight: 500;
+  font-size: 38px;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Charmonman", serif;
+  color: #6c6664;
+}
+.and {
+  font-family: "Charmonman", serif;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 34px;
+    color: #6c6664;
+}
+.divder {
+  border-bottom: 1px solid;
+  max-width: 80px;
+  margin-top: 20px;
+  color: #6c6664;
+  padding: 10px 0px;
+  margin: 0 auto;
+}
+.your-parent-name {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Poppins", serif;
+  text-transform: uppercase;
+  color: #6C6664;
+  text-align: center;
+}
+.partner-parent-name {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Poppins", serif;
+  text-transform: uppercase;
+  color: #6C6664;
+  text-align: center;
+}
+.partner-name{
+  font-weight: 500;
+  font-size: 38px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: "Charmonman", serif;
+    color: #6c6664;
+}
+.invitation-description{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "Poppins", serif;
+  text-transform: uppercase;
+  max-width: 250px;
+  color: #6C6664;
+}
+.invitation-title {
+  text-align: center;
+    margin-top: 50px;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #6c6664;
+    font-family: "Charmonman", serif;
+}
+.invitation-date {
+  text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: "Poppins", serif;
+    text-transform: uppercase;
+    color: #6C6664;
+    letter-spacing: 4px;
+}
+.invitation-month {
+  font-family: "Charmonman", serif;
+  font-weight: 600;
+  font-size: 190px;
+  color: #F2F2F2;
+  position: relative;
+  left: -42px;
+  line-height: 0.8;
+  top: 20px;
+}
+.invitation-year {
+  font-family: "Charmonman", serif;
+    font-weight: 600;
+    font-size: 190px;
+    color: #F2F2F2;
+    position: relative;
+    line-height: 0.8;
+}
+
+.couple-img1 {
+  width: 100%;
+  border-radius: 0px 16px;
+  max-height: 270px;
+  height: 100%;
+}
+
+.invitation-address {
+  text-align: center;
+    letter-spacing: 1px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    color: #6c6664;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.following-party {
+  text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 25px;
+    color: #6c6664;
+    font-family: "Charmonman", serif;
+}
+
+.invitation-time {
+  text-align: center;
+    letter-spacing: 1px;
+    color: #6c6664;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+    font-family: "Poppins", serif;
+    max-width: 245px;
+    line-height: 1.4;
+}
+.invitation-time span {
+ 
+  letter-spacing: 3px;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+.couple-img {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.couple-img img {
+  max-width: 700px;
+    max-height: 900px;
+    width: 100%;
+    height: 100%;
+}
+.couple-img2 {
+ background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 374px;
+    border-radius: 5px 30px 0px 10px;
+}

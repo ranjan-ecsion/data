@@ -1,0 +1,146 @@
+
+/* Font Faces */
+@font-face {
+  font-family: "Georgia";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Georgia.ttf") format("truetype");
+}
+
+/* Font Faces */
+@font-face {
+  font-family: "AlexBrush";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Alex_Brush.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.invitation-description {
+  font-size: 14px;
+  color: #68173c;
+  font-family: "Georgia";
+  font-style: italic;
+  font-weight: 600;
+  max-width: 230px;
+  margin-top: 40px;
+}
+
+.groom-bride-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.couple-img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  max-width: 330px;
+}
+
+.partner-name {
+  font-family: "AlexBrush";
+  color: #68173c;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.your-name {
+  font-family: "AlexBrush";
+  color: #68173c;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.invitation-title {
+  font-family: "AlexBrush";
+  color: #68173c;
+  font-size: 42px;
+  font-weight: 500;
+  max-width: 500px;
+}
+
+.invitation-day {
+  border-top: 1px solid #9E9E9E;
+  border-bottom: 1px solid #9E9E9E;
+  font-size: 14px;
+  font-family: "Georgia";
+  color: #68173c;
+  font-weight: 500;
+  padding: 0px 10px;
+}
+
+.invitation-date {
+  font-size: 45px;
+  color: #68173c;
+  line-height: 32px;
+  font-weight: 600;
+  font-family: "Georgia";
+}
+
+.invitation-address {
+  font-size: 14px;
+  color: #68173c;
+  font-family: "Georgia";
+  max-width: 210px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+
+.invitation-time {
+  border-top: 1px solid #68173c;
+  border-bottom: 1px solid #68173c;
+  font-size: 16px;
+  font-family: "Georgia";
+  color: #68173c;
+  font-weight: 500;
+}
+
+.invitation-date-section {
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.invitation-year {
+  font-size: 16px;
+  color: #68173c;
+  font-weight: 500;
+  font-family: "Georgia";
+  line-height: 35px;
+}
+
+.invitation-month {
+  line-height: 30px;
+  font-size: 16px;
+  font-family: "Georgia";
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #68173c;
+}
+
+.following-party {
+  font-family: "AlexBrush";
+  font-size: 16px;
+  color: #68173c;
+  font-weight: 500;
+  margin-top: auto;
+}

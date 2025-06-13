@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hurricane&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+@font-face {
+  font-family: "Georgia";
+  src: url("https://react-web-composer.ecsion.com/fonts/Georgia.ttf") format("truetype");
+}
+
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex
+;
+  flex-direction: column;
+  justify-content: space-between;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  text-transform: capitalize;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  color: #6a420c;
+  font-family: "Georgia";
+  font-weight: 400;
+}
+
+.invitation-title {
+  text-transform: capitalize;
+  font-family: "Italianno", serif;
+ 
+  font-size: 56px;
+  line-height: 1;
+  letter-spacing: 2px;
+ 
+}
+.invitation-discription {
+  max-width: 220px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+ 
+}
+
+.invitation-date-section {
+  font-size: 40px;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.invitation-time {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+
+.divider {
+  border-bottom: 3px solid;
+  width: 290px;
+  margin: 10px 0;
+}
+
+
+.your-name {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 22px;
+  letter-spacing: 2px;
+  width: 65%;
+}
+.partner-name{
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 2px;
+  width: 65%;
+  margin: 0 auto;
+}
+.partner-parent-name {
+  font-size: 16px;
+  margin-top: 10px;
+}
+.your-parent-name {
+  margin-top: 5px;
+  font-size: 16px;
+}
+.and{
+  font-size: 122px;
+  line-height: 1;
+}
+
+.invitation-address {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 1px;
+  max-width: 300px;
+}

@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mr+Dafoe&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@font-face {
+  font-family: "Things";
+  src: url("../fonts/Things.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montageway";
+  src: url("../fonts/Montageway\ Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Oleandro";
+  src: url("../fonts/Oleandro.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  padding: 30px 50px;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 1px 1px 7px 1px lightgray;
+}
+.invitation-date {
+  font-family: "Things";
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+.flower-img {
+  position: relative;
+  bottom: 70px;
+}
+
+.invitation-address {
+  letter-spacing: 4px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  text-align: center;
+  font-family: "Things";
+}
+
+.invitation-title {
+  margin-top: 10px;
+  font-size: 36px;
+  word-spacing: 2px;
+  line-height: 1.7;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-family: "Oleandro";
+  font-weight: 500;
+  color: #000;
+  padding-left: 10px;
+}
+.couple-img img {
+  width: 219px;
+  height: 150px;
+  object-fit: cover;
+}
+.groom-bride-section {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 12px;
+  font-family: "Things";
+  text-align: center;
+  font-size: 44px;
+  position: absolute;
+  top: 50%;
+  font-weight: 500;
+}
+.invitation-date-section {
+  text-transform: uppercase;
+  letter-spacing: 7px;
+
+  font-family: "Things";
+  text-align: center;
+  line-height: 2;
+  font-size: 18px;
+}
+.your-name,
+.partner-name {
+  line-height: 0.6;
+}
+.invitation-message {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  padding-right: 30px;
+}
+.invitation-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+.invitation-address {
+  font-family: "Things";
+  letter-spacing: 2px;
+  font-size: 16px;
+  margin-top: 5px;
+  text-align: start;
+}
+.invitation-time {
+  font-family: "Things";
+  font-size: 16px;
+  margin-top: 5px;
+  text-transform: capitalize;
+}

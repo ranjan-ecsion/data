@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  background-color: #ffffff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 0 auto;
+  color: #000000;
+  font-weight: 400;
+}
+
+.invitation-title {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 105px;
+  margin: 0 auto;
+  letter-spacing: 3px;
+}
+
+.couple-img1 img {
+ max-width: 350px;
+ width: 100%;
+  height: 520px;
+  object-fit: cover;
+}
+.invitation-discription {
+  font-size: 16px;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.your-name {
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-weight: 500;
+ 
+  text-transform: uppercase;
+}
+.invitation-date-section {
+  font-size: 35px;
+    display: flex
+;
+    justify-content: center;
+    border: 1px solid;
+    gap: 7px;
+    max-width: 240px;
+    margin: 0 auto;
+    margin-top: 27px;
+    font-weight: 500;
+}
+.partner-name{
+  font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 500;
+   
+    text-transform: uppercase;
+}
+.your-parent-name {
+  font-size: 16px;
+}
+.partner-parent-name {
+  font-size: 16px;
+}
+.and{
+  font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.groom-bride-address-section {
+  margin-top: 100px;
+}
+
+
+
+.invitation-address
+ {
+  font-size: 16px;
+    letter-spacing: 3px;
+    max-width: 400px;
+    font-weight: 500;
+    margin: 0 auto;
+   
+}
+.invitation-time{
+   font-size: 16px;
+    letter-spacing: 3px;
+    max-width: 400px;
+    font-weight: 500;
+    margin: 0 auto;
+    padding-top: 20px;
+}

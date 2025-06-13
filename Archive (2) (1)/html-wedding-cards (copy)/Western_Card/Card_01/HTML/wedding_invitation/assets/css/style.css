@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+.invitation-card {
+ 
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  margin: 0 auto;
+  background-color: #efedee;
+  color: #bba677;
+
+}
+
+.invitation-title {
+  font-size: 70px;
+    font-family: "Bonheur Royale", serif;
+    line-height: 1;
+    text-transform: capitalize;
+    margin-top: 50px;
+    font-weight: 500;
+}
+.invitation-description {
+  font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-top: 19px;
+}
+.couple-img {
+  width: 234px;
+  height: 262.3px;
+  object-fit: cover;
+}
+.invitation-address {
+  font-size: 14px;
+    max-width: 260px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    padding-top: 10px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+}
+.and {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+  font-family: "Bonheur Royale", serif;
+  font-size: 600;
+}
+.divider {
+  border-bottom: 2px solid;
+  width: 70px;
+}
+
+.invitation-date-section {
+  letter-spacing: 1px;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-family: "Poppins", serif;
+}
+
+.groom-bride-section {
+ 
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: 600;
+  font-size: 26px;
+}
+.your-name {
+  font-family: "Bonheur Royale", serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-size: 38px;
+    line-height: 1;
+}
+.partner-name{
+  font-family: "Bonheur Royale", serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 4px;
+    font-size: 38px;
+}
+.invitation-time {
+  font-family: "Poppins", serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+.your-parent-name {
+  font-family: "Poppins", serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+
+}
+.partner-parent-name {
+  font-family: "Poppins", serif;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+}
+.following-party {
+  font-size: 20px;
+  font-family: "Bonheur Royale", serif;
+    text-transform: capitalize;
+    margin-top: 20px;
+  font-style: italic;
+  font-weight: 500;
+}

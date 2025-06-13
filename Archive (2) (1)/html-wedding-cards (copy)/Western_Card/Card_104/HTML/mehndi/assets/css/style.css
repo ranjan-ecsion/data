@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hurricane&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Hurricane&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+
+.invitation-card {
+  width: 787px;
+  height: 562px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: center;
+  text-transform: capitalize;
+  text-align: center;
+  background-size: cover;
+  padding: 30px;
+  align-items: center;
+  margin: 0 auto;
+  color: #6a420c;
+  font-family: "Playfair Display", serif;
+}
+
+.invitation-title {
+ font-family: "Style Script", serif;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 44px;
+    letter-spacing: 1px;
+}
+
+.invitation-date-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.invitation-date {
+  font-size: 160px;
+  height: 150px;
+  line-height: 0.6;
+}
+
+.invitation-month {
+ 
+  font-size: 30px;
+  line-height: 0.8;
+}
+
+.invitation-year {
+  font-size: 24px;
+  
+}
+
+.invitation-time {
+  text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.divider {
+  border-bottom: 3px solid;
+  width: 290px;
+  margin: 10px 0;
+}
+
+.groom-bride-section {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+
+.and{
+  font-family: "Style Script", serif;
+  font-size: 50px;
+  line-height: 1;
+}
+
+.invitation-address {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  max-width: 193px;
+}

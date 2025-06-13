@@ -1,0 +1,1179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'voguelicious-boldItalic';
+    src: url('../fonts/voguelicious-boldItalic.ttf') format('truetype');
+
+}
+
+
+@font-face {
+    font-family: 'Academy_EngravedLet_Plain';
+    src: url('../fonts/Academy_EngravedLet_Plain.ttf') format('truetype');
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", serif;
+}
+
+/* section-01 */
+
+
+.section-01 {
+    max-width: 780px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+.section-01 .banner-image {
+    margin-top: -95px;
+}
+
+.section-01 h6 {
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 400;
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+}
+
+.section-01 .banner-content {
+    color: #ffffff;
+    padding: 50px 50px;
+    opacity: 0.81;
+    background-color: #930715;
+}
+
+.section-01 h2 {
+    font-size: 34px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'buttain';
+    letter-spacing: 1px;
+}
+
+.section-01 .image-source {
+    position: relative;
+}
+
+.section-01 p {
+    background: linear-gradient(#000000 0%, #000000 0%);
+    opacity: 0.74;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 40px 50px;
+    margin-bottom: 0px;
+}
+
+.section-01 h3 {
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'voguelicious-boldItalic';
+    letter-spacing: 1px;
+    line-height: 1.1;
+}
+
+@media (max-width: 480px) {
+
+    .section-01 h2 {
+        font-size: 24px;
+
+    }
+
+    .section-01 .banner-content {
+        padding: 25px 20px;
+
+    }
+
+    .section-01 h3 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-top: 0px;
+    }
+
+    .section-01 {
+        height: 550px;
+        margin-bottom: 5px;
+
+    }
+
+    .section-01 {
+
+        margin-bottom: 5px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .section-01 {
+
+        margin-bottom: 5px;
+
+    }
+}
+
+/* section-02 */
+
+
+.section-02 {
+    max-width: 780px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: auto;
+    background-color: #f8f9f9;
+    padding-bottom: 50px;
+
+}
+
+
+.section-02 .image-source {
+    position: relative;
+}
+
+.section-02 h5 {
+    background: rgb(0 0 0 / 43%);
+    padding: 5px 15px;
+    max-width: 122px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b5b5b5c2;
+    position: absolute;
+    bottom: 15px;
+    left: 0px;
+}
+
+.section-02 .image-1 img {
+
+    width: 100%;
+    height: 590px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.section-02 .image-2 img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border: 4px solid #FFFFFF;
+}
+
+
+.section-02 h3 {
+
+    font-size: 16px;
+    color: #030303;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+.section-02 h2 {
+
+    font-size: 46px;
+    color: #000000;
+    font-weight: 400;
+    font-family: 'voguelicious-boldItalic';
+    line-height: 0.8;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.section-02 h2 span {
+    font-size: 51px;
+    color: #930715;
+    font-weight: 400;
+    font-family: 'Academy_EngravedLet_Plain';
+    line-height: 0.8;
+
+}
+
+.section-02 h1 {
+    font-size: 38px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background-color: #DD1B5F;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'buttain';
+    margin-bottom: 0px;
+}
+
+.section-02 p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    background-color: #930715;
+    opacity: 1;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.section-02 h4 {
+    color: #1E1E1E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+    .section-02 .order1 {
+        order: 2;
+    }
+
+    .section-02 h2 {
+        font-size: 28px;
+        color: #000000;
+        font-weight: 400;
+        font-family: 'voguelicious-boldItalic';
+        line-height: 1.4;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+
+    }
+
+    .section-02 {
+        margin-bottom: 5px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .section-02 h3 {
+        font-size: 16px;
+        padding: 0px 20px;
+        margin-bottom: 24px;
+    }
+
+    .section-02 .image-1 img {
+        margin-bottom: 0px;
+        height: 430px;
+    }
+
+    .section-02 p {
+
+
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .section-02 h1 {
+        font-size: 18px;
+        padding: 22px 25px;
+        margin-top: 0px;
+    }
+    .section-02 h2 span {
+        font-size: 42px;
+       
+        line-height: 1.2;
+    }
+    .section-02 {
+
+        margin-bottom: 5px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .section-02 {
+
+        margin-bottom: 5px;
+
+    }
+}
+
+.section-03 {
+    max-width: 780px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: auto;
+    padding-top: 50px;
+    background-color: #f8f9f9;
+}
+
+.section-03 h2 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 400;
+    font-family: 'voguelicious-boldItalic';
+    line-height: 0.8;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.section-03 h2 span {
+    font-size: 30px;
+    color: #930715;
+    font-weight: 400;
+    font-family: 'Academy_EngravedLet_Plain';
+    line-height: 0.8;
+    margin-left: 10px;
+
+}
+
+.section-03 .image-source {
+    position: relative;
+}
+
+.section-03 h5 {
+    background: rgb(0 0 0 / 43%);
+    padding: 5px 15px;
+    max-width: 122px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b5b5b5c2;
+    position: absolute;
+    bottom: 8px;
+    left: 0px;
+}
+
+.section-03 h6 {
+    background: rgb(0 0 0 / 43%);
+    padding: 5px 15px;
+    max-width: 122px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b5b5b5c2;
+    position: absolute;
+    right: 24px;
+    bottom: 10px;
+}
+
+.section-03 .image-1 img {
+    width: 100%;
+    height: 345px;
+    object-fit: cover;
+    margin-top: 30px;
+}
+
+.section-03 .image-2 img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    max-width: 375px;
+}
+
+.section-03 .image-3 img {
+    width: 100%;
+    height: 345px;
+    object-fit: cover;
+    margin-top: 30px;
+
+}
+
+.section-03 h3 {
+
+    font-size: 31px;
+    color: #930715;
+    font-weight: 400;
+    line-height: 1;
+    font-family: 'Academy_EngravedLet_Plain';
+    margin-bottom: 30px;
+}
+
+.section-03 h1 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 400;
+    font-family: 'voguelicious-boldItalic';
+
+}
+
+.section-03 p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    max-width: 315px;
+}
+
+.section-03 h4 {
+    font-size: 50px;
+    color: #C70961;
+    font-weight: 400;
+    font-family: 'the-mithan';
+    line-height: 0.8;
+    margin: 15px 0px;
+}
+
+.section-03 .divider {
+    padding: 25px 0px;
+    background-color: #930715;
+
+}
+
+@media (max-width: 480px) {
+
+    .section-03 .image-3 img {
+        margin-top: 25px;
+    }
+    .section-03 .image-1 img {
+        margin-top: 5px;
+    }
+    .section-03 h1 {
+        font-size: 24px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .section-03 .order1 {
+        order: 2;
+    }
+
+    .section-03 h4 {
+        text-align: center;
+    }
+
+    .section-03 h3 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .section-03 h2 span {
+        font-size: 24px;
+       
+    }
+    .section-03 h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+
+    .section-03 p {
+        max-width: 400px;
+        margin-left: 0px;
+        padding: 0px 20px;
+        margin-top: 18px;
+        text-align: center;
+    }
+
+
+    .section-03 {
+        margin-bottom: 5px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .section-03 h6 {
+
+        color: #b5b5b5c2;
+        position: absolute;
+        right: 0px;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-03 {
+
+        margin-bottom: 5px;
+
+    }
+}
+
+/* .section-04 */
+
+.section-04 {
+    max-width: 780px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: auto;
+    background-color: #f8f9f9;
+    padding-bottom: 40px;
+}
+
+
+.section-04 h2 {
+    font-size: 48px;
+    color: #000000;
+    font-weight: 400;
+    font-family: 'voguelicious-boldItalic';
+    line-height: 0.8;
+    margin-bottom: 25px;
+}
+
+.section-04 h2 span {
+    font-size: 34px;
+    color: #930715;
+    font-weight: 400;
+    font-family: 'Academy_EngravedLet_Plain';
+    line-height: 0.8;
+    margin-left: 10px;
+
+}
+
+.section-04 .image-source {
+    position: relative;
+}
+
+.section-04 h5 {
+
+    background: rgb(0 0 0 / 43%);
+    padding: 5px 15px;
+    max-width: 122px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b5b5b5c2;
+    position: absolute;
+    bottom: 37px;
+    left: 0px;
+}
+
+.section-04 h6 {
+    background: rgb(0 0 0 / 43%);
+    padding: 5px 15px;
+    max-width: 122px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b5b5b5c2;
+    position: absolute;
+    bottom: 26px;
+    left: 0px;
+}
+
+.section-04 .image-1 img {
+    width: 100%;
+    height: 336px;
+    object-fit: cover;
+    margin: 25px 0px;
+}
+
+.section-04 .image-2 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.section-04 .image-3 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.section-04 h3 {
+    font-size: 34px;
+    color: #930715;
+    font-weight: 400;
+    line-height: 0.4;
+    font-family: 'Academy_EngravedLet_Plain';
+    margin-bottom: 30px;
+}
+
+.section-04 h1 {
+    font-size: 30px;
+    color: #000000;
+    font-weight: 400;
+    font-family: 'voguelicious-boldItalic';
+
+}
+
+.section-04 p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0px;
+
+}
+
+.section-04 h4 {
+    font-size: 50px;
+    color: #C70961;
+    font-weight: 400;
+    font-family: 'the-mithan';
+    line-height: 0.8;
+    margin: 15px 0px;
+}
+
+.section-04 .divider {
+    padding: 25px 0px;
+    background-color: #930715;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+    .section-04 .image-2 img {
+        max-width: 375px;
+        float: none;
+    }
+
+    .section-04 .image-1 img {
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+
+    .section-04 .order1 {
+        order: 2;
+    }
+
+    .section-04 h4 {
+        text-align: center;
+    }
+
+    .section-04 h3 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .section-04 h1 {
+        font-size: 28px;
+
+        margin-left: 0px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .section-04 p {
+        margin-bottom: 18px;
+        margin-left: 0px;
+        padding: 0px 20px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .section-04 h2 {
+        line-height: 0.8;
+        margin-bottom: 24px;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .section-04 {
+        margin-bottom: 5px;
+        padding: 0px;
+        padding-bottom: 15px;
+
+    }
+    .section-04 .image-3 img {
+       
+        margin-bottom: 5px;
+    }
+    .section-04 h5 {
+       
+        position: absolute;
+        bottom: 10px;
+        left: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-04 {
+      
+        margin-bottom: 5px;
+
+    }
+}
+
+/* section-05 */
+
+
+.section-05 {
+    max-width: 780px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    height: 950px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.section-05 h6 {
+
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 400;
+    position: absolute;
+    left: 8px;
+    bottom: 10px;
+}
+
+.section-05 h5 {
+
+    background: rgb(0 0 0 / 43%);
+    color: #b5b5b5c2;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 400;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+}
+
+.section-05 .image-1 img {
+
+    width: 100%;
+    height: 334px;
+    object-fit: cover;
+    max-width: 230px;
+    border: 7px solid #ffffff;
+}
+
+.section-05 .banner-content {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.section-05 h1 {
+    font-size: 36px;
+    font-weight: 500;
+    font-family: 'voguelicious-boldItalic';
+}
+
+.section-05 h3 {
+    font-size: 34px;
+    color: #930715;
+    font-weight: 400;
+    line-height: 0.4;
+    font-family: 'Academy_EngravedLet_Plain';
+    margin: 20px 0px;
+
+}
+
+.section-05 .image-source {
+    position: relative;
+}
+
+.section-05 p {
+    font-size: 16px;
+    color: #1E1E1E;
+
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 480px) {
+    .section-05 p {
+       
+        text-align: center;
+    }
+    .section-05 h2 {
+        font-size: 24px;
+
+    }
+    .section-05 .image-1 img {
+        width: 100%;
+        height: 334px;
+        object-fit: cover;
+        max-width: 335px;
+        border: 7px solid #ffffff;
+        margin: 10px 0px;
+    }
+    .section-05 .banner-content {
+
+        padding: 30px 20px;
+
+    }
+
+    .section-05 h3 {
+        font-size: 34px;
+        line-height: 1.2;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .section-05 h1 {
+        font-size: 32px;
+        font-weight: 500;
+        font-family: 'voguelicious-boldItalic';
+        text-align: center;
+    }
+    .section-05 h6 {
+       
+        position: absolute;
+        left: 8px;
+        bottom: 25px;
+    }
+
+    .section-05 {
+        max-width: 780px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+        height: 1000px;
+        padding: 50px 20px;
+      
+    }
+    .section-05 h5 {
+      
+        position: absolute;
+        bottom: -46px;
+        right: -20px;
+    }
+}
+
+.section-06 {
+    max-width: 780px;
+    margin: 0 auto;
+    height: auto;
+    background-color: #f8f9f9;
+    padding-left: 50px;
+    margin-bottom: 10px;
+
+}
+
+.section-06.image-source {
+    position: relative;
+}
+
+.section-06 h5 {
+    background: rgb(0 0 0 / 43%);
+    padding: 5px 15px;
+    max-width: 122px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b5b5b5c2;
+    position: absolute;
+    bottom: 60px;
+    left: 0px;
+}
+
+.section-06 h6 {
+
+    background: rgb(0 0 0 / 43%);
+    padding: 5px 15px;
+    max-width: 122px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b5b5b5c2;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+}
+
+.section-06 .image-1 img {
+
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+
+.section-06 .image-2 img {
+
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+
+.section-06 h3 {
+    text-align: end;
+    font-size: 38px;
+    font-weight: 400;
+    font-family: 'Academy_EngravedLet_Plain';
+}
+
+.section-06 h2 {
+    font-size: 50px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Great Vibes", cursive;
+    line-height: 0.8;
+
+}
+
+.section-06 h1 {
+
+    font-size: 40px;
+    font-weight: 400;
+
+    font-family: 'voguelicious-boldItalic';
+    margin-bottom: 0px;
+}
+
+.section-06 p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0px;
+
+}
+
+.section-06 .image-source {
+
+    position: relative;
+}
+
+.section-06 h4 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0px 30px;
+}
+
+@media (max-width: 480px) {
+    .section-06 .order1 {
+        order: 2;
+    }
+
+    .section-06 h3 {
+        font-size: 30px;
+        font-weight: 400;
+        font-family: 'quinstory';
+        text-align: center;
+    }
+
+    .section-06 h2 {
+        font-size: 42px;
+
+    }
+    .section-06 h5 {
+      
+        position: absolute;
+        bottom: 30px;
+        left: 0px;
+    }
+    .section-06 .image-2 img {
+        width: 100%;
+        height: 480px;
+        padding-right: 0px;
+        padding-bottom: 15px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .section-06 {
+
+        text-align: center;
+        padding: 0px;
+    }
+    .section-06 .image-1 img {
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+
+    .section-06 p {
+        padding: 0px 20px;
+        margin-bottom: 25px;
+    }
+
+    .section-06 h4 {
+
+        padding: 25px 30px;
+    }
+
+    .section-06 h1 {
+        font-size: 30px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+}
+
+.section-07 {
+    max-width: 780px;
+    margin: 0 auto;
+    height: auto;
+    background-color: #f8f9f9;
+    padding-left: 50px;
+
+}
+
+.section-07 .image-source {
+    position: relative;
+}
+
+.section-07 h5 {
+    background: rgb(0 0 0 / 43%);
+    padding: 5px 15px;
+    max-width: 122px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b5b5b5c2;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+.section-07 h6 {
+    background: rgb(0 0 0 / 43%);
+    padding: 5px 15px;
+    max-width: 122px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+    color: #b5b5b5c2;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+}
+
+.section-07 .image-1 img {
+
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    margin-top: 50px;
+}
+
+
+.section-07 .image-2 {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+
+.section-07 h3 {
+
+    font-size: 38px;
+    font-weight: 400;
+    font-family: 'Academy_EngravedLet_Plain';
+    color: #930715;
+}
+
+.section-07 h2 {
+
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 225px;
+    background-color: #930715;
+    opacity: 0.84;
+    padding: 71px 30px;
+}
+
+.section-07 h1 {
+    font-size: 46px;
+    font-weight: 400;
+    font-family: 'voguelicious-boldItalic';
+    margin-bottom: 0px;
+    color: #000000;
+    line-height: 1;
+}
+
+.section-07 p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0px;
+    color: #000000;
+    max-width: 275px;
+}
+
+.section-07 .image-source {
+
+    position: relative;
+}
+
+.section-07 h4 {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0px 30px;
+}
+
+@media (max-width: 480px) {
+   
+    .section-07 .order1 {
+        order: 2;
+    }
+    .section-07 h2 {
+       
+        padding: 71px 10px;
+    }
+    .section-07 h3 {
+        font-size: 30px;
+        font-weight: 400;
+        font-family: 'quinstory';
+    }
+    .section-07 h6 {
+        background: rgb(0 0 0 / 43%);
+        padding: 5px 15px;
+        max-width: 122px;
+        font-size: 12px;
+        font-weight: 300;
+        font-style: italic;
+        color: #b5b5b5c2;
+        position: absolute;
+        top: -40px;
+    }
+
+    .section-07 .image-2 {
+        background-size: cover;
+        background-position: center;
+        height: 478px;
+    }
+
+    .section-07 {
+
+        text-align: center;
+        padding: 0px;
+    }
+    .section-07 .image-1 img {
+       margin: 0px;
+    }
+
+    .section-07 p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #000000;
+        max-width: 408px;
+        margin-bottom: 25px;
+        padding: 0px 20px;
+    }
+
+    .section-07 h4 {
+
+        padding: 25px 30px;
+    }
+
+    .section-07 h1 {
+        font-size: 24px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+}

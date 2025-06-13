@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: 'Coronet';
+  src: url('https://react-web-composer.ecsion.com/fonts/Coronet.ttf') format('truetype');
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  margin: 0 auto;
+}
+
+.invitation-title {
+  font-size: 32px;
+  color: #3C3C3A;
+  max-width: 400px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+
+.invitation-description {
+  font-size: 14px;
+  color: #3C3C3A;
+  text-transform: capitalize;
+  font-family: "Montserrat", sans-serif;
+  max-width: 300px;
+  font-weight: 500;
+}
+
+.groom-bride-section {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 500;
+}
+
+.partner-name {
+  font-family: 'Coronet';
+  color: #676D51;
+  font-size: 70px;
+  line-height: 0.2;
+}
+
+.your-name {
+  font-family: 'Coronet';
+  color: #676D51;
+  font-size: 70px;
+  line-height: 0.7;
+}
+
+.and {
+  font-family: 'Coronet';
+    color: #676D51;
+    font-size: 50px;
+    line-height: 1;
+    text-align: center;
+    margin: 8px 0px;
+}
+
+.following-party {
+  color: #676D51;
+    font-family: 'Coronet';
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.invitation-address {
+  font-size: 14px;
+    text-transform: capitalize;
+    color: #3C3C3A;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.4;
+    font-weight: 500;
+    max-width: 259px;
+}
+
+.invitation-title-date {
+  border-bottom: 2px solid #a6824d;
+  border-top: 2px solid #a6824d;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+.invitation-date-section {
+  color: #3C3C3A;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.divider {
+  border-bottom: 2px solid #a6824d;
+  padding: 0 48px;
+}
+
+.invitation-day {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3C3C3A;
+  text-transform: uppercase;
+  border-bottom: 2px solid #a6824d;
+}
+
+.invitation-time {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3C3C3A;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        @font-face {
+            font-family: "Georgia";
+            src: url("https://react-web-composer.ecsion.com/fonts/Georgia.ttf") format("truetype");
+        }
+
+        .invitation-card {
+            width: 562px;
+            height: 787px;
+            flex-direction: column;
+            display: flex;
+            padding: 30px 30px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .groom-bride-parents-section {
+            display: flex;
+            gap: 5px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #464646;
+            font-family: "Georgia";
+        }
+
+        .invitation-title {
+            font-size: 42px;
+            color: #c5942c;
+            font-family: "Alex Brush", serif;
+            font-weight: 500;
+            max-width: 330px;
+            margin-bottom: 10px;
+        }
+
+        .invitation-description {
+            font-size: 16px;
+            color: #464646;
+            font-family: "Georgia";
+            font-style: italic;
+            font-weight: 500;
+            max-width: 270px;
+            padding-bottom: 10px;
+        }
+
+        .invitation-year {
+            border-top: 2px solid #c5942c;
+            font-size: 16px;
+            border-bottom: 2px solid #c5942c;
+            padding: 5px 5px;
+            color: #464646;
+            font-weight: 500;
+            font-family: "Georgia";
+            width: 20%;
+        }
+
+        .invitation-day {
+            border-top: 2px solid #c5942c;
+            font-size: 14px;
+            border-bottom: 2px solid #c5942c;
+            padding: 5px 5px;
+            color: #464646;
+            font-weight: 500;
+            font-family: "Georgia";
+            width: 20%;
+
+        }
+
+        .invitation-date {
+            font-size: 38px;
+            color: #464646;
+            line-height: 32px;
+            font-weight: 600;
+            font-family: "Georgia";
+            padding: 0px 5px;
+            line-height: 0.2;
+        }
+
+
+        .following-party {
+            font-size: 14px;
+            color: #464646;
+            font-family: "Georgia";
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .invitation-time {
+            font-size: 14px;
+            color: #464646;
+            font-family: "Georgia";
+            font-style: italic;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        .invitation-address {
+            font-size: 14px;
+            color: #464646;
+            font-family: "Georgia";
+            font-style: italic;
+            max-width: 210px;
+            line-height: 1.4;
+            font-weight: 500;
+            margin: 15px 0px;
+        }
+
+        .invitation-date-section {
+            align-items: flex-start;
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .partner-parent-name , .your-parent-name {
+            font-family: "Georgia";
+            color: #464646;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        .your-name,
+        .partner-name {
+
+            font-family: "Alex Brush", serif;
+            color: #464646;
+            font-size: 42px;
+            font-weight: 500;
+
+        }
+
+        .and {
+    font-family: "Alex Brush", serif;
+    font-size: 20px;
+    text-align: center;
+    color: #464646;
+    font-weight: 600;
+}
+
+        .groom-bride-section {
+            line-height: 1.2;
+        } 
+
+        img.icon {
+            max-width: 70px;
+        }
+
+        .yourInitial {
+            font-size: 24px;
+            font-style: italic;
+            color: #464646;
+            font-family: "Alex Brush", serif;
+            letter-spacing: 5px;
+        }
+
+        .partnerInitial {
+            font-size: 24px;
+            font-style: italic;
+            color: #464646;
+            font-family: "Alex Brush", serif;
+            letter-spacing: 5px;
+        }
+
+        .invitation-month {
+            font-weight: 500;
+            font-size: 16px;
+            font-family: "Georgia";
+            text-transform: uppercase;
+            color: #464646;
+            margin-top: 16px;
+        }
+
+        .initial-name-bg {
+            background-size: cover;
+            margin-bottom: 30px;
+            background-repeat: no-repeat;
+            padding: 38px 50px;
+            line-height: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invitation-card" style="
+    background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/2EE1F264-D2EA-49E4-B47C-0E5B12D418C1.png');
+  ">
+        <div class="initial-name-bg"
+            style="background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/7DE551B8-1FBA-4853-AC2F-CD92EA3193B7.png);">
+            <div class="yourInitial">${contentJson["yourInitial"]}</div>
+            <div class="partnerInitial">
+                ${contentJson["partnerInitial"]}
+            </div>
+        </div>
+        <div class="invitation-title" id="title">${contentJson["invitation-title"]}</div>
+
+
+        <div class="your-parent-name"> ${contentJson["your-parent-name"]}</div>
+
+        <div class="invitation-description mt-3" id="message"> ${contentJson["invitation-description"]}</div>
+
+
+        <div class="groom-bride-section ">
+
+            <div>
+                <div class="your-name " id="brideFirstName"> ${contentJson["your-name"]}</div>
+                <div class="your-parent-name mb-2 " id="groomFirstName">
+                    ${contentJson["your-parent-name"]}
+                </div>
+            </div>
+            <div class="and">With</div>
+            <div>
+                <div class="partner-name mb-2 mt-2">${contentJson["partner-name"]}</div>
+                <div class="partner-parent-name">
+                    ${contentJson["partner-parent-name"]}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="invitation-date-section">
+            <div class="invitation-day" id="day">${contentJson["invitation-week-day"]}</div>
+            <div class="mx-2">
+                <div class="invitation-date" id="date">${contentJson["invitation-date"]}</div>
+                <div class="invitation-month" id="month">${contentJson["invitation-month-text"]}</div>
+            </div>
+            <div class="invitation-year" id="year">${contentJson["invitation-year"]}</div>
+        </div>
+        <div class="invitation-time mt-3">
+            ${contentJson["invitation-time"]}
+        </div>
+        <div class="invitation-address" id="address"> ${contentJson["invitation-address"]}</div>
+        <div class="following-party mt-4"> ${contentJson["following-party"]}</div>
+    </div>
+
+</body>
+
+</html>

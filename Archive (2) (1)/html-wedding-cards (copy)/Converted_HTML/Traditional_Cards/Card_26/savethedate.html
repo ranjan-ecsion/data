@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Date</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    .invitation-card {
+      width: 562px;
+      height: 787px;
+      flex-direction: column;
+      display: flex;
+      padding: 30px 30px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .invitation-description {
+      font-size: 14px;
+      color: #B52A58;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      max-width: 260px;
+      line-height: 1.4;
+    }
+
+    .groom-bride-section {
+      display: flex;
+      margin-top: 20px;
+      border-bottom: 1px solid #B52A58;
+      border-top: 1px solid #B52A58;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      max-width: 340px;
+    }
+
+    .your-name,
+    .partner-name {
+
+      font-family: "Playfair Display", serif;
+      color: #B52A58;
+      font-size: 22px;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: 2px;
+      width: 40%;
+    }
+
+    .and {
+      font-family: "Playfair Display", serif;
+      color: #B52A58;
+      font-size: 45px;
+      margin: 0px 10px;
+      font-weight: 500;
+      width: 20%;
+    }
+
+    .invitation-title {
+      font-family: "Playfair Display", serif;
+      color: #B52A58;
+      font-size: 36px;
+      font-weight: 500;
+      margin-top: 25px;
+      letter-spacing: 1px;
+
+      max-width: 350px;
+    }
+
+    .invitation-day {
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      color: #B52A58;
+      font-weight: 500;
+      padding-right: 10px;
+    }
+
+    .invitation-address {
+      font-size: 14px;
+      color: #B52A58;
+      font-family: "Montserrat", sans-serif;
+
+      max-width: 210px;
+      font-weight: 500;
+      margin: 25px 0px;
+
+    }
+
+    .invitation-time {
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      color: #B52A58;
+      font-weight: 500;
+      padding-left: 10px;
+    }
+
+    .invitation-date-section {
+      display: flex;
+      margin-top: 20px;
+
+    }
+
+    .following-party {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      color: #B52A58;
+      font-weight: 500;
+      text-transform: capitalize;
+      font-style: italic;
+
+    }
+
+    .invitation-completedate {
+
+      padding: 0px 10px;
+      border-right: 1px solid #B52A58;
+      border-left: 1px solid #B52A58;
+      font-weight: 500;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+      color: #B52A58;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="invitation-card"
+    style="background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/C5A19497-287A-450E-AE2B-FD2A10092BCB.png');">
+    <div class="text-center">
+      <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/83B419CF-B743-400F-B459-5F7F9392833C.png"
+        class="img-fluid" alt="Invitation Image">
+    </div>
+    <div class="invitation-title">${contentJson["invitation-title"]}</div>
+    <div class="invitation-description mt-3">
+      ${contentJson["invitation-description"]}
+    </div>
+    <div class="groom-bride-section">
+      <div class="your-name">
+        <div> ${contentJson["your-name"]}</div>
+      </div>
+      <div class="and">&</div>
+      <div class="partner-name">
+        <div>${contentJson["partner-name"]}</div>
+      </div>
+    </div>
+    <div class="d-flex mt-4">
+      <div class="invitation-day">${contentJson["invitation-week-day"]}</div>
+      <div class="invitation-completedate ">${contentJson["invitation-full-date"]}</div>
+      <div class="invitation-time">${contentJson["invitation-time"]}</div>
+    </div>
+    <div class="invitation-address">${contentJson["invitation-address"]}
+    </div>
+    <div class="following-party">${contentJson["following-party"]}</div>
+
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Housing";
+  src: url("../fonts/Housing.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Optimus\ Seasonal\ Regular";
+  src: url("../fonts/Optimus\ Seasonal\ Regular.ttf") format("truetype");
+}
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-color: #e8eae7;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.invitation-title {
+  font-family: "Optimus\ Seasonal\ Regular";
+  color: #bfa672;
+  font-size: 90px;
+  line-height: 0.8;
+}
+.invitation-title span {
+  color: #D9D1C1;
+}
+.couple-img {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.couple-img img {
+  max-width: 325px;
+  max-height: 310px;
+  background-position: top left;
+  cursor: grab;
+  user-select: none;
+  top: 0;
+  left: 0;
+}
+.couple-img2 img {
+  max-width: 450px;
+  max-height: 310px;
+  background-position: top left;
+  cursor: grab;
+  user-select: none;
+  top: 0;
+  left: 0;
+}
+.groom-bride-section {
+  text-align: center;
+}
+.your-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  color: #6c6664;
+}
+.partner-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 4px;
+  font-weight: 500;
+  color: #6c6664;
+
+}
+.and {
+  font-family: "Housing";
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #6c6664;
+}
+.invitation-date {
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: #6c6664;
+}
+.invitation-address {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #6c6664;
+}
+.following-party {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #6c6664;
+}
+.invitation-time {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  color: #6c6664;
+  
+}

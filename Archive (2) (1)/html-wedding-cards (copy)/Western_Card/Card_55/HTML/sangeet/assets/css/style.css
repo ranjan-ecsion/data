@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "NewBaskervilleC";
+  src: url(../fonts/NewBaskervilleC.ttf) format("truetype");
+}
+
+.invitation-card {
+  font-family: "NewBaskervilleC";
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  text-transform: capitalize;
+  text-align: center;
+  justify-content: center;
+  background-color: #d8cec3;
+  margin: 0 auto;
+  color: #454444;
+}
+
+.invitation-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  height: 236px;
+}
+.invitation-date-section {
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+.invitation-title {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 38px;
+}
+.groom-bride-section {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.couple-img {
+  width: 100%;
+  max-width: 464px;
+  height: 236px;
+  object-fit: cover;
+}
+
+.invitation-time {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.invitation-address {
+  text-transform: capitalize;
+  font-size: 20px;
+  max-width: 350px;
+}

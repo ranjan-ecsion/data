@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haldi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+
+<style>
+
+
+    /* Font Faces */
+@font-face {
+  font-family: "AbrilFatface";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Abril_Fatface.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'BlessedSignature';
+  src: url(".https://react-web-composer.ecsion.com/fonts/Blessed_Signature.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url(".https://react-web-composer.ecsion.com/fonts/Georgia.ttf") format("truetype");
+}
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  padding:20px 0;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  color: #000;
+}
+
+.icon-date-section{
+  background-color: #606c52;
+text-align: center;
+}
+
+.invitation-date-section {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 50px;
+  line-height: 1.1;
+  letter-spacing: 8px;
+  font-family: "AbrilFatface";
+}
+
+.invitation-time{
+  font-size: 18px;
+  font-family: 'Georgia';
+  margin-top: 10px;
+  text-transform: capitalize;
+  max-width: 250px;
+}
+
+
+.invitation-title {
+  font-family: "BlessedSignature";
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 1;
+}
+
+.groom-bride-section {
+  font-size: 56px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.your-name{
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  font-size: 90px;
+  line-height: 1;
+  font-family: "AbrilFatface";
+}
+
+.couple-img1{
+  width: 100%;
+  margin-top: 70px;
+  max-width: 300px;
+}
+
+.partner-name{
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  font-size: 90px;
+  line-height: 1;
+  font-family: "AbrilFatface";
+}
+
+.invitation-address {
+  font-size: 18px;
+  font-family: 'Georgia';
+  margin-top: 10px;
+  text-transform: capitalize;
+  max-width: 250px;
+}
+
+</style>
+
+
+    </head>
+
+  <body>
+    <div class="invitation-card" style="background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/1C006CBC-0300-463D-927A-A90DB3517A71.png');">
+     <div class="row w-100 h-100">
+      <div class="col-3">
+        <div class="d-flex flex-column h-100 justify-content-end">
+          <div class="your-name">
+            ${contentJson["your-name"]}
+
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="d-flex flex-column justify-content-start h-100 text-center mt-5">
+          <div class="invitation-title">
+            ${contentJson["invitation-title"]}
+
+        </div>
+        <div class="invitation-date-section">
+            <span id="date">
+                ${contentJson["invitation-date"]}
+            </span>.
+            <span id="month">
+                ${contentJson["invitation-month"]}
+            </span>.
+            <span id="year">
+                ${contentJson["invitation-year"]}
+            </span>
+        </div>
+        <div class="invitation-time">
+            ${contentJson["invitation-time"]}
+
+        </div>
+
+        <div class="invitation-address">
+            ${contentJson["invitation-address"]}
+
+        </div>
+        <div class="couple-img1">
+          <img id="imgOne" src=${contentJson['couple-img1']} alt="">
+        </div>
+      </div>
+      </div>
+      <div class="col-3">
+        <div class="partner-name">
+            ${contentJson["partner-name"]}
+
+        </div>
+      </div>
+     </div>
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

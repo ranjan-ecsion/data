@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "StyleScript";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Style_Script.ttf") format("truetype");
+}
+
+
+/* Invitation Card Styling */
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  text-transform: capitalize;
+  color: #606060;
+  text-align: center;
+}
+
+.invitation-title {
+  font-family: "StyleScript";
+  font-size: 48px;
+  max-width: 400px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.invitation-description {
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  max-width: 250px;
+}
+
+.groom-bride-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.your-name {
+  font-weight: 500;
+  font-size: 40px;
+  font-family: "StyleScript";
+  color: #000000;
+}
+
+.partner-name {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 40px;
+  font-family: "StyleScript";
+  color: #000000;
+}
+
+.and {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: "StyleScript";
+  color: #000000;
+}
+
+.invitation-date-section {
+  font-family: "poppins", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invitation-day-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins", sans-serif;
+  line-height: 1.4;
+}
+
+.invitation-day {
+  font-size: 18px;
+  font-weight: 700;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.invitation-date {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 2px;
+}
+
+.invitation-year {
+  line-height: 0.3;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.invitation-month {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 0.3;
+  letter-spacing: 1px;
+}
+
+.invitation-time {
+  font-family: "poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.invitation-address {
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  max-width: 250px;
+  margin: 25px 0px;
+}
+
+.following-party {
+  font-family: "StyleScript";
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.your-parent-name,
+.partner-parent-name {
+  font-size: 14px;
+  font-family: "poppins", sans-serif;
+  font-weight: 600;
+  max-width: 500px;
+}

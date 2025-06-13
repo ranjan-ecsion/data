@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "StyleScript";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Style_Script.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.invitation-title {
+  font-size: 42px;
+  color: #000;
+  font-family: "Style_Script";
+  font-weight: 500;
+  letter-spacing: 2px;
+  max-width: 370px;
+}
+
+.invitation-description {
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 250px;
+}
+
+.groom-bride-section {
+  line-height: 1;
+  margin-top: 35px;
+}
+
+.your-name {
+  font-size: 40px;
+  font-family: "Style_Script";
+  color: #000;
+  font-weight: 500;
+}
+
+.and {
+  margin-right: 10px;
+  color: #000;
+  font-weight: 500;
+  font-family: "Style_Script";
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.partner-name {
+  margin-top: 5px;
+  font-size: 40px;
+  font-family: "Style_Script";
+  color: #000;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.invitation-day {
+  border-top: 1px solid #606060;
+  border-bottom: 1px solid #606060;
+  font-size: 14px;
+  font-family: "poppins";
+  color: #000;
+  font-weight: 500;
+  padding: 0px 10px;
+}
+
+.invitation-date {
+  font-size: 45px;
+  color: #000;
+  line-height: 32px;
+  font-weight: 600;
+  font-family: "poppins";
+}
+
+.invitation-address {
+  font-size: 14px;
+  color: #000;
+  font-family: "poppins";
+  font-weight: 500;
+  max-width: 210px;
+  margin: 10px 0px;
+}
+
+.invitation-time {
+  border-top: 1px solid #606060;
+  border-bottom: 1px solid #606060;
+  font-size: 14px;
+  font-family: "poppins";
+  color: #000;
+  font-weight: 500;
+}
+
+.invitation-date-section {
+  align-items: center;
+  margin-top: 30px;
+  display: flex;
+  gap: 12px;
+  margin-right: 20px;
+}
+
+.invitation-year {
+  font-size: 14px;
+  color: #000;
+  font-weight: 500;
+  font-family: "poppins";
+  line-height: 35px;
+}
+
+.invitation-month {
+  line-height: 30px;
+  font-size: 14px;
+  font-family: "poppins";
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #000;
+}
+
+.following-party {
+  font-family: "Style_Script";
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+
+.your-parent-name,
+.partner-parent-name {
+  font-family: "poppins";
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 500px;
+}

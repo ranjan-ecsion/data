@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@font-face {
+  font-family: "Housing";
+  src: url(../fonts/Housing.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "NewBskvllBT";
+  src: url(../fonts/BaskervilleBT.ttf) format("truetype");
+}
+
+.invitation-card {
+  font-family: "Playfair Display", serif;
+  width: 787px;
+  height: 562px;
+  padding: 30px;
+  text-transform: capitalize;
+  background: #f3f1f2;
+  text-align: center;
+  margin: 0 auto;
+  color: #000000;
+}
+
+.invitation-date-section {
+  margin-top: 30px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.invitation-time {
+  margin-bottom: 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.couple-img img {
+  height: 496px;
+  max-width: 410px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.divider {
+  width: 180px;
+  border-bottom: 1px solid;
+}
+
+.invitation-title {
+  font-family: "Housing";
+
+  letter-spacing: 1px;
+  font-size: 40px;
+  margin: 15px 0px;
+}
+
+.groom-bride-section {
+  display: flex;
+  gap: 10px;
+  font-family: "NewBskvllBT";
+  font-weight: 600;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-bottom: 30px;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.invitation-address {
+  font-size: 14px;
+  letter-spacing: 2px;
+}

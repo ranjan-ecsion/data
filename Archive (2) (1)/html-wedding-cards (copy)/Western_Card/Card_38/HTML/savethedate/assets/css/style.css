@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "housing";
+  src: url(../fonts/Housing.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Basker";
+  src: url(../fonts/NewBaskervilleC.ttf) format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  color: #454444;
+}
+.invitation-time {
+  font-family: "Basker";
+    font-size: 16px;
+  margin-bottom: 10px;
+  /* letter-spacing: 4px; */
+  word-wrap: break-word;
+  font-weight: 500;
+  word-spacing: 3px;
+}
+
+.invitation-title {
+  font-family: "Basker";
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  font-size: 150px;
+  font-style: italic;
+}
+
+.invitation-title span{
+  writing-mode: vertical-lr;
+    transform: rotate(180deg) !important;
+   border-left: 2px solid;
+   border-right: 2px solid;
+  font-family: "Basker";
+  line-height: 1.2;
+  margin-right: 50px;
+    font-size: 70px;
+    letter-spacing: 5.3px;
+}
+
+.invitation-address {
+  font-family: "Basker";
+  font-size: 19px;
+  margin-top: 2px;
+  letter-spacing: 4px;
+  word-wrap: break-word;
+  font-style: italic;
+  padding-top: 70px;
+}
+
+.invitation-date-section{
+  line-height: 60px;
+}
+
+.invitation-date-year{
+  position: relative;
+  font-style: italic;
+    left: 76px;
+    bottom: 50px;
+}
+
+.invitation-date {
+  font-family: "Basker";
+  font-size: 45px;
+}
+
+.invitation-month{
+  font-size: 80px;
+  font-family: "housing";
+  margin-top: 70px;
+  position: relative;
+    right: 25px;
+}
+
+.invitation-year{
+  font-size: 30px;
+  font-family: "Basker";
+  letter-spacing: 10px;
+  line-height: 1;
+}
+
+.groom-bride-section{
+  word-wrap: break-word;
+  letter-spacing: 10px;
+  font-family: "Basker";
+  font-style: italic;
+}

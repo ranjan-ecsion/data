@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@font-face {
+  font-family: "NewBaskervilleBT";
+  src: url("../fonts/NewBaskervilleBT.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "NewBaskervilleBT";
+  background-color: #fff;
+  font-style: italic;
+}
+.invitation-card {
+  height:  787px;
+  width: 562px;
+  flex-direction: column;
+  display: flex;
+  padding: 65px 0px;
+  background-size: cover;
+ background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #F2F2F2;
+}
+.couple-img img {
+  width: 100%;
+  max-width: 317px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.invitation-date-section {
+  text-align: center;
+  color: #454444;
+  margin-top: 20px;
+  letter-spacing: 4px ;
+  font-size: 20px;
+}
+.your-name{
+  color: #454444;
+  font-size: 20px;
+  letter-spacing:6px;
+}
+.and {
+  color: #CBCBCB;
+  font-family: "Blinkwomen";
+}
+.partner-name{
+  color: #454444;
+  font-size: 20px;
+  letter-spacing: 6px;
+}
+.invitation-address{
+  color: #454444;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.invitation-time{
+  color: #454444;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.invitation-title{
+  color: #C6A14F;
+  margin-top: 20px ;
+  font-size: 120px;
+  font-family: "Great Vibes", cursive;
+  line-height: 0.8;
+  font-style: normal;
+  margin-left: 30px ;
+  
+}
+.invitation-title span{
+  font-size: 75px;
+  margin-right: 30px  ;
+}

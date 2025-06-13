@@ -1,0 +1,120 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+  font-family: "Georgia";
+  src: url("https://react-web-composer.ecsion.com/fonts/Georgia.ttf") format("truetype");
+}
+/* Invitation Card Styling */
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  text-transform: capitalize; 
+  font-family: "Georgia";
+  border-radius: 8px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.invitation-title {
+  font-family: "Abril Fatface", serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  max-width: 400px;
+}
+
+.invitation-description {
+  font-size: 16px;
+    max-width: 300px;
+    font-weight: 400;
+}
+.your-parent-name {
+  font-size: 16px;
+  font-weight: 400;
+  
+ 
+}
+.partner-parent-name {
+  font-size: 16px;
+  font-weight: 400;
+}
+.groom-bride-section {
+
+  font-size: 52px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.2;
+}
+.your-name,.partner-name,.and {
+  font-family: "Abril Fatface", serif;
+}
+.invitation-date-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+font-size: 20px;
+font-family: "Georgia";
+}
+
+.invitation-year,
+.invitation-date,
+.invitation-month {
+  margin: 0 5px;
+}
+
+.invitation-day {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.invitation-date {
+  font-family: "Abril Fatface", serif;
+  position: relative;
+  font-size: 80px;
+}
+
+.invitation-date sup{
+  position: absolute;
+  font-size: 14px;
+  top: 30px;
+}
+
+.invitation-time {
+  font-family: "Georgia";
+  font-size: 14px;
+  font-weight: 500;
+    font-style: italic;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.invitation-address {
+  font-size: 14px;
+    font-weight: 500;
+  font-style: italic;
+  max-width: 300px;
+  margin-bottom: 20px;
+  font-family: "Georgia";
+  text-align: center;
+}
+
+.following-party {
+  font-family: "Georgia";
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  text-align: center;
+}

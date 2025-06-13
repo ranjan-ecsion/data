@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@font-face {
+  font-family: "Parslay";
+  src: url("../fonts/Parslay.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Blinkwomen";
+  src: url("../fonts/Blinkwomen.ttf") format("truetype");
+}
+.invitation-card {
+  height: 787px;
+  width: 563px;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  border-radius: 10px;
+  background-color: #e8eae7;
+  padding: 50px 30px;
+  margin: 0 auto;
+}
+.heart-img {
+  width: 20px;
+}
+.couple-img {
+  width: 100%;
+  background-color: #dedad9;
+  padding: 25px;
+  rotate: 5deg; 
+}
+.couple-img img {
+  width: 100%;
+  max-width: 450px;
+  height: 300px;
+  object-fit: cover;
+}
+.invitation-date {
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-align: end;
+  padding-top: 5px;
+  position: relative;
+  bottom: 25px;
+  rotate: 4deg;
+  right: 46px;
+  color: #454444;
+  font-family: "Parslay";
+}
+.heart-grp {
+  width: 50px;
+  position: absolute;
+}
+.invitation-title {
+  font-family: "Blinkwomen";
+  letter-spacing: 3px;
+  word-spacing: 2px;
+  font-size: 50px;
+  line-height: 0.8;
+  color: #454444;
+}
+
+.groom-bride-section {
+  text-align: center;
+  font-family: "Parslay";
+  font-size: 38px;
+  color: #454444;
+  margin-top: 30px;
+  letter-spacing: 5px;
+}
+.invitation-address {
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-top: 25px;
+  color: #454444;
+  font-family: "Parslay";
+  font-weight: 500;
+}
+.hearts-img {
+  position: relative;
+}
+.hearts {
+  position: absolute;
+  width: 50px;
+  left: 82%;
+}
+.invitation-time{
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-top: 15px;
+  color: #454444;
+  font-family: "Parslay";
+  font-weight: 500;
+}

@@ -1,0 +1,125 @@
+
+@font-face {
+  font-family: "NewBaskervilleBT";
+  src: url("../fonts/NewBaskervilleBT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Housing";
+  src: url("../fonts/Blinkwomen.ttf") format("truetype");
+}
+
+.invitation-card {
+  height: 787px;
+    width: 562px;
+    flex-direction: column;
+    display: flex;
+    padding: 0px 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-color: #F3F1F2;
+    justify-content: center;
+    font-family: "NewBaskervilleBT";
+    color: #383B34;
+}
+
+.couple-img1 img {
+  width: 272px;
+  height: 220px;
+  object-fit: cover;
+  rotate: -10deg;
+}
+.couple-img2 img {
+  width: 236px;
+  height: 220px;
+  rotate: 10deg;
+  object-fit: cover;
+}
+
+.couple-img3 img {
+  rotate: -10deg;
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+}
+.couple-img {
+  position: relative;
+  overflow: hidden;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.invitation-date-section {
+  font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2;
+    text-transform: capitalize;
+    margin-top: 10px;
+    transform: rotate(352deg);
+  
+}
+
+.invitation-time{
+  letter-spacing: 2px;
+  text-align: center;
+   font-size: 16px;
+   font-style: italic;
+   font-weight: 600;
+   
+
+}
+.invitation-address{
+  letter-spacing: 2px;
+    text-align: center;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 600;
+    max-width: 200px;
+}
+.invitation-title {
+  font-weight: 500;
+  font-size: 54px;
+  word-spacing: 2px;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  font-family: "Housing";
+  text-align: center;
+}
+.invitation-title-section {
+ border-right: 1px solid ;
+ border-left: 1px solid ;
+}
+.groom-bride-section {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-style: italic;
+  font-weight: 600;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #E5DCD5;
+  border: 6px solid #fff;
+  rotate: 12deg;
+}
+.your-name {
+  font-size: 20px;
+  rotate: -11deg;
+}
+.and {
+  font-size: 20px;
+  rotate: -11deg;
+}
+.partner-name {
+  font-size: 20px;
+  rotate: -11deg;
+}

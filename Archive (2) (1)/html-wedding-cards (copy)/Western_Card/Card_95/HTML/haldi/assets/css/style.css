@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "NewBskvllBT";
+  src: url("../fonts/NewBaskervilleBT.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Parslay";
+  src: url("../fonts/Parslay.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  font-family: "NewBskvllBT";
+  color: #000;
+}
+
+.invitation-date-section, .invitation-time {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.invitation-title {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  height: 690px;
+  letter-spacing: 8px;
+  word-spacing: 10px;
+  font-weight: 600;
+}
+
+.groom-bride-section {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.couple-img img{
+  max-width: 161px;
+  width: 100%;
+  height: 161px;
+  object-fit: cover;
+}
+
+.invitation-address {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}

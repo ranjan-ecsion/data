@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+  font-family: "Housing";
+  src: url("../fonts/Housing.ttf") format("truetype");
+}
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-position: center;
+  background-size: cover;
+  padding: 30px;
+  text-transform: capitalize;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  color: #834e1b;
+  font-family: "Playfair Display", serif;
+}
+
+
+.divider{
+  width: 200px;
+  border-bottom: 2px dotted;
+}
+
+.invitation-title {
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1;
+  font-size: 50px;
+  max-width: 250px;
+  margin-bottom: 60px;
+}
+
+.invitation-title span{
+  font-weight: 500;
+  color: #D0A959;
+  line-height: 0;
+  font-family: "Housing";
+}
+
+.invitation-date-section{
+text-align: center;
+letter-spacing: 5px;
+font-size: 36px;
+font-weight: 600;
+}
+
+.groom-bride-section {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Housing";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 265px;
+  width: 400px;
+  gap: 10px;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 1;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.invitation-address {
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 16px;
+  max-width: 300px;
+}

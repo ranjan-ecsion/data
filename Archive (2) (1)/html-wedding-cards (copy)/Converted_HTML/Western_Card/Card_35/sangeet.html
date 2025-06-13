@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sangeet</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+@font-face {
+  font-family: "Italianno";
+  src: url(".https://react-web-composer.ecsion.com/fonts/Italianno.ttf") format("truetype");
+}
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.invitation-title {
+  font-family: "Italianno";
+  letter-spacing: 2px;
+  word-wrap: break-word;
+  font-size: 28px;
+}
+
+
+.invitation-address {
+  font-family: "Poppins";
+  margin-top: 2px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  word-wrap: break-word;
+  max-width: 250px;
+}
+
+.invitation-date-section {
+  font-family: "Poppins";
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+.invitation-time{
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: "Poppins";
+}
+
+.couple-img1 img {
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 400px;
+  width: 100%;
+  height: 400px;
+}
+
+
+.groom-bride-section{
+  word-wrap: break-word;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-family: "Italianno";
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div class="invitation-card fw-semibold" style="background-image: url(https://ecsiondevstorage.blob.core.windows.net/wedding-storage/1467B14C-4D95-4BFB-B35B-05E4752176D5.png);">
+      
+        <div class="invitation-content text-center mt-4">
+          <div class="invitation-title fw-bold mb-3">
+            ${contentJson["invitation-title"]}
+
+          </div>
+          <div class=" gap-3 align-items-center justify-content-center mb-3">
+            <div class="invitation-date-section">
+              <span id="date">
+                ${contentJson["invitation-date"]}
+            </span>.
+            <span id="month">
+                ${contentJson["invitation-month"]}
+            </span>.
+            
+            
+            
+            <span id="year">
+                ${contentJson["invitation-year"]}
+            </span>
+            </div>
+            <div class="invitation-time">
+              ${contentJson["invitation-time"]}
+
+            </div>
+          </div>
+          <div class="groom-bride-section mb-3">
+            <div class="your-name">
+              ${contentJson["your-name"]}
+
+            </div> <div class="and">&</div> <div class="partner-name">
+              ${contentJson["partner-name"]}
+
+            </div>
+          </div>
+          <div class="invitation-address mt-2 text-center">
+            ${contentJson["invitation-address"]}
+          </div>
+        </div>
+
+      <div class="couple-img1">
+        <img    id="imgOne" src=${contentJson['couple-img1']} alt="">
+      </div>
+  </div>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

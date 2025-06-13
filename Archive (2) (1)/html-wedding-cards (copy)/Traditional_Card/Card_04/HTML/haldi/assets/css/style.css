@@ -1,0 +1,114 @@
+
+@font-face {
+    font-family: 'Coronet';
+    src: url('https://react-web-composer.ecsion.com/fonts/Coronet.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Georgia";
+    src: url("https://react-web-composer.ecsion.com/fonts/Georgia.ttf") format("truetype");
+}
+
+
+.invitation-card {
+    width: 562px;
+    height: 787px;
+    flex-direction: column;
+    display: flex;
+    padding: 30px 84px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: start;
+    justify-content: flex-start;
+    margin: 0 auto;
+
+}
+
+.invitation-description {
+    font-size: 14px;
+    font-family: "Georgia";
+    font-weight: 500;
+    font-style: italic;
+    max-width: 280px;
+    color: #464646;
+}
+
+.invitation-title {
+    font-size: 48px;
+    color: #91593B;
+    font-family: 'Coronet';
+    font-weight: 500;
+    max-width: 300px;
+
+}
+
+.invitation-time {
+    color: #464646;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Georgia";
+}
+
+.following-party {
+    font-size: 14px;
+    color: #464646;
+    font-family: "Georgia";
+    font-weight: 500;
+    font-style: italic;
+}
+
+.invitation-address {
+    font-size: 14px;
+    color: #464646;
+    font-family: "Georgia";
+    font-weight: 500;
+    font-style: italic;
+    max-width: 210px;
+    line-height: 1.5;
+}
+
+.groom-bride-section {
+    margin-top: 10px;
+    line-height: 1.2;
+}
+
+.your-name {
+    font-size: 40px;
+    color: #91593B;
+    font-family: "Georgia";
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.partner-name {
+    font-size: 40px;
+    color: #91593B;
+    font-family: "Georgia";
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.and {
+    font-size: 40px;
+    color: #91593B;
+    font-family: "Georgia";
+    font-weight: 500;
+
+
+}
+
+.invitation-date {
+    font-size: 20px;
+    color: #464646;
+    font-family: "Georgia";
+    text-transform: uppercase;
+    font-weight: 600;
+    border-top: 1px solid #91593B;
+    border-bottom: 1px solid #91593B;
+    padding: 5px 0px;
+    max-width: 220px;
+    width: 100%;
+}

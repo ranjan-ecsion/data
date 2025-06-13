@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.invitation-card {
+  width: 562px;
+  height: 787px;
+  flex-direction: column;
+  display: flex;
+  padding: 30px 30px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content:flex-start;
+  margin: 0 auto;
+  
+}
+.invitation-description {
+  font-size: 22px;
+  color: #AF3129;
+  font-family: "Style Script", cursive;
+  text-align: center;
+  max-width: 324px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.invitation-date {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+  color: #AF3129;
+  text-align: center;
+}
+.invitation-time {
+  font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #AF3129;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-style: italic;
+    max-width: 122px;
+    margin: 0 auto;
+    line-height: 1.3;
+    text-align: center;
+}
+.groom-bride-section {
+  margin-top: 15px;
+  text-align: center;
+}
+.your-name, .partner-name{
+  color: #5E0A05;
+    font-size: 38px;
+    font-weight: 500;
+    font-family: "Style Script", cursive;
+}
+.your-parent-name {
+  font-size: 25px;
+    color: #5E0A05;
+    font-family: "Style Script", cursive;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+.partner-parent-name {
+  font-size: 25px;
+  color: #5E0A05;
+  font-family: "Style Script", cursive;
+
+  letter-spacing: 2px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+.and {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #AF3129;
+  font-weight: 600;
+  margin: 8px 0px;
+}
+.invitation-title {
+  font-family: "Style Script", cursive;
+    color: #5E0A05;
+    font-size: 46px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+.invitation-day {
+  font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: #AF3129;
+    font-weight: 500;
+    padding-right: 10px;
+}
+ .invitation-address {
+  font-size: 14px;
+    color: #AF3129;
+    font-family: "Montserrat", sans-serif;
+    max-width: 172px;
+    font-weight: 600;
+    line-height: 1.4;
+    border-right: 2px solid #5E0A05;
+    margin-right: 15px;
+    font-style: italic;
+    padding: 10px 0px;
+    text-align: center;
+}
+.address-date-time-section {
+  display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+}
+
+
+.invitation-date-section{
+  align-items: baseline;
+    display: flex;
+    padding-top: 5px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+  
+}
+.following-party {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #AF3129;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-style: italic;
+  margin-top: 40px;
+  text-align: center;
+}

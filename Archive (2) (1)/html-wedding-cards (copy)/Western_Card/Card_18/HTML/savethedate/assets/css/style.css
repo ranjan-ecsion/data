@@ -1,0 +1,83 @@
+@font-face {
+  font-family: "Blinkwomen";
+  src: url("../fonts/Blinkwomen.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Housing";
+  src: url("../fonts/Housing.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "NewBaskervilleBT";
+  background-color: #fff;
+}
+.invitation-card {
+  height: 562px;
+  width: 787px;
+  flex-direction: column;
+  display: flex;
+  
+  background-size: cover;
+ background-repeat: no-repeat;
+  margin: 0 auto;
+
+}
+
+.invitation-border{
+  border: 1px solid #D39E29 ;
+  align-items: center;
+}
+.invitation-date-section {
+  text-align: center;
+  color: #CBCBCB;
+  margin-top: 20px;
+  font-style: italic;
+  letter-spacing: 4px;
+  font-size: 20px;
+}
+.your-name {
+  color: #CBCBCB;
+  line-height: 3;
+  font-size: 28px;
+  letter-spacing: 10px;
+}
+.and {
+  color: #CBCBCB;
+  font-family: "Housing";
+}
+.partner-name{
+  color: #CBCBCB;
+  line-height: 3;
+  font-size: 28px;
+  letter-spacing: 10px;
+}
+.invitation-address{
+  color: #CBCBCB;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.invitation-title{
+  color: #CBCBCB;
+  margin-top: 20px ;
+  font-style: italic;
+  text-transform: capitalize;
+  font-size: 38px;
+  font-family: "Housing";
+}
+.image-border {
+  background-size: cover;
+  margin: 25px;
+  height: 562px;
+  
+}
+.couple-bg-img img {
+  width: 324px;
+  height: 512px;
+  
+  object-fit: cover;
+}

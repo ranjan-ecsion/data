@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+  font-family: "NewBaskervilleBT";
+  src: url("../fonts/NewBaskervilleBT.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mandalaz";
+  src: url("../fonts/Mandalaz\ Sensei\ Alternate.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "NewBaskervilleBT";
+  background-color: #fff;
+  color: #383B34;
+}
+.invitation-card {
+  height:562px;
+  width:  787px  ;
+  flex-direction: column;
+  display: flex;
+  padding: 65px 30px;
+  background-size: cover;
+ background-repeat: no-repeat;
+  margin: 0 auto;
+  background-color: #F3F1F2;
+}
+.couple-img img {
+  width: 100%;
+  max-width: 470px;
+  height: 330px;
+  object-fit: cover;
+}
+
+.invitation-month {
+  font-family: "NewBaskervilleBT";
+  font-style: italic;
+  text-align: center;
+  font-size: 200px;
+  line-height: 1;
+}
+.invitation-date {
+  font-family: "NewBaskervilleBT";
+  font-style: italic;
+  text-align: center;
+  font-size: 200px;
+  line-height: 1;
+}
+.invitation-year {
+  font-family: "NewBaskervilleBT";
+  font-style: italic;
+  text-align: center;
+  font-size: 200px;
+  line-height: 1;
+}
+
+.invitation-address{
+  color: #454444;
+  letter-spacing: 2px;
+ margin-top: 10px;
+  font-size: 16px;
+}
+.invitation-title {
+  margin: 20px 0;
+  font-size: 48px;
+  word-spacing: 2px;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  line-height: 0;
+}
+.invitation-title span {
+  margin: 20px 0;
+  font-size: 44px;
+  font-family: "Mandalaz";
+  line-height: 0.8;
+  letter-spacing: 2px;
+  font-weight: 600;
+  
+}
+.your-name {
+  rotate: -90deg;
+    font-size:75px;
+    text-transform: uppercase;
+}
+.partner-name {
+  rotate: 90deg;
+  font-size: 85px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: end;
+}
+.invitation-date-address-time {
+  font-size: 20px;
+    letter-spacing: 2px;
+}

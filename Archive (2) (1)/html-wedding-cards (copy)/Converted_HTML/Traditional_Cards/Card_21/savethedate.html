@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save the Date</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @font-face {
+            font-family: "BlessedSignature";
+            src: url("https://react-web-composer.ecsion.com/fonts/Blessed_Signature.ttf") format("truetype");
+        }
+
+
+        .invitation-card {
+            width: 562px;
+            height: 787px;
+            flex-direction: column;
+            display: flex;
+            padding: 30px 50px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: start;
+            justify-content: flex-start;
+            margin: 0 auto;
+
+        }
+
+        .invitation-title {
+            margin-bottom: 10px;
+            font-size: 34px;
+            color: #AF3129;
+            font-weight: 600;
+            font-family: "playFair-display";
+            max-width: 300px;
+            margin-top: 25px;
+        }
+
+        .invitation-description {
+            font-size: 14px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            font-style: italic;
+            max-width: 180px;
+            text-transform: capitalize;
+            color: #464646;
+
+        }
+
+        .your-name {
+            font-size: 48px;
+            color: #AF3129;
+            font-family: "Blessed_Signature";
+            font-weight: 600;
+
+            letter-spacing: 3px;
+
+        }
+
+        .partner-name {
+            font-size: 48px;
+            color: #AF3129;
+            font-family: "BlessedSignature";
+            font-weight: 600;
+
+            letter-spacing: 3px;
+        }
+
+        .and {
+            font-size: 20px;
+            color: #464646;
+            font-family: "playFair-display";
+            font-weight: 400;
+        }
+
+        .following-party {
+
+            color: #AF3129;
+            font-style: italic;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .couple-img {
+            height: 82px;
+            width: 70px;
+            margin-top: 10px;
+            background-size: cover;
+        }
+
+        .invitation-date {
+            font-size: 20px;
+            color: #464646;
+            font-family: "Montserrat", sans-serif;
+            text-transform: uppercase;
+            font-weight: 600;
+            border-top: 1px solid #AF312963;
+            border-bottom: 1px solid #AF312963;
+            padding: 5px 0px;
+            max-width: 210px;
+            width: 100%;
+            margin: 20px 0px;
+        }
+
+        .invitation-address {
+            font-size: 14px;
+            color: #464646;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+            max-width: 245px;
+            margin: 20px 0px;
+        }
+
+        .invitation-time {
+            color: #464646;
+            font-style: italic;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .groom-bride-section {
+
+            line-height: 1.4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="invitation-card" style="
+                    background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/0C2C7256-18F2-4EA1-97C0-8874BD992938.png');
+                ">
+      <div class="invitation-title">${contentJson["invitation-title"]}</div>
+      <div>
+        <img class="img-fluid"
+          src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/D5C62B3F-814D-40E4-9449-26696CDEBBD3.png">
+      </div>
+      <div class="invitation-description my-3">
+        ${contentJson["invitation-description"]}
+      </div>
+      <div class="groom-bride-section">
+        <div class="your-name">${contentJson["your-name"]}</div>
+        <div class="and">AND</div>
+        <div class="partner-name">${contentJson["partner-name"]}</div>
+      </div>
+  
+      <div class="invitation-date  ">${contentJson["invitation-date"]}</div>
+      <div class="invitation-time  "> <span class="invitation-day">${contentJson["invitation-day"]}</span><span
+          class="invitation-time">${contentJson["invitation-time"]}</span></div>
+      <div class="invitation-address ">${contentJson["invitation-address"]}</div>
+      <div class="following-party "> ${contentJson["following-party"]}</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
