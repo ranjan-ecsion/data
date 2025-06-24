@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Privacy Policy UI with Icons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background-color: #f1f3f4;
+        }
+
+        .outer-container {
+            background-color: #e9e9e9;
+            padding: 40px 20px 0 20px;
+            max-width: 400px;
+            margin: auto;
+            border-radius: 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .header-icons {
+            font-size: 20px;
+            padding: 0 8px;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .scrollable-content {
+            overflow-y: auto;
+            padding: 16px 0;
+            flex: 1;
+        }
+
+        .card-box {
+            background: white;
+            border-radius: 12px;
+            padding: 1.2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1rem;
+        }
+
+        .checkbox-box {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1.2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            font-size: 14px;
+            color: #888;
+        }
+
+        .checkbox-box a {
+            text-decoration: underline;
+            color: #888;
+        }
+
+        .btn-sticky {
+            position: sticky;
+            bottom: 0;
+            background: white;
+            padding: 1rem 1rem 0.5rem;
+            border-top: 1px solid #ddd;
+            margin: 0 -20px;
+        }
+
+        .btn-submit {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .text-link {
+            color: #1c54a1;
+            font-weight: 500;
+        }
+
+        .top-nav {
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .progress-bar {
+            height: 4px;
+            background-color: #007bff;
+            width: 50%;
+        }
+
+        .progress {
+            height: 4px;
+        }
+
+        input.form-check-input {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-container">
+        <!-- Top Row Icons -->
+        <div class="top-nav">
+            <i class="bi bi-arrow-left fs-5"></i>
+            <i class="bi bi-x fs-5"></i>
+        </div>
+
+        <!-- Scrollable content -->
+        <div class="scrollable-content">
+            <!-- Privacy Policy Card -->
+            <div class="card-box">
+                <h6 class="fw-normal mb-3">Privacy Policy</h6>
+                <p class="mb-1" style="font-size: 14px">
+                    By clicking Submit, you agree to send your info to PerfectlyWed,
+                    who agrees to use it according to their Privacy Policy. Facebook
+                    will also use it subject to our Data Policy, including to auto-fill
+                    forms for ads.
+                </p>
+                <p class="mb-0 text-link">
+                    <a href="#" class="text-decoration-none">View Facebook Data Policy.</a><br />
+                    <a href="#" class="text-decoration-none">Visit PerfectlyWed’s Privacy Policy.</a>
+                </p>
+            </div>
+
+            <!-- Checkbox Box -->
+            <div class="checkbox-box d-flex justify-content-between align-items-center">
+                <div style="font-size: 13px">
+                    Receive updates from PerfectlyWed and start a conversation on
+                    Messenger that includes your contact information. They'll see your
+                    <a href="#">public info</a> and which ad you responded to
+                </div>
+                <div>
+                    <input class="form-check-input mt-1" type="checkbox" checked />
+                </div>
+            </div>
+        </div>
+
+        <!-- Sticky Button -->
+        <div class="btn-sticky">
+            <div class="progress mb-2">
+                <div class="progress-bar" role="progressbar"></div>
+            </div>
+            <button class="btn btn-primary btn-submit">Submit</button>
+        </div>
+    </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</body>
+
+</html>

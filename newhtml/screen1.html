@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sticky Button Offer Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+
+    .outer-container {
+      background-color: #e9e9e9;
+      padding: 80px 20px 0 20px; /* increased top padding for logo */
+      max-width: 400px;
+      margin: auto;
+      border-radius: 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .logo-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      z-index: 3;
+    }
+
+    .logo-circle img {
+      width: 80px;
+    }
+
+    .card.offer-card {
+      background-color: white;
+      border: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px; /* space below logo */
+      overflow: hidden;
+      border-radius: 6px 6px 0 0;
+    }
+
+    .offer-card-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 20px 0 20px;
+    }
+
+    .check-icon {
+      color: green;
+    }
+
+    .btn-sticky {
+      background: white;
+      padding: 1rem 1.5rem;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      margin: 0 -20px;
+    }
+
+    .btn-continue {
+      border-radius: 999px;
+    }
+
+    .offer-card-body h6 {
+      color: grey !important;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer-container">
+    <!-- Properly positioned overlapping Logo -->
+    <div class="logo-circle">
+      <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/DCC37EAA-17D7-4EB7-9759-B970129F3726.png" alt="Logo" />
+    </div>
+
+    <div class="card offer-card">
+      <div class="offer-card-body">
+        <h6 class="text-center">PerfectlyWed</h6>
+        <h5 class="fw-bold text-center my-2">🎁 Pre-Launch Offer (Limited Time!)</h5>
+
+        <div class="text-center my-4">
+          <div class="text-muted">Total Value: ₹22,500</div>
+          <div>✨ Your Price: <strong>₹6,000</strong></div>
+        </div>
+
+        <ul class="list-unstyled text-center mb-3">
+          <li class="mb-2"><i class="check-icon me-2">&#x2705;</i>12 Months of Premium Access (Pay for 6 Month)</li>
+          <li class="mb-2"><i class="check-icon me-2">&#x2705;</i>100+ Premium Invitation Designs — Free</li>
+          <li class="mb-2"><i class="check-icon me-2">&#x2705;</i>Unlimited Guest Photo Sharing — Free</li>
+          <li class="mb-2"><i class="check-icon me-2">&#x2705;</i>Real-Time Wedding Updates — Free</li>
+        </ul>
+
+        <p class="text-center">
+          ⏳ Offer valid for first 100 users only<br />
+          📅 Ends July 25, 2025
+        </p>
+      </div>
+
+      <!-- Sticky Button -->
+      
+    </div>
+    <div class="btn-sticky">
+      <button class="btn btn-primary btn-continue">
+        Continue →
+      </button>
+    </div>
+  </div>
+</body>
+</html>

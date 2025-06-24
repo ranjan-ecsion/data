@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Combined Screens</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .screen {
+      display: none;
+    }
+    .screen.active {
+      display: block;
+    }
+
+    /* ========== SCREEN 1 ========== */
+    .screen1 .outer-container {
+      background-color: #e9e9e9;
+      padding: 80px 20px 0 20px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 0;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .screen1 .logo-circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      z-index: 3;
+    }
+    .screen1 .logo-circle img {
+      width: 80px;
+    }
+    .screen1 .offer-card {
+      background-color: white;
+      border: 0;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+      overflow: hidden;
+      border-radius: 6px 6px 0 0;
+    }
+    .screen1 .offer-card-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 10px 20px 0 20px;
+    }
+    .screen1 .btn-sticky {
+      background: white;
+      padding: 1rem 1.5rem;
+      border-top: 1px solid #ddd;
+      text-align: center;
+      margin: 0 -20px;
+    }
+
+    /* ========== SCREEN 2 ========== */
+    .screen2 .outer-container {
+      background-color: #e9e9e9;
+      padding: 20px 20px 0 20px;
+      max-width: 400px;
+      margin: auto;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+    .screen2 .card-box {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      margin: 20px auto;
+      overflow-y: auto;
+      padding: 70px 20px 20px 20px;
+      flex: 1;
+    }
+    .screen2 .form-control {
+      border: none;
+      border-bottom: 1px solid #ccc;
+      border-radius: 0;
+      box-shadow: none;
+      padding-left: 0;
+    }
+    .screen2 .bottom-sticky {
+      background: white;
+      padding: 1rem;
+      border-top: 1px solid #ddd;
+      margin: 0 -20px;
+    }
+
+    /* ========== SCREEN 3 ========== */
+    .screen3 .outer-container {
+      background-color: #e9e9e9;
+      padding: 40px 20px 0 20px;
+      max-width: 400px;
+      margin: auto;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .screen3 .scrollable-content {
+      overflow-y: auto;
+      padding: 16px 0;
+      flex: 1;
+    }
+    .screen3 .card-box,
+    .screen3 .checkbox-box {
+      background: white;
+      border-radius: 12px;
+      padding: 1.2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      margin-bottom: 1rem;
+    }
+    .screen3 .btn-sticky {
+      background: white;
+      padding: 1rem 1rem 0.5rem;
+      border-top: 1px solid #ddd;
+      margin: 0 -20px;
+    }
+
+    /* ========== SCREEN 4 ========== */
+    .screen4 .outer-container {
+      background-color: #e9e9e9;
+      padding: 60px 20px 0 20px;
+      max-width: 400px;
+      margin: auto;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+    .screen4 .scrollable-content {
+      overflow-y: auto;
+      padding: 70px 20px 20px 20px;
+      flex: 1;
+      background-color: white;
+      text-align: center;
+      border-radius: 12px 12px 0 0;
+    }
+    .screen4 .btn-sticky {
+      background: white;
+      padding: 16px;
+      border-top: 1px solid #ddd;
+      border-radius: 0;
+      margin: 0 -20px;
+    }
+
+    /* Navigation Buttons */
+    .nav-btns {
+      text-align: center;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen 1 -->
+  <div class="screen screen1 active">
+    <div class="outer-container">
+      <div class="logo-circle">
+        <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/DCC37EAA-17D7-4EB7-9759-B970129F3726.png" />
+      </div>
+      <div class="card offer-card">
+        <div class="offer-card-body">
+          <h6 class="text-center">PerfectlyWed</h6>
+          <h5 class="fw-bold text-center my-2">🎁 Pre-Launch Offer (Limited Time!)</h5>
+          <ul class="list-unstyled text-center mb-3">
+            <li>✅ 12 Months of Premium Access</li>
+            <li>✅ 100+ Invitation Designs</li>
+            <li>✅ Unlimited Guest Photo Sharing</li>
+            <li>✅ Real-Time Wedding Updates</li>
+          </ul>
+          <p class="text-center">⏳ Offer valid for first 100 users only</p>
+        </div>
+      </div>
+      <div class="btn-sticky nav-btns">
+        <button class="btn btn-primary" onclick="nextScreen()">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Screen 2 -->
+  <div class="screen screen2">
+    <div class="outer-container">
+      <div class="card-box">
+        <h6 class="fw-semibold">Contact Information</h6>
+        <p class="text-muted small">Please answer the below questions</p>
+        <input type="text" class="form-control mb-3" placeholder="Full name" />
+        <input type="email" class="form-control mb-3" placeholder="Email" />
+        <input type="tel" class="form-control mb-3" placeholder="Phone number" />
+      </div>
+      <div class="bottom-sticky nav-btns">
+        <button class="btn btn-secondary me-2" onclick="prevScreen()">← Previous</button>
+        <button class="btn btn-primary" onclick="nextScreen()">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Screen 3 -->
+  <div class="screen screen3">
+    <div class="outer-container">
+      <div class="scrollable-content">
+        <div class="card-box">
+          <h6>Privacy Policy</h6>
+          <p>By clicking Submit, you agree to our Privacy Policy.</p>
+        </div>
+        <div class="checkbox-box d-flex justify-content-between align-items-center">
+          <div>Receive updates from PerfectlyWed</div>
+          <input type="checkbox" checked />
+        </div>
+      </div>
+      <div class="btn-sticky nav-btns">
+        <button class="btn btn-secondary me-2" onclick="prevScreen()">← Previous</button>
+        <button class="btn btn-primary" onclick="nextScreen()">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Screen 4 -->
+  <div class="screen screen4">
+    <div class="outer-container">
+      <div class="logo-circle">
+        <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/DCC37EAA-17D7-4EB7-9759-B970129F3726.png" />
+      </div>
+      <div class="scrollable-content">
+        <p class="text-muted">PerfectlyWed</p>
+        <h6>Thanks, you're all set.</h6>
+        <p>Your offer has been activated!</p>
+        <ul class="feature-list">
+          <li>12 Months of Premium Access</li>
+          <li>100+ Designs Free</li>
+        </ul>
+      </div>
+      <div class="btn-sticky nav-btns">
+        <button class="btn btn-secondary me-2" onclick="prevScreen()">← Previous</button>
+        <button class="btn btn-success">Finish</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let current = 0;
+    const screens = document.querySelectorAll(".screen");
+
+    function showScreen(index) {
+      screens.forEach((screen, i) => {
+        screen.classList.toggle("active", i === index);
+      });
+    }
+
+    function nextScreen() {
+      if (current < screens.length - 1) {
+        current++;
+        showScreen(current);
+      }
+    }
+
+    function prevScreen() {
+      if (current > 0) {
+        current--;
+        showScreen(current);
+      }
+    }
+  </script>
+</body>
+</html>
