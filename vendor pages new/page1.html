@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <style>
+        .hero-section {
+            font-family: 'Sen', sans-serif;
+            padding-top: 20px;
+        }
+
+        .hero-section .vendor-cover-img img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            filter: blur(5px);
+            clip-path: inset(0px round 0px);
+
+        }
+
+        .hero-section .short-description {
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-section .event-spaces-container {
+            border: 1px solid #ddd;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .hero-section .event-spaces-container .first-section {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+        }
+
+        .hero-section .fw-500 {
+            font-weight: 500;
+        }
+
+        .hero-section .fw-300 {
+            font-weight: 300;
+        }
+
+        .hero-section .policies-list li {
+            margin-bottom: 18px;
+        }
+
+        .hero-section .expectations-list li {
+            /* margin-bottom: 10px; */
+            font-weight: 400;
+        }
+
+        .hero-section .text-primary {
+            color: #DD1B5F !important;
+        }
+
+        .hero-section .btn-primary {
+            background-color: #DD1B5F !important;
+            border-color: #DD1B5F !important;
+        }
+
+        .hero-section a {
+            text-decoration: none !important;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .hero-section .hero-details-section {
+                box-shadow:
+                    -10px -8px 10px rgba(0, 0, 0, 0.15),
+                    10px -8px 10px rgba(0, 0, 0, 0.15);
+                border-radius: 26px 26px 0 0;
+                background-color: #fff;
+                margin-top: -24px;
+                padding: 0;
+            }
+
+            .hero-section .text-center-sm {
+                text-align: center;
+            }
+
+            .sticky-footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: #fff;
+                padding: 10px 15px;
+                box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+                z-index: 999;
+            }
+
+            .w-100-sm {
+                width: 100%;
+            }
+
+            .hero-section .vendor-cover-img img {
+                height: 170px;
+
+            }
+
+
+            .rating-container span i {
+                font-size: 10px;
+            }
+
+            .hero-section .short-description {
+                padding: 0 4px;
+            }
+
+            .rating-column,
+            .review-column {
+                padding: 0;
+            }
+
+            .mb-sm-20 {
+                margin-bottom: 20px;
+            }
+
+            .hero-section {
+                padding-bottom: 102px;
+            }
+
+            .p-sm-0px {
+                padding: 0px;
+            }
+
+            .hero-section .hero-details-section {
+                padding: 15px;
+            }
+
+            .hero-section .rating-column {
+                text-align: center;
+            }
+
+            .hero-section .review-column {
+                text-align: center;
+            }
+
+            .hero-section .rating-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .hero-section .rating-container span {
+                margin-right: 2px;
+            }
+
+            .hero-section {
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero-section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 p-sm-0px">
+                    <div class="vendor-cover-img">
+                        <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/9E197C23-790D-47DC-80A2-5D57B2BDD4AC.png"
+                            class="img-fluid rounded" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-6 hero-details-section">
+                    <div class="card mt-3 border-0">
+                        <div class="card-body text-center">
+
+                            <h5 class="text-primary">Turning Point Marriage Lawn</h5>
+                            <p class="text-muted mb-0">New Delhi, Delhi NCR</p>
+                            <p class="text-muted"><small>Taj Palace, New Delhi, Taj Palace 2 Sardar Patel Marg</small>
+                            </p>
+
+                            <div>
+                                <button class="btn btn-primary btn-sm">
+                                    View Contact
+                                </button>
+
+                                <button class="btn btn-success btn-sm">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    Whatsapp
+                                </button>
+                            </div>
+
+                            <div class="row mt-4 pt-2">
+                                <div class="col-3">
+                                    <div>
+                                        <p class="mb-0">
+                                            4.8
+                                        </p>
+                                        <div class="rating-container">
+                                            <span>
+                                                <i class="fa-solid fa-star text-primary"></i>
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-star text-primary"></i>
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-star text-primary"></i>
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span>
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-6 rating-column">
+                                    <div class="short-description">
+                                        <p class="mb-0">
+
+                                            Luxury, Upscale.
+                                            Affordable, Budget
+                                        </p>
+
+                                    </div>
+                                </div>
+                                <div class="col-3 review-column">
+                                    <div>
+                                        <p class="mb-0">
+                                            126
+                                        </p>
+                                        <p class="mb-0">
+                                            Reviews
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <h6>
+                        EVENT SPACES -
+                    </h6>
+                    <div class="px-4">
+
+                        <p class="text-primary mt-3">
+                            INDOORS
+                        </p>
+
+                        <div>
+                            <p class="mb-2">Space 1</p>
+                            <div class="event-spaces-container">
+
+                                <div class="d-flex justify-content-between first-section">
+                                    <span>Seating</span><span>200</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Floating</span><span>250</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <p class="mb-2">Space 2</p>
+                            <div class="event-spaces-container">
+
+                                <div class="d-flex justify-content-between first-section">
+                                    <span>Seating</span><span>200</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Floating</span><span>250</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <div class="px-4 mt-4 pt-3 mb-4">
+
+                        <p class="text-primary">
+                            OUTDOORS
+                        </p>
+
+                        <div>
+                            <p class="mb-2">Space 1</p>
+                            <div class="event-spaces-container">
+
+                                <div class="d-flex justify-content-between first-section">
+                                    <span>Seating</span><span>200</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Floating</span><span>250</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <hr>
+
+
+                    <div class="mt-4 mb-sm-20">
+                        <div>
+                            <h6 class="mb-3">ROOMS AVALABLE</h6>
+                            <div class="event-spaces-container mx-3">
+
+                                <div class="d-flex justify-content-between first-section">
+                                    <span>Rooms</span><span>400</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Average Price</span><span>Rs 12,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 pt-3">
+                            <h6 class="mb-3">PRICE PER PLATE</h6>
+                            <div class="event-spaces-container mx-3">
+
+                                <div class="d-flex justify-content-between first-section">
+                                    <span>Rooms</span><span>400</span>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <span>Average Price</span><span>Rs 12,000</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+
+                    <h6 class="mt-3">
+                        POLICIES
+                    </h6>
+
+                    <ul class="list-unstyled policies-list mt-4 px-4">
+                        <li>
+                            <p class="fw-500 mb-0">Catering</p>
+                            <p class="fw-300 mb-0">Outside catering not allowed; in-house
+                                catering services are mandatory</p>
+                        </li>
+                        <li>
+                            <p class="fw-500 mb-0">DJ</p>
+                            <p class="fw-300 mb-0">In house DJ not available , Outside DJ
+                                permitted</p>
+                        </li>
+                        <li>
+                            <p class="fw-500 mb-0">Alcohol</p>
+                            <p class="fw-300 mb-0">Alcohol permitted at venue; license and
+                                arrangements must be managed</p>
+                        </li>
+                        <li>
+                            <p class="fw-500 mb-0">Decor</p>
+                            <p class="fw-300 mb-0">Outside decorators allowed; must coordinate
+                                with venue for setup</p>
+                        </li>
+                        <li>
+                            <p class="fw-500 mb-0">Other</p>
+                            <p class="fw-300 mb-0">NA</p>
+                        </li>
+                    </ul>
+                    <hr>
+
+                </div>
+                <div class="col-md-7">
+                    <div>
+
+
+                        <div class="px-2">
+
+                            <div class="mt-4">
+                                <h6 class="text-primary fw-500">What to Expect:</h6>
+                                <ul class="list-unstyled mb-4 expectations-list">
+                                    <li>- Spacious outdoor lawn for large weddings</li>
+                                    <li>- Flexible decor policy, outside decorators allowed</li>
+                                    <li>- Affordable veg &amp; non-veg catering</li>
+                                </ul>
+
+                            </div>
+
+                            <div>
+                                <h6 class="text-primary fw-500">What to Be Cautious About:</h6>
+                                <ul class="list-unstyled mb-4 expectations-list">
+                                    <li>- Only outdoor space, no indoor option</li>
+                                    <li>- Rooms not explicitly specified in number</li>
+                                    <li>- Catering restricted to in-house</li>
+                                </ul>
+
+                            </div>
+
+                            <div>
+                                <h6 class="text-primary fw-500">What to Expect:</h6>
+                                <ul class="list-unstyled mb-4 expectations-list">
+                                    <li>- Only outdoor space, no indoor option</li>
+                                    <li>- Rooms not explicitly specified in number</li>
+                                    <li>- Catering restricted to in-house</li>
+                                </ul>
+
+                            </div>
+                            <hr>
+                            <p class="mb-1">
+                                A luscious venue in Mumbai perfect for
+                                grand and intimate weddings. Retains
+                                Indian warmth with modern services,
+                                customized to needs and budget.
+
+                            </p>
+                            <hr>
+                            <div class="text-end">
+                                <a href="#" class="text-primary">More info</a>
+                            </div>
+                        </div>
+
+
+                        <div class="sticky-footer text-center-sm">
+                            <a href="#" class="text-primary d-block mb-2">View Policies & Additonal Details</a>
+                            <button class="btn btn-primary btn-sm w-100-sm">Message Vendor</button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
