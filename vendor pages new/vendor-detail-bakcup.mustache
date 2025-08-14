@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{{SEO_Meta_Title}}</title>
+    <meta name="description" content="{{SEO_Meta_Description}}" />
+    <meta name="keywords" content="{{FOCUS_keyword}}" />
+    <meta name="author" content="Your Name/Company Name" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: #f7f9fb;
+            color: #333;
+        }
+
+        .banner {
+            background: linear-gradient(to right, #8B0000, #600000);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 40px 20px;
+            background: #fff;
+            border-radius: 10px;
+            margin-top: -40px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        h3 {
+            color: #4a90e2;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .meta p, .description p {
+            margin: 6px 0;
+        }
+
+        .price-category {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .rating {
+            font-weight: bold;
+            color: #ff9800;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 8px;
+        }
+
+        ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #8B0000;
+        }
+
+        .event-space-item {
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 12px;
+        }
+
+        .sentiment p {
+            background-color: #fef9f2;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #ff9800;
+        }
+
+        .gallery img {
+            max-width: 200px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2rem;
+            }
+
+            .banner p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <h1>{{name}}</h1>
+        <p>{{SEO_Meta_Description}}</p>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+
+        <!-- Meta Info -->
+        <div class="meta">
+            <p><strong>Location:</strong> {{additional_info.activeAddress.display_address}} ({{city}}, {{locality_name}})</p>
+            <p><strong>Pricing Category:</strong> <span class="price-category">{{pricing_category}}</span></p>
+            <p><strong>Vendor Rating:</strong> <span class="rating">{{vendor_rating}} ⭐</span></p>
+            <p><strong>Operating Since:</strong> {{findFAQAnswer "been-on-wedmegood-since"}}</p>
+            <p><strong>Rooms Available:</strong> {{findFAQAnswer "room-count"}} (Approx. ₹{{findFAQAnswer "room-price"}} per room)</p>
+        </div>
+
+        <!-- Description -->
+        <div class="description">
+            <h3>About {{name}}</h3>
+            {{{additional_info.information}}}
+        </div>
+
+        <!-- Pricing -->
+        <div class="pricing-info">
+            <h3>Pricing (Per Plate)</h3>
+            <ul>
+                <li><strong>Vegetarian:</strong> ₹{{pricing.lowest_deal_veg}}</li>
+                <li><strong>Non-Vegetarian:</strong> ₹{{pricing.lowest_deal_non_veg}}</li>
+                <li><em>{{pricing.notes}}</em></li>
+            </ul>
+        </div>
+
+        <!-- Event Spaces -->
+        <div class="event-spaces">
+            <h3>Event Spaces</h3>
+
+            <h4>Outdoor Areas</h4>
+            {{#banquet_halls.outdoor-area}}
+            <div class="event-space-item">
+                <strong>{{name}}:</strong> Max Seating {{max_seating}}, Max Floating {{max_floating}}
+            </div>
+            {{/banquet_halls.outdoor-area}}
+
+            <h4>Indoor Areas</h4>
+            {{#banquet_halls.indoor-area}}
+            <div class="event-space-item">
+              <strong>{{name}}</strong><br>
+              <span>Max Seating: <b>{{max_seating}}</b></span> &nbsp; | &nbsp;
+              <span>Max Floating: <b>{{max_floating}}</b></span>
+            </div>
+            {{/banquet_halls.indoor-area}}
+        </div>
+
+        <!-- FAQ -->
+        {{#additional_info.faq.length}}
+        <div class="faq">
+            <h3>FAQs & Policies</h3>
+            <ul>
+                {{#additional_info.faq}}
+                    {{^isCapacityFAQ}}
+                    <li><strong>{{question}}</strong> {{answer}}</li>
+                    {{/isCapacityFAQ}}
+                {{/additional_info.faq}}
+            </ul>
+        </div>
+        {{/additional_info.faq.length}}
+
+        <!-- Sentiment -->
+        <div class="sentiment">
+            <h3>Guest Insights</h3>
+            <h4>What to Expect</h4>
+            <p>{{sentiment_analysis.what_to_expect}}</p>
+            <h4>What to Watch For</h4>
+            <p>{{sentiment_analysis.what_to_watch_for}}</p>
+        </div>
+    </div>
+</body>
+</html>
