@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        .invitation-card {
+            max-width: 562px;
+            width: 100%;
+            height: 787px;
+            flex-direction: column;
+            display: flex;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            padding: 20px 30px;
+            justify-content: center;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            background-color: #FFFFFF;
+            border: 2px solid #C3922E;
+            border-radius: 10px;
+            font-family: "Poppins", sans-serif;
+        }
+
+
+
+        .your-parent-name {
+            font-family: "Poppins", sans-serif;
+            color: #000000;
+            font-weight: 500;
+            font-size: 18px;
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 10px;
+
+        }
+
+        .partner-parent-name {
+            font-family: "Poppins", sans-serif;
+            color: #000000;
+            font-weight: 400;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .following-party {
+            font-family: "Poppins", sans-serif;
+            color: #000000;
+            font-weight: 500;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .invitation-description {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 16px !important;
+            font-size: 18px;
+        }
+
+        .and {
+            font-size: 18px;
+
+        }
+
+        .your-grandparent-name {
+            font-size: 18px;
+            color: #000000;
+        }
+
+        .partner-grandparent-name {
+            font-size: 18px;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+
+
+
+        .groom-bride-section {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-direction: column;
+        }
+
+        .your-name {
+            font-size: 44px;
+            font-family: "Italianno", cursive;
+            color: #C3922E;
+            font-weight: 500;
+        }
+
+        .partner-name {
+            font-size: 44px;
+            font-family: "Italianno", cursive;
+            color: #C3922E;
+            font-weight: 500;
+        }
+
+
+
+
+
+
+
+        @media (max-width: 562px) {
+            .invitation-card {
+                min-height: 100vh;
+                padding: 15px;
+            }
+
+
+
+            .your-name,
+            .partner-name {
+                font-size: 40px;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="invitation-card">
+        <div class="your-parent-name">
+            <!-- ${contentJson["invitation-title"]} -->
+            Sunita & Rajesh Sharma
+        </div>
+
+        <div class="invitation-description">
+            <!-- ${contentJson["invitation-title"]} -->
+            request the honour of your presence at the Wedding of their daughter
+        </div>
+
+
+        <div class="groom-bride-section">
+            <div class="your-name">
+                <!-- ${contentJson["your-name"]} -->
+                Ananya
+            </div>
+            <div class="your-grandparent-name">
+                <!-- ${contentJson["invitation-title"]} -->
+                (Gd/o Smt. Kamla & Sh. Madhusudan Sharma)
+            </div>
+            <div class="and">
+                <!-- ${contentJson["your-name"]} -->
+                with
+            </div>
+            <!-- <div class="and">&</div> -->
+            <div class="partner-name">
+                <!-- ${contentJson["partner-name"]} -->
+                Aman
+            </div>
+
+        </div>
+
+        <div class="partner-parent-name">
+            <!-- ${contentJson["invitation-title"]} -->
+            (S/o Rekha & Suresh Mehta)
+
+        </div>
+
+        <div class="partner-grandparent-name">
+            <!-- ${contentJson["invitation-title"]} -->
+            (Gs/o Late Smt. Shanta & Sh. Harishchandra Mehta)
+        </div>
+
+
+        <div class="following-party">
+            <!-- ${contentJson["invitation-address"]} -->
+            #WeddingHastag
+        </div>
+    </div>
+
+</body>
+
+</html>
