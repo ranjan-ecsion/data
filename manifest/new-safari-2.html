@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>iOS Notch + Tiny URL Bar Test</title>
+  <style>
+    :root{
+      --sat: env(safe-area-inset-top, 0px);
+      --sar: env(safe-area-inset-right, 0px);
+      --sab: env(safe-area-inset-bottom, 0px);
+      --sal: env(safe-area-inset-left, 0px);
+      /* Fallback for older iOS that lacks 100dvh */
+      --vh: 1vh;
+    }
+
+    /* 1) ROOT MUST SCROLL A HAIR */
+    html, body {
+      margin: 0;
+      height: auto;          /* not 100% / not fixed */
+      overflow-y: auto;      /* allow tiny scroll */
+      -webkit-overflow-scrolling: touch;
+      background: transparent;  /* don't block notch with body bg */
+    }
+    /* 1–2px spacer so Safari has something to scroll */
+    body::after {
+      content: "";
+      display: block;
+      height: calc(4px + var(--sab));
+    }
+
+    /* 2) FULL-BLEED LAYER UNDER THE NOTCH */
+    .hero {
+      position: relative;
+      /* Prefer 100dvh; fallback to JS-updated --vh * 100 for older iOS */
+      height: calc(100 * var(--vh));
+      height: 100dvh;
+      overflow: hidden;
+      /* STRETCH the 430x891 image to fill; distortion OK */
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,.35), transparent),
+        url("https://ecsiondevstorage.blob.core.windows.net/wedding-storage/2DFB7813-0ED5-4958-A1D4-1A2CA62B078C.webp") center / 100% 100% no-repeat;
+    }
+
+    /* 3) KEEP TEXT/CTAs IN SAFE AREA */
+    .hero__safe {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      padding:
+        calc(20px + var(--sat))
+        max(16px, var(--sar))
+        calc(24px + var(--sab))
+        max(16px, var(--sal));
+      font: 400 16px/1.5 system-ui, -apple-system, sans-serif;
+    }
+    h1 { margin: 0 0 8px; font-weight: 700; font-size: 28px; line-height: 1.2; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__safe">
+      <h1>Title on Top of Image</h1>
+      <p>Text/CTAs stay inside the safe area.</p>
+    </div>
+  </header>
+
+  <script>
+    // Fallback for iOS that lacks 100dvh (older Safari): set --vh = visual viewport
+    function setVH() {
+      const vh = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+      document.documentElement.style.setProperty('--vh', (vh / 100) + 'px');
+    }
+    setVH();
+    window.addEventListener('resize', setVH);
+    window.addEventListener('orientationchange', setVH);
+
+    // On first user interaction, nudge 1px (programmatic scroll AFTER a touch counts)
+    function nudge() {
+      if (window.scrollY < 1) requestAnimationFrame(() => scrollTo(0, 1));
+      window.removeEventListener('touchstart', nudge, {passive:true});
+      window.removeEventListener('pointerdown', nudge);
+    }
+    window.addEventListener('touchstart', nudge, {passive:true});
+    window.addEventListener('pointerdown', nudge);
+  </script>
+</body>
+</html>

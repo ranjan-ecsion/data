@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>iOS Notch + Tiny URL Bar – DIAGNOSTIC</title>
+<style>
+  :root{
+    --sat: env(safe-area-inset-top, 0px);
+    --sar: env(safe-area-inset-right, 0px);
+    --sab: env(safe-area-inset-bottom, 0px);
+    --sal: env(safe-area-inset-left, 0px);
+    --vvh: 1vh; /* visual viewport fallback */
+  }
+
+  /* Root must scroll a little */
+  html, body{
+    margin:0;
+    height:auto;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+    background:#000;
+  }
+  /* give ~48px of scroll room so Safari always has something to collapse */
+  body::after{
+    content:"";
+    display:block;
+    height: calc(48px + var(--sab));
+  }
+
+  /* Fullscreen hero that sits under the notch/home indicator */
+  .hero{
+    position:relative;
+    height:100dvh;                  /* modern iOS */
+    height:calc(100 * var(--vvh));  /* fallback */
+    overflow:hidden;
+    background:
+      linear-gradient(to bottom, rgba(0,0,0,.35), transparent),
+      url("https://ecsiondevstorage.blob.core.windows.net/wedding-storage/2DFB7813-0ED5-4958-A1D4-1A2CA62B078C.webp") center / 100% 100% no-repeat; /* STRETCH */
+  }
+
+  /* Overlay your HTML text inside the safe area */
+  .hero__safe{
+    position:relative; z-index:1; color:#fff;
+    padding:
+      calc(20px + var(--sat))
+      max(16px, var(--sar))
+      calc(24px + var(--sab))
+      max(16px, var(--sal));
+    font:400 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  }
+  h1{margin:0 0 8px; font-weight:700; font-size:28px; line-height:1.2;}
+
+  /* Diagnostic HUD */
+  .hud{
+    position:fixed; left:8px; top:calc(8px + var(--sat));
+    background:rgba(0,0,0,.6); color:#0f0; font:12px/1.35 ui-monospace, SFMono-Regular, Menlo, monospace;
+    padding:8px 10px; border-radius:8px; z-index:9999; pointer-events:none;
+    white-space:pre; backdrop-filter:saturate(1.2) blur(4px);
+  }
+  .hud.bad{ color:#ffb; }
+  .edge-bar{
+    position:fixed; top:0; left:0; right:0; height:var(--sat);
+    background:rgba(255,0,0,.35); z-index:9998; pointer-events:none;
+  }
+</style>
+</head>
+<body>
+  <div class="edge-bar" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="hero__safe">
+      <h1>Portrait Hero</h1>
+      <p>Text & buttons go here. Image stretches and should bleed under the notch.</p>
+    </div>
+  </header>
+
+  <pre class="hud" id="hud">Loading…</pre>
+
+<script>
+  // 1) Live readouts to catch common blockers
+  function report(){
+    const vv = window.visualViewport;
+    const hud = document.getElementById('hud');
+    const isIframe = (window.top !== window.self);
+    const doc = document.documentElement;
+    const r = getComputedStyle(doc);
+    const sat = r.getPropertyValue('--sat').trim();
+    const sab = r.getPropertyValue('--sab').trim();
+    const sal = r.getPropertyValue('--sal').trim();
+    const sar = r.getPropertyValue('--sar').trim();
+
+    const info = [
+      `iframe:           ${isIframe}`,
+      `scrollY:          ${Math.round(window.scrollY)} px`,
+      `scrollHeight:     ${Math.round(doc.scrollHeight)} px`,
+      `clientHeight:     ${Math.round(doc.clientHeight)} px`,
+      `canScroll:        ${doc.scrollHeight > doc.clientHeight}`,
+      `innerHeight:      ${window.innerHeight} px`,
+      `vv.height:        ${vv ? Math.round(vv.height) : 'n/a'} px`,
+      `100dvh support:   ${CSS.supports('height', '100dvh')}`,
+      `safe-area top:    ${sat}, right: ${sar}, bottom: ${sab}, left: ${sal}`
+    ].join('\n');
+
+    hud.textContent = info;
+    hud.classList.toggle('bad', isIframe || !(doc.scrollHeight > doc.clientHeight));
+  }
+
+  // 2) Keep --vvh in sync with the visual viewport (older iOS fallback)
+  function setVVH(){
+    const h = (window.visualViewport ? window.visualViewport.height : window.innerHeight) / 100;
+    document.documentElement.style.setProperty('--vvh', h + 'px');
+  }
+
+  // 3) Nudge after first user interaction so the URL bar can collapse
+  function nudge(){
+    if (document.documentElement.scrollHeight <= document.documentElement.clientHeight) return; // no scroll -> nothing to do
+    requestAnimationFrame(() => {
+      // scroll a little; larger than 1px to be reliable
+      scrollTo(0, 32);
+      setTimeout(report, 100);
+    });
+    window.removeEventListener('touchstart', nudge, {passive:true});
+    window.removeEventListener('pointerdown', nudge);
+    window.removeEventListener('click', nudge, true);
+  }
+
+  setVVH(); report();
+  (window.visualViewport || window).addEventListener('resize', () => { setVVH(); report(); });
+  window.addEventListener('orientationchange', () => { setVVH(); report(); });
+  window.addEventListener('scroll', report, {passive:true});
+  window.addEventListener('touchstart', nudge, {passive:true});
+  window.addEventListener('pointerdown', nudge);
+  window.addEventListener('click', nudge, true);
+
+  // Warn loudly if multiple viewport meta tags exist
+  (function warnMultiViewport(){
+    const metas = Array.from(document.querySelectorAll('meta[name="viewport"]'));
+    if (metas.length > 1){
+      const hud = document.getElementById('hud');
+      hud.textContent += `\nWARNING: ${metas.length} viewport tags found`;
+      hud.classList.add('bad');
+    }
+  })();
+</script>
+</body>
+</html>

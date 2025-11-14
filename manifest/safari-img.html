@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Document</title>
+  <style>
+    :root {
+      --sat: env(safe-area-inset-top, 0px);
+      --sar: env(safe-area-inset-right, 0px);
+      --sab: env(safe-area-inset-bottom, 0px);
+      --sal: env(safe-area-inset-left, 0px);
+    }
+
+    html,
+    body {
+      margin: 0;
+      height: auto;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    body::after {
+      content: "";
+      display: block;
+      height: calc(2px + var(--sab)); /* small scroll budget */
+    }
+
+    .hero {
+      position: relative;
+      height: 100dvh;
+      overflow: hidden;
+    }
+
+    /* The image fills full screen (acts as background) */
+    .hero__bleed {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* keeps aspect ratio while filling */
+      object-position: center;
+      z-index: 0;
+    }
+
+    /* Overlay gradient for readability */
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), transparent);
+      z-index: 1;
+    }
+
+    /* Content inside safe areas */
+    .hero__safe {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      padding: calc(20px + var(--sat))
+        max(16px, var(--sar))
+        calc(24px + var(--sab))
+        max(16px, var(--sal));
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font: 700 28px/1.2 system-ui, -apple-system, sans-serif;
+    }
+
+    p {
+      margin: 0 0 16px;
+      font: 400 16px/1.5 system-ui, -apple-system, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <!-- ✅ background image now as <img> -->
+    <img
+      class="hero__bleed"
+      src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/2DFB7813-0ED5-4958-A1D4-1A2CA62B078C.webp"
+      alt="Hero Background"
+    />
+
+    <div class="hero__safe">
+      <h1>Title</h1>
+      <p>Copy over the image</p>
+    </div>
+  </header>
+
+  <script>
+    // Nudge Safari to collapse address bar
+    function nudge() {
+      if (window.scrollY < 1) requestAnimationFrame(() => scrollTo(0, 1));
+      window.removeEventListener("touchstart", nudge, { passive: true });
+      window.removeEventListener("pointerdown", nudge);
+    }
+    window.addEventListener("touchstart", nudge, { passive: true });
+    window.addEventListener("pointerdown", nudge);
+  </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+{
+  "card": "LVID_HGEN_RA_1007",
+  "assets_dir": "assets",
+  "events": {
+    "haldi": {
+      "scene_name": "haldi",
+      "is_event": true,
+      "video": "LVID_HGEN_RA_1007/assets/haldi.mp4",
+      "poster": "LVID_HGEN_RA_1007/assets/haldi-poster.jpg",
+      "patch": "LVID_HGEN_RA_1007/assets/haldi-patch.png",
+      "scene_type": "event"
+    },
+    "mehendi": {
+      "scene_name": "mehendi",
+      "is_event": true,
+      "video": "LVID_HGEN_RA_1007/assets/mehendi.mp4",
+      "poster": "LVID_HGEN_RA_1007/assets/mehendi-poster.jpg",
+      "patch": "LVID_HGEN_RA_1007/assets/mehendi-patch.png",
+      "scene_type": "event"
+    },
+    "sangeet": {
+      "scene_name": "sangeet",
+      "is_event": true,
+      "video": "LVID_HGEN_RA_1007/assets/sangeet.mp4",
+      "poster": "LVID_HGEN_RA_1007/assets/sangeet-poster.jpg",
+      "patch": "LVID_HGEN_RA_1007/assets/sangeet-patch.png",
+      "scene_type": "event"
+    },
+    "wedding": {
+      "scene_name": "wedding",
+      "is_event": true,
+      "video": "LVID_HGEN_RA_1007/assets/wedding.mp4",
+      "poster": "LVID_HGEN_RA_1007/assets/wedding-poster.jpg",
+      "patch": "LVID_HGEN_RA_1007/assets/wedding-patch.png",
+      "scene_type": "event"
+    },
+    "reception": {
+      "scene_name": "reception",
+      "is_event": true,
+      "video": "LVID_HGEN_RA_1007/assets/reception.mp4",
+      "poster": "LVID_HGEN_RA_1007/assets/reception-poster.jpg",
+      "patch": "LVID_HGEN_RA_1007/assets/reception-patch.png",
+      "scene_type": "event"
+    },
+    "grand-parent-blessings": {
+      "scene_name": "grand-parent-blessings",
+      "video": "LVID_HGEN_RA_1007/assets/default.mp4",
+      "poster": "LVID_HGEN_RA_1007/assets/default.jpg",
+      "patch": "LVID_HGEN_RA_1007/assets/default-patch.png",
+      "scene_type": "grand-parent-blessings"
+    },
+    "host-invitation": {
+      "scene_name": "host-invitation",
+      "video": "LVID_HGEN_RA_1007/assets/default.mp4",
+      "poster": "LVID_HGEN_RA_1007/assets/default.jpg",
+      "patch": "LVID_HGEN_RA_1007/assets/default-patch.png",
+      "scene_type": "host-invitation"
+    },
+    "save-the-date": {
+      "scene_name": "save-the-date",
+      "video": "LVID_HGEN_RA_1007/assets/default.mp4",
+      "poster": "LVID_HGEN_RA_1007/assets/default.jpg",
+      "patch": "LVID_HGEN_RA_1007/assets/default-patch.png",
+      "scene_type": "save-the-date"
+    },
+    "custom-event": {
+      "scene_name": "custom-event",
+      "video": "LVID_HGEN_RA_1007/assets/default.mp4",
+      "poster": "LVID_HGEN_RA_1007/assets/default.jpg",
+      "patch": "LVID_HGEN_RA_1007/assets/default-patch.png",
+      "scene_type": "custom-event"
+    },
+    "religious": {
+      "scene_name": "religious",
+      "containing_folder": "ganesh_vandana",
+      "selection_key": "ganesh006",
+      "source": "library",
+      "scene_type": "religious"
+    },
+    "monogram": {
+      "scene_name": "monogram",
+      "selection_key": "monogram-015",
+      "source": "library",
+      "scene_type": "monogram"
+    }
+  }
+}

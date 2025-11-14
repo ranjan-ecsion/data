@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video with Horizontal Scrollable Images</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      margin: 0;
+      background: #f8f9fa;
+      overflow-y: hidden; /* Prevent vertical scroll */
+    }
+
+    .media-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 900px;
+      height: 100vh;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+
+    .video-container {
+      width: 100%;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      flex: 0 0 auto;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .image-gallery {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto; /* enable horizontal scroll */
+      overflow-y: hidden;
+      gap: 10px;
+      margin-top: 20px;
+      padding: 10px 0;
+      scrollbar-width: thin;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .image-gallery img {
+      width: 200px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Scrollbar styling */
+    .image-gallery::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .image-gallery::-webkit-scrollbar-thumb {
+      background-color: #bbb;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="media-section">
+    <!-- Video Section -->
+    <div class="video-container">
+      <video controls autoplay muted loop>
+        <source src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/B61811EB-5603-47C0-8A18-5EEB537B5DD9.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Scrollable Images Section -->
+    <div class="image-gallery">
+      <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/BE32D47F-F83D-4C76-9CC3-22CC0F24D604.jpg" alt="Image 1" />
+      <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/BE32D47F-F83D-4C76-9CC3-22CC0F24D604.jpg" alt="Image 2" />
+      <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/BE32D47F-F83D-4C76-9CC3-22CC0F24D604.jpg" alt="Image 3" />
+      <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/BE32D47F-F83D-4C76-9CC3-22CC0F24D604.jpg" alt="Image 4" />
+      <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/BE32D47F-F83D-4C76-9CC3-22CC0F24D604.jpg" alt="Image 5" />
+      <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/BE32D47F-F83D-4C76-9CC3-22CC0F24D604.jpg" alt="Image 6" />
+      <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/BE32D47F-F83D-4C76-9CC3-22CC0F24D604.jpg" alt="Image 7" />
+      <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/BE32D47F-F83D-4C76-9CC3-22CC0F24D604.jpg" alt="Image 8" />
+      <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/BE32D47F-F83D-4C76-9CC3-22CC0F24D604.jpg" alt="Image 9" />
+    </div>
+  </div>
+</body>
+</html>

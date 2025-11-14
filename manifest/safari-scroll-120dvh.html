@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <title>Hero Scroll Fix Demo</title>
+
+    <style>
+      /* Safe-area variables */
+      :root {
+        --sat: env(safe-area-inset-top, 0px);
+        --sab: env(safe-area-inset-bottom, 0px);
+        --sal: env(safe-area-inset-left, 0px);
+        --sar: env(safe-area-inset-right, 0px);
+      }
+
+      /* Allow slight scroll for Safari URL bar to collapse */
+      html,
+      body {
+        margin: 0;
+        height: auto;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        background: #000;
+      }
+
+      /* Invisible spacer for 1–2px scroll */
+      body::after {
+        content: "";
+        display: block;
+        height: calc(2px + var(--sab));
+      }
+
+      /* Full-bleed hero image under notch */
+      .hero {
+        position: relative;
+        height: 120dvh; /* dynamic viewport height for iOS Safari */
+        overflow: auto;
+      }
+
+      /* Image fills screen edge-to-edge */
+      .hero__bleed {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      /* Safe area for interactive UI or text */
+      .hero__safe {
+        position: relative;
+        z-index: 1;
+        padding: calc(16px + var(--sat)) 16px calc(16px + var(--sab));
+        color: #fff;
+        text-align: center;
+      }
+
+      .hero__safe h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+
+      .hero__safe p {
+        font-size: 1rem;
+        opacity: 0.9;
+      }
+
+      /* Optional call-to-action button */
+      .hero__button {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 12px 24px;
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        border-radius: 8px;
+        text-decoration: none;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .hero__button:hover {
+        background: rgba(255, 255, 255, 0.25);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="hero">
+      <img
+        class="hero__bleed"
+        src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/4D6A3136-57BE-4E60-96EF-0EFD4FF65041.jpg"
+        alt="Hero Background"
+      />
+      <div class="hero__safe">
+        <h1>Bizfire CRM</h1>
+        <p>Your Next Big Business Growth Leap</p>
+        <a href="#" class="hero__button">Get Started</a>
+      </div>
+    </header>
+
+    <script>
+      // 👇 Nudge scroll to minimize Safari's address bar
+      function nudge() {
+        requestAnimationFrame(() => scrollTo(0, 1));
+        window.removeEventListener("touchstart", nudge, { passive: true });
+        window.removeEventListener("pointerdown", nudge);
+      }
+      window.addEventListener("touchstart", nudge, { passive: true });
+      window.addEventListener("pointerdown", nudge);
+    </script>
+  </body>
+</html>

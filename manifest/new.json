@@ -1,0 +1,58 @@
+{
+    "invitation-title": 20,
+    "your-name": 10,
+    "partner-name": 10,
+    "your-parent-name": 24,
+    "partner-parent-name": 30,
+    "your-grandparent-name": 44,
+    "partner-grandparent-name": 44,
+    "invitation-full-date": 14,
+    "invitation-time": 10,
+    "invitation-venue": 26,
+    "invitation-address": 46,
+    "couple-img1": 0,
+    "couple-img2": 0,
+    "couple-img3": 0,
+    "invitation-description": 100,
+    "invitation-message": 80,
+    "invitation-date": 4,
+    "invitation-month": 4,
+    "invitation-month-text": 12,
+    "invitation-year": 8,
+    "following-party": 24,
+    "invitation-full-date-text": 22,
+    "invitation-week-day": 10,
+    "yourInitial": 1,
+    "partnerInitial": 1
+  }
+   12 - November - 2024
+   From 07:00 pm Onwards
+   radisson blu plaza 
+  {
+    "invitation-title": 70,
+    "your-name": 12,
+    "partner-name": 12,
+    "your-parent-name": 60,
+    "partner-parent-name": 60,
+    "your-grandparent-name": 70,
+    "partner-grandparent-name": 70,
+    "invitation-full-date": 22,
+    "invitation-time": 30,
+    "invitation-venue": 24,
+    "invitation-address": 60,
+    "couple-img1": 1,
+    "couple-img2": 1,
+    "couple-img3": 1,
+    "invitation-description": 100,
+    "invitation-message": 60,
+    "invitation-date": 2,
+    "invitation-month": 10,
+    "invitation-month-text": 12,
+    "invitation-year": 4,
+    "following-party": 24,
+    "invitation-full-date-text": 12,
+    "invitation-week-day": 10,
+    "yourInitial": 1,
+    "partnerInitial": 1
+  }
+   
