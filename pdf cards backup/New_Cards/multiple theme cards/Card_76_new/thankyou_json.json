@@ -1,0 +1,103 @@
+[
+
+    {
+        "primaryColor": "#DDB733",
+        "secondaryColor": "#333333",
+        "bodyColor": "#3B2E57",
+        "textColor": "#FFFFFF",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "Alex Brush",
+        "secondaryFont": "Playfair Display",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "georgia",
+        "headingFont": "BonheurRoyale-Regular",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/B8F57D5B-03C8-46D5-A088-F04A33E85042.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/A12CE590-E36A-4EF5-8DCB-A737580CE714.png"
+
+    },
+    
+       {
+        "primaryColor": "#DDB733",
+        "secondaryColor": "#333333",
+        "bodyColor": "#060408",
+        "textColor": "#FFFFFF",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "Alex Brush",
+        "secondaryFont": "Playfair Display",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "georgia",
+        "headingFont": "BonheurRoyale-Regular",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/B8F57D5B-03C8-46D5-A088-F04A33E85042.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/A12CE590-E36A-4EF5-8DCB-A737580CE714.png"
+
+    },
+    
+        
+        {
+        "primaryColor": "#DDB733",
+        "secondaryColor": "#333333",
+        "bodyColor": "#390000",
+        "textColor": "#FFFFFF",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "Alex Brush",
+        "secondaryFont": "Playfair Display",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "georgia",
+        "headingFont": "BonheurRoyale-Regular",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/B8F57D5B-03C8-46D5-A088-F04A33E85042.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/A12CE590-E36A-4EF5-8DCB-A737580CE714.png"
+
+    },
+       {
+        "primaryColor": "#DDB733",
+        "secondaryColor": "#333333",
+        "bodyColor": "#BCCBCB",
+        "textColor": "#000000",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "Alex Brush",
+        "secondaryFont": "Playfair Display",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "georgia",
+        "headingFont": "BonheurRoyale-Regular",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/B8F57D5B-03C8-46D5-A088-F04A33E85042.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/A12CE590-E36A-4EF5-8DCB-A737580CE714.png"
+
+    
+    },
+
+    {
+        "primaryColor": "#DDB733",
+        "secondaryColor": "#333333",
+        "bodyColor": "#F2DEF2",
+        "textColor": "#000000",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "Alex Brush",
+        "secondaryFont": "Playfair Display",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "georgia",
+        "headingFont": "BonheurRoyale-Regular",
+            "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/B8F57D5B-03C8-46D5-A088-F04A33E85042.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/A12CE590-E36A-4EF5-8DCB-A737580CE714.png"
+
+    }
+    ]

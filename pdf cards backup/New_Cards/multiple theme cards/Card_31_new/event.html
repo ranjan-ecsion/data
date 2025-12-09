@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Schedule</title>
+
+  <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="" />
+  <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .invitation-card {
+      max-width: 562px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      position: relative;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .invitation-title {
+      font-family: 'Alex Brush', cursive;
+      font-size: 28px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    .groom-bride-name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      margin-bottom: 10px;
+      gap: 10px;
+    }
+
+    .yourName,
+    .partnerName,
+    .and {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    .section-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .invitation-date,
+    .invitation-time,
+    .invitation-venue,
+    .invitation-address {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .invitation-venue {
+      font-weight: bold;
+    }
+
+    .invitation-address {
+      max-width: 280px;
+    }
+
+    hr {
+      width: 80%;
+      margin: 25px auto;
+      border: 1px solid #ddd;
+    }
+
+    @media screen and (max-width: 562px) {
+      .invitation-card {
+        background-image: url("https://ecsiondevstorage.blob.core.windows.net/wedding-storage/008D35B5-CDBC-4408-A988-DB8C6EDFE4FB.png");
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="invitation-card" class="invitation-card"></div>
+
+  <script>
+    const contentJson = {
+    "primaryColor": "#AF3129",
+        "secondaryColor": "#333333",
+        "bodyColor": "#FFFAE8",
+        "textColor": "#000000",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "laurentine",
+        "secondaryFont": "Playfair Display",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "Abril Fatface",
+        "headingFont": "BonheurRoyale-Regular",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/1BAC4727-B8BF-4D32-A570-DF5C6388EB5E.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/EE8844B4-D5A9-4C0B-9DC0-DEF01C77F2CA.png"
+
+    };
+
+    const data = {
+      eventsArray: [
+        {
+          yourName: "Radha",
+          partnerName: "Krishna",
+          invitationFullDate: "8 December 2026",
+          invitationTime: "4:00 PM Saturday Onwards",
+          invitationVenue: "Hotel Giriraj",
+          invitationAddress: "K.J. Buti Marrg, Temple Road, Sitabuldi",
+          invitationTitle: "Welcome Dinner"
+        },
+        {
+          yourName: "Radha",
+          partnerName: "Krishna",
+          invitationFullDate: "9 December 2026",
+          invitationTime: "4:00 PM Saturday Onwards",
+          invitationVenue: "Hotel Giriraj",
+          invitationAddress: "K.J. Buti Marrg, Temple Road, Sitabuldi",
+          invitationTitle: "Reception Gala"
+        }
+      ]
+    };
+
+    const card = document.getElementById("invitation-card");
+    card.style.backgroundColor = contentJson.bodyColor;
+    card.style.backgroundImage = `url('${contentJson.bgImage}')`;
+    card.style.color = contentJson.textColor;
+
+    data.eventsArray.forEach(event => {
+      const section = document.createElement("div");
+      section.className = "section-content";
+      section.innerHTML = `
+        <div class="invitation-title" style="font-family: ${contentJson.primaryFont}; color: ${contentJson.primaryColor};">${event.invitationTitle}</div>
+        <div class="groom-bride-name">
+          <div class="yourName" style="font-family: ${contentJson.secondaryFont}; color: ${contentJson.textColor};">${event.yourName}</div>
+          <div class="and" style="font-family: ${contentJson.secondaryFont}; color: ${contentJson.textColor};">&</div>
+          <div class="partnerName" style="font-family: ${contentJson.secondaryFont}; color: ${contentJson.textColor};">${event.partnerName}</div> 
+        </div>
+        <div class="invitation-date" style="font-family: ${contentJson.secondaryFont}; color: ${contentJson.textColor};">${event.invitationFullDate}</div>
+        <div class="invitation-time" style="font-family: ${contentJson.secondaryFont}; color: ${contentJson.textColor};">${event.invitationTime}</div>
+        <div class="invitation-venue" style="font-family: ${contentJson.secondaryFont}; color: ${contentJson.textColor};">${event.invitationVenue}</div>
+        <div class="invitation-address" style="font-family: ${contentJson.secondaryFont}; color: ${contentJson.textColor};">${event.invitationAddress}</div>
+      `;
+      card.appendChild(section);
+      card.appendChild(document.createElement("hr"));
+    });
+  </script>
+</body>
+
+</html>

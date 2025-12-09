@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <!-- iPhone Safari full screen & safe-area handling -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Android Chrome status bar color -->
+  <meta name="theme-color" content="#db0606" />
+
+  <title>Safe Area Test</title>
+
+  <style>
+    /* Full screen + safe-area color (change #db0606 as needed) */
+    body {
+      margin: 0;
+      padding: 0;
+      background: #db0606; /* <--- CHANGE THIS COLOR */
+      color: white;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Safe-area padding so content doesn’t go under the notch */
+    .content {
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <h1>Safe Area Color Test</h1>
+    <p>This background color fills the entire screen & safe area.</p>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save the date</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+    <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+   
+   <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+        .invitation-card {
+            max-width: 562px;
+            width: 100%;
+            height: 787px;
+            flex-direction: column;
+            display: flex;
+            padding: 30px 30px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            background-color: ${contentJson['bodyColor']};
+            background-image: url("\${contentJson['bgImage']}");
+        }
+
+        .invitation-title {
+            text-align: center;
+            font-size: 40px;
+            font-family: ${contentJson['primaryFont']};
+            color: ${contentJson['textColor']};
+            max-width: 400px;
+            font-weight: 400;
+            line-height: 80px;
+        }
+
+        .invitation-description {
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: ${contentJson['secondaryFont']};
+            color: ${contentJson['primaryColor']};
+            max-width: 300px;
+            text-transform: capitalize;
+        }
+
+        .groom-bride-section {
+            font-size: 46px;
+            font-family: ${contentJson['primaryFont']};
+            color: ${contentJson['textColor']};
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .invitation-details {
+            font-size: 14px;
+            font-family: ${contentJson['secondaryFont']};
+            color: ${contentJson['primaryColor']};
+        }
+
+        .invitation-address {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: ${contentJson['secondaryFont']};
+            color: ${contentJson['primaryColor']};
+            text-transform: capitalize;
+            font-style: italic;
+            max-width: 220px;
+        }
+
+        .divider {
+            width: 170px;
+            border-bottom: 1px solid ${contentJson['textColor']};
+        }
+
+        .invitation-date-section {
+            display: flex;
+            align-items: center;
+            font-family: ${contentJson['secondaryFont']};
+            color: ${contentJson['primaryColor']};
+            justify-content: center;
+            text-transform: uppercase;
+            max-width: 256px;
+            width: 100%;
+        }
+
+        .invitation-year {
+            font-size: 36px;
+            font-weight: 500;
+            font-family: ${contentJson['secondaryFont']};
+            color: ${contentJson['primaryColor']};
+            line-height: 1;
+        }
+
+        .invitation-date-year {
+            padding-right: 10px;
+        }
+
+        .invitation-date {
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            font-family: ${contentJson['secondaryFont']};
+            color: ${contentJson['primaryColor']};
+        }
+
+        .invitation-date sup {
+            font-size: 8px;
+        }
+
+        .invitation-day-time {
+            padding-left: 10px;
+            font-size: 26px;
+            font-weight: 500;
+            font-family: ${contentJson['secondaryFont']};
+            color: ${contentJson['primaryColor']};
+            border-left: 1px solid ${contentJson['textColor']};
+        }
+
+        .following-party {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: ${contentJson['secondaryFont']};
+            color: ${contentJson['primaryColor']};
+            text-transform: capitalize;
+            font-style: italic;
+        }
+
+        @media screen and (max-width: 562px) {
+            .invitation-card {
+        min-height: 100vh;
+        background-image: url("\${contentJson['bgResponsiveImage']}");
+      }
+
+            .invitation-title {
+                font-size: 30px;
+                line-height: 60px;
+            }
+
+            .invitation-description,
+            .following-party {
+                font-size: 14px;
+                max-width: 300px;
+                padding: 10px 0px;
+            }
+
+
+            .invitation-address {
+                font-size: 14px;
+                max-width: 250px;
+            }
+
+            .groom-bride-section {
+                font-size: 26px;
+            }
+
+            .invitation-date-year {
+                padding-right: 10px;
+            }
+
+            .invitation-year {
+                font-size: 20px;
+            }
+
+            .invitation-date {
+                font-size: 20px;
+            }
+
+            .invitation-day-time {
+                font-size: 20px;
+                padding-left: 10px;
+            }
+
+            .divider {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="invitation-card" >
+        <div class="invitation-title mt-5">
+            ${contentJson["invitation-title"]}
+            <!-- Save the date -->
+        </div>
+        <div class="invitation-description ">
+            ${contentJson["invitation-description"]}
+            <!-- Request your gracious presence at the wedding of their daughter -->
+        </div>
+        <div class="groom-bride-section my-3">
+            <div>
+                <div class="your-name">
+                    ${contentJson["your-name"]}
+                    <!-- Richard -->
+                </div>
+
+            </div>
+            <div class="and">&</div>
+            <div>
+                <div class="partner-name">
+                    ${contentJson["partner-name"]}
+                    <!-- Monica -->
+                </div>
+
+            </div>
+        </div>
+        <div class="invitation-date-section my-3">
+            <div class="invitation-date-year">
+                <div class="invitation-date">
+                   
+                    ${contentJson["invitation-month-text"]} 
+                    ${contentJson["invitation-date"]} 
+                    <!-- OCT 23 -->
+                    <!-- <sup>RD</sup> -->
+                </div>
+                <div class="invitation-year">
+                    ${contentJson["invitation-year"]}
+                    <!-- 2025 -->
+                </div>
+            </div>
+            <div class="invitation-day-time">
+                <div class="invitation-time">
+                    ${contentJson["invitation-time"]}
+                    <!-- 3:30 pm -->
+                </div>
+                <div class="invitation-day">
+                    ${contentJson["invitation-week-day"]}
+                    <!-- SUNDAY -->
+                </div>
+            </div>
+        </div>
+        <div class="invitation-address mt-2 mb-3">
+            ${contentJson["invitation-address"]}
+            <!-- ceremony sta. mery church reception hotel palace -->
+        </div>
+        <div class="divider"></div>
+        <div class="following-party mt-3">
+            ${contentJson["following-party"]}
+            <!-- Following the Party -->
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

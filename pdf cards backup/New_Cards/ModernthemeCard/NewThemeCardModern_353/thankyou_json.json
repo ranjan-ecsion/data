@@ -1,0 +1,20 @@
+        [
+            {
+                "primaryColor": "#4C565F",
+                "secondaryColor": "#333333",
+                "bodyColor": "#FFF3E8",
+                "textColor": "#4C565F",
+                "actionColor": "#E94444",
+                "successColor": "#38cc31",
+                "borderGray": "#ccc",
+               "primaryFont": "Playfair Display",
+                "secondaryFont": "Poppins",
+                "bodyRegularFont": "Poppins-Regular",
+                "bodyMediumFont": "Poppins-Medium",
+                "bodyBoldFont": "georgia",
+                "tertiaryFont": "georgia",
+                "headingFont": "BonheurRoyale-Regular",
+                "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/9696EF27-8A4B-46AB-AA82-5282166965FF.png",
+                "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/34873BA0-59D3-400A-A89D-1F121E0D4593.png"
+                }
+            ]

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the date</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+  <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../wedding_invitation/assets/css/style.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+    .invitation-card {
+      max-width: 562px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 30px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      align-items: center;
+      margin: 0 auto;
+      background-color: ${contentJson['bodyColor']};
+      position: relative;
+    }
+
+    .invitation-title {
+      color: ${contentJson['textColor']};
+            font-family: ${contentJson['tertiaryFont']};
+      text-transform: capitalize;
+      font-size: 44px;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-top: 20px;
+      letter-spacing: 4px;
+      text-align: right;
+      width: 100%;
+       
+    }
+
+    .groom-bride-section {
+      display: flex;
+      align-items: start;
+      justify-content: flex-start;
+      margin-top: 10px;
+      width: 100%;
+    }
+
+    .and {
+     color: ${contentJson['primaryColor']};
+            font-family: ${contentJson['primaryFont']};
+      font-size: 36px;
+      font-weight: 600;
+      padding: 0px 12px;
+       
+      text-transform: uppercase;
+    }
+
+    .your-name,
+    .partner-name {
+    color: ${contentJson['primaryColor']};
+            font-family: ${contentJson['primaryFont']};
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 36px;
+      letter-spacing: 3px;
+      
+    }
+
+    .invitation-date-section {
+      margin-top: 10px;
+      width: 100%;
+      text-align: right;
+      color: ${contentJson['textColor']};
+            font-family: ${contentJson['secondaryFont']};
+      font-size: 16px;
+      font-weight: 400;
+       
+    }
+
+    .invitation-address {
+      width: 100%;
+      text-align: right;
+      color: ${contentJson['textColor']};
+            font-family: ${contentJson['secondaryFont']};
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 30px;
+      
+    }
+
+    .invitation-address {
+      text-transform: capitalize;
+      letter-spacing: 1px;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .patch {
+      width: 295px;
+      height: 400px;
+      background-color:  ${contentJson['secondaryColor']};
+      position: absolute;
+      bottom: -30px;
+      right: -30px;
+      z-index: 1;
+    }
+
+    .patch-1 {
+      width: 295px;
+      height: 335px;
+      background-color:  ${contentJson['secondaryColor']};
+      position: absolute;
+      top: -30px;
+      left: 96px;
+      z-index: 1;
+    }
+
+    .couple-img {
+      position: relative;
+      z-index: 2;
+    }
+
+    .couple-img img {
+         width: 358px;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 480px) {
+      .invitation-card {
+        padding: 20px;
+        border: none;
+        min-height: 100vh;
+        justify-content: center;
+      }
+
+      .invitation-title {
+        font-size: 36px;
+
+        text-align: left;
+        letter-spacing: 2px;
+        margin-top: 50px;
+      }
+
+      .groom-bride-section {
+        justify-content: left;
+        flex-direction: row;
+
+        align-items: center;
+        text-align: center;
+      }
+
+      .your-name,
+      .partner-name {
+        font-size: 30px;
+        letter-spacing: 2px;
+      }
+
+      .and {
+        padding: 5px 15px;
+        font-size: 20px;
+      }
+
+      .invitation-date-section,
+      .invitation-address {
+        font-size: 14px;
+                text-align: end;
+      }
+
+      .image-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .patch,
+      .patch-1 {
+        display: none;
+      }
+
+      .couple-img img {
+         width: 100%;
+      height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="invitation-card">
+    <div class="invitation-title">
+      ${contentJson["invitation-title"]}
+      <!-- Save The Date -->
+    </div>
+
+    <div class="groom-bride-section">
+      <div class="your-name">
+        ${contentJson["your-name"]}
+         <!-- SHWETA -->
+      </div>
+      <div class="and">&</div>
+      <div class="partner-name">
+        ${contentJson["partner-name"]}
+        <!-- JAYESH -->
+      </div>
+    </div>
+
+    <div class="invitation-date-section">
+      ${contentJson["invitation-full-date"]}
+      <!-- 19Th August 2028 -->
+    </div>
+    <div class="invitation-address">
+      ${contentJson["invitation-address"]}
+      <!-- Dublin Castle, Nagpur -->
+    </div>
+
+    <div class="image-container">
+    
+      <div class="couple-img">
+        <img id="imgOne" src=${contentJson['couple-img1']}
+          
+          alt="Couple Image">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

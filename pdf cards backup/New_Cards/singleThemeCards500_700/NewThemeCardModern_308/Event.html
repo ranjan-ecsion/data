@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event Schedule</title>
+ 
+  <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="" />
+  <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+ 
+  <style id="dynamic-style"></style>
+</head>
+<body>
+  <div id="invitation-card" class="invitation-card"></div>
+ 
+  <script>
+    const contentJson = {
+       "primaryColor": "#966A2C",
+        "secondaryColor": "#333333",
+        "bodyColor": "#FFF3E8",
+        "textColor": "#966A2C",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "Playfair Display",
+        "secondaryFont": "Playfair Display",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "tertiaryFont": "abrilfatfaceRegular",
+        "headingFont": "BonheurRoyale-Regular",
+       "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/BA37870F-E53D-4172-A6CC-C8494C88947A.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/BA37870F-E53D-4172-A6CC-C8494C88947A.png"
+                };
+ 
+    const style = `
+      @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+ 
+      .invitation-card {
+        max-width: 562px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        position: relative;
+        background-color: ${contentJson.bodyColor};
+        background-image: url('${contentJson.bgImage}');
+      }
+ 
+      .invitation-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: 500;
+        font-family: ${contentJson.primaryFont};
+        color: ${contentJson.primaryColor};
+      }
+ 
+      .groom-bride-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin-bottom: 10px;
+        gap: 10px;
+        padding-top: 80px;
+      }
+ 
+      .yourName,
+      .partnerName,
+      .and {
+        font-size: 26px;
+        font-weight: bold;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        text-align: center;
+      font-family: ${contentJson.primaryFont};
+        color: ${contentJson.primaryColor};
+      }
+ 
+      .section-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+ 
+      .invitation-date,
+      .invitation-time,
+      .invitation-venue,
+      .invitation-address {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 5px;
+        font-family: ${contentJson.secondaryFont};
+        color: ${contentJson.textColor};
+      }
+ 
+      .invitation-venue {
+        font-weight: bold;
+      }
+ 
+      .invitation-address {
+        max-width: 280px;
+      }
+                
+      hr {
+        width: 50%;
+        margin: 25px auto;
+        border: 1px solid ${contentJson.textColor};
+      }
+ 
+      @media screen and (max-width: 562px) {
+        .invitation-card {
+          background-image: url('${contentJson.bgResponsiveImage}');
+        }
+      }
+    `;
+    document.getElementById('dynamic-style').innerHTML = style;
+ 
+    let eventsArray = [];
+ 
+    try {
+      if (window.ReactNativeWebViewEventJSON) {
+        const parsed = JSON.parse(window.ReactNativeWebViewEventJSON);
+        console.log(parsed);
+        if (parsed?.eventsArray?.length) {
+          eventsArray = parsed.eventsArray;
+        }
+      }
+    } catch (e) {
+      console.warn("Error parsing injected events data:", e);
+    }
+ 
+    if (eventsArray.length === 0) {
+      eventsArray = [
+        {
+          // "your-name": "Radha",
+          // "partner-name": "Krishna",
+          "invitation-title": "Welcome Dinner",
+          "invitation-full-date": "8 December 2026",
+          "invitation-time": "4:00 PM Saturday Onwards",
+          "invitation-venue": "Hotel Giriraj",
+          "invitation-address": "K.J. Buti Marrg, Temple Road, Sitabuldi"
+        },
+        {
+          "invitation-title": "Reception Gala",
+          "invitation-full-date": "9 December 2026",
+          "invitation-time": "4:00 PM Sunday Onwards",
+          "invitation-venue": "Hotel Paradise",
+          "invitation-address": "MG Road, Nagpur"
+        }
+      ];
+    }
+ 
+    const card = document.getElementById("invitation-card");
+ 
+    if (eventsArray.length > 0) {
+      // const firstEvent = eventsArray[0];
+      // const brideName = firstEvent["your-name"] || '';
+      // const groomName = firstEvent["partner-name"] || '';
+ 
+      // if (brideName && groomName) {
+      //   const coupleNames = document.createElement("div");
+      //   coupleNames.className = "groom-bride-name";
+      //   coupleNames.innerHTML = `
+      //     <div class="yourName">${brideName}</div>
+      //     <div class="and">&</div>
+      //     <div class="partnerName">${groomName}</div>
+      //   `;
+      //   card.appendChild(coupleNames);
+      // }
+ 
+      eventsArray.forEach(event => {
+        const section = document.createElement("div");
+        section.className = "section-content";
+        section.innerHTML = `
+          <div class="invitation-title">${event["invitation-title"] || ''}</div>
+          <div class="invitation-date">${event["invitation-full-date"] || ''}</div>
+          <div class="invitation-time">${event["invitation-time"] || ''}</div>
+          <div class="invitation-venue">${event["invitation-venue"] || ''}</div>
+          <div class="invitation-address">${event["invitation-address"] || ''}</div>
+        `;
+        card.appendChild(section);
+        card.appendChild(document.createElement("hr"));
+      });
+    }
+  </script>
+</body>
+</html>
+ 

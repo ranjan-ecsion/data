@@ -1,0 +1,99 @@
+[
+    {
+        "primaryColor": "#FFFFFF",
+        "secondaryColor": "#333333",
+        "bodyColor": " #501414",
+        "textColor": "  #FFFFFF",
+         "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "Playfair Display",
+        "secondaryFont": "Montserrat",
+        "tertiaryFont": "Alex Brush",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "headingFont": "BonheurRoyale-Regular",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/EF43F6A6-2D60-49CA-B716-6BB4C9E12E0A.png",
+          "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/7B334655-3895-4861-8F72-F1345B5F62CF.png"
+
+    },
+    {
+       "primaryColor": "#104A08",
+        "secondaryColor": "#333333",
+        "bodyColor": "#FFFFD3",
+        "textColor": " #000000",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "Playfair Display",
+        "secondaryFont": "Montserrat",
+        "tertiaryFont": "Alex Brush",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "headingFont": "BonheurRoyale-Regular",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/EF43F6A6-2D60-49CA-B716-6BB4C9E12E0A.png",
+           "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/7B334655-3895-4861-8F72-F1345B5F62CF.png"
+
+    },
+    {
+        "primaryColor": "#FFFFFF",
+        "secondaryColor": "#333333",
+         "bodyColor": "#2E626C",
+        "textColor": " #FFFFFF",
+      "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "Playfair Display",
+        "secondaryFont": "Montserrat",
+        "tertiaryFont": "Alex Brush",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "headingFont": "BonheurRoyale-Regular",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/EF43F6A6-2D60-49CA-B716-6BB4C9E12E0A.png",
+           "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/7B334655-3895-4861-8F72-F1345B5F62CF.png"
+
+   
+    },
+    {
+        "primaryColor": "#104A08",
+        "secondaryColor": "#333333",
+        "bodyColor": "#FFEDED",
+        "textColor": " #000000",
+       "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+       "primaryFont": "Playfair Display",
+        "secondaryFont": "Montserrat",
+        "tertiaryFont": "Alex Brush",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "headingFont": "BonheurRoyale-Regular",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/EF43F6A6-2D60-49CA-B716-6BB4C9E12E0A.png",
+          "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/7B334655-3895-4861-8F72-F1345B5F62CF.png"
+
+  
+    },
+        {
+        "primaryColor": "#104A08",
+        "secondaryColor": "#333333",
+        "bodyColor": "#FFFFFF",
+        "textColor": " #000000",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "Playfair Display",
+        "secondaryFont": "Montserrat",
+        "tertiaryFont": "Alex Brush",
+        "bodyRegularFont": "Poppins-Regular",
+        "bodyMediumFont": "Poppins-Medium",
+        "bodyBoldFont": "georgia",
+        "headingFont": "BonheurRoyale-Regular",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/EF43F6A6-2D60-49CA-B716-6BB4C9E12E0A.png",
+          "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/7B334655-3895-4861-8F72-F1345B5F62CF.png"
+
+    }
+]

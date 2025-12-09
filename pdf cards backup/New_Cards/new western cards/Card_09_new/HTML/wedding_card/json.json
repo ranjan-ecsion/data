@@ -1,0 +1,20 @@
+[
+{
+    "primaryColor": "#DC7634",
+    "secondaryColor": "#91593B",
+    "bodyColor": "#dedad9",
+    "textColor": "#000000",
+    "actionColor": "#E94444",
+    "successColor": "#38cc31",
+    "borderGray": "#ccc",
+    "primaryFont": "Alex Brush",
+    "secondaryFont": "Montserrat",
+    "bodyRegularFont": "Poppins-Regular",
+    "bodyMediumFont": "Poppins-Medium",
+    "bodyBoldFont": "Montserrat",
+    "tertiaryFont":"bangkokn",
+    "headingFont": "BonheurRoyale-Regular",
+    "bgImage": "",
+    "bgResponsiveImage": ""
+  }
+]

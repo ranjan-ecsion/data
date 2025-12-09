@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the date</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+  <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../wedding_invitation/assets/css/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+    .invitation-card {
+      max-width: 562px;
+      width: 100%;
+      height: 787px;
+      flex-direction: column;
+      display: flex;
+      padding: 30px 30px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      background-color: #FFF2EA;
+
+    }
+
+    .invitation-title {
+       font-family: "Galter";
+      text-transform: uppercase;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-top: 12px;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    .groom-bride-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      line-height: 1.2;
+    }
+
+    .and {
+      font-family: "Galter";
+      font-size: 46px;
+      font-size: 600;
+      padding: 0px 12px;
+    }
+
+    .your-name {
+      font-family: "Galter";
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 46px;
+      letter-spacing: 9px;
+      color: #DC7634;
+    }
+
+    .partner-name {
+      font-family: "Galter";
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 46px;
+      letter-spacing: 9px;
+      color: #DC7634;
+    }
+
+    .invitation-date-section {
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+      margin-top: 10px;
+    }
+
+    .invitation-month {
+      font-family: "georgia";
+      font-size: 16px;
+      font-weight: 600;
+      border-top: 1px dotted;
+      border-bottom: 1px dotted;
+      padding: 7px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .invitation-day {
+      font-family: "georgia";
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .invitation-time {
+      font-family: "georgia";
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .invitation-date {
+      font-family: "georgia";
+      font-size: 40px;
+      font-weight: 600;
+      padding: 0px 0px;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .invitation-year {
+      font-family: "georgia";
+      font-size: 16px;
+      font-weight: 600;
+      border-top: 1px dotted;
+      border-bottom: 1px dotted;
+      padding: 7px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+
+
+
+    .couple-img img {
+      width: 374px;
+      height: 446px;
+      object-fit: cover;
+      margin-top: 10px;
+       border-radius: 190px 190px 0px 0px;
+    }
+
+    .day-time {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (max-width: 480px) {
+  .invitation-card {
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 15px 15px;
+  }
+
+  .couple-img img {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+  }
+
+  .your-name,
+  .partner-name {
+    font-size: 28px;
+    letter-spacing: 4px;
+  }
+
+  .and {
+    font-size: 32px;
+    padding: 0 6px;
+  }
+
+  .invitation-date-section {
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+  }
+
+  .invitation-month,
+  .invitation-year {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding: 4px 0;
+  }
+
+  .invitation-day,
+  .invitation-time {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    padding: 0px 0;
+  }
+
+  .invitation-date {
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+
+  .invitation-title {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .groom-bride-section {
+    flex-direction: column;
+   
+}
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="invitation-card">
+    <div class="couple-img">
+      <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/99E3D9E5-1AB4-41B3-942B-B931457309A3.jpeg"
+        alt="">
+    </div>
+    <div class="groom-bride-section ">
+      <div class="d-flex">
+        <div class="your-name">
+          <!-- ${contentJson["your-name"]} -->
+          SHAILY
+        </div>
+        <div class="and">
+          &
+        </div>
+      </div>
+      <div class="partner-name">
+        <!-- ${contentJson["partner-name"]} -->
+        JAYESH
+      </div>
+    </div>
+    <div class="invitation-date-section">
+      <div class="invitation-month">
+        <!-- ${contentJson["invitation-month-text"]} -->
+        SEPT
+      </div>
+      <div class="day-time">
+        <div class="invitation-day">
+          <!-- ${contentJson["invitation-day"]} -->
+          SATURDAY
+        </div>
+        <div class="invitation-date">
+          <!-- ${contentJson["invitation-date"]} -->
+          21
+        </div>
+        <div class="invitation-time">
+          <!-- ${contentJson["invitation-time"]} -->
+          10:30 AM
+        </div>
+      </div>
+      <div class="invitation-year">
+        <!-- ${contentJson["invitation-year"]} -->
+        2027
+      </div>
+    </div>
+    <div class="invitation-title">
+      <!-- ${contentJson["invitation-title"]} -->
+      Save The Date
+    </div>
+
+
+
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <!-- iPhone Safari full screen & safe-area handling -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Android Chrome status bar color -->
+  <meta name="theme-color" content="#db0606" />
+
+  <title>Safe Area Test</title>
+
+  <style>
+    /* Reset */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    /* Create a full-screen background layer that enters the safe-area */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+
+      /* Background image */
+      background-image: url("https://images.pexels.com/photos/1493226/pexels-photo-1493226.jpeg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      z-index: -1; /* keep behind content */
+    }
+
+    /* Content with safe-area insets */
+    .content {
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <div>
+      <h1>Safe Area Image Test</h1>
+      <p>The background image now fills the entire screen including notch area.</p>
+    </div>
+  </div>
+</body>
+</html>

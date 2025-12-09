@@ -1,0 +1,24 @@
+{
+  "eventsArray": [
+    {
+      "yourName": "Radha",
+      "and": "&",
+      "partnerName": "Krishna",
+      "invitationFullDate": "8 December 2026",
+      "invitationTime": "4:00 PM Saturday Onwards",
+      "invitationVenue": "Hotel Giriraj",
+      "invitationAddress": "K.J. Buti Marrg, Temple Road, Sitabuldi",
+      "invitationTitle": "Welcome Dinner"
+    },
+    {
+      "yourName": "Radha",
+      "and": "&",
+      "partnerName": "Krishna",
+      "invitationFullDate": "9 December 2026",
+      "invitationTime": "4:00 PM Saturday Onwards",
+      "invitationVenue": "Hotel Giriraj",
+      "invitationAddress": "K.J. Buti Marrg, Temple Road, Sitabuldi",
+      "invitationTitle": "Reception Gala"
+    }
+  ]
+}

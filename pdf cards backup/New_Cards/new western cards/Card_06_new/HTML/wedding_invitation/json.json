@@ -1,0 +1,19 @@
+[
+{
+    "primaryColor": "#DC7634",
+    "secondaryColor": "#91593B",
+    "bodyColor": "#FFF2EA",
+    "textColor": "#000000",
+    "actionColor": "#E94444",
+    "successColor": "#38cc31",
+    "borderGray": "#ccc",
+    "primaryFont": "Galter",
+    "secondaryFont": "Poppins",
+    "bodyRegularFont": "Poppins-Regular",
+    "bodyMediumFont": "Poppins-Medium",
+    "bodyBoldFont": "Montserrat",
+    "headingFont": "BonheurRoyale-Regular",
+    "bgImage": "",
+    "bgResponsiveImage": ""
+  }
+]

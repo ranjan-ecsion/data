@@ -1,0 +1,21 @@
+{
+  "title": "Wedding Celebration",
+  "eventsArray": [
+    {
+      "event_name": "Haldi Ceremony",
+      "event_date": "25",
+      "event_month": "July",
+      "event_year": "2025",
+      "event_time": "10:00 AM",
+      "event_address": "Venue A, City"
+    },
+    {
+      "event_name": "Reception",
+      "event_date": "26",
+      "event_month": "July",
+      "event_year": "2025",
+      "event_time": "7:00 PM",
+      "event_address": "Venue B, City"
+    }
+  ]
+}

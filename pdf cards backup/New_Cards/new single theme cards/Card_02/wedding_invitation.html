@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+    <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        .invitation-card {
+            max-width: 562px;
+            width: 100%;
+            height: 787px;
+            flex-direction: column;
+            display: flex;
+            padding: 30px 30px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+      background-image: url("https://ecsiondevstorage.blob.core.windows.net/wedding-storage/A032AEF0-1A57-4407-B57C-B62EF99F4205.png");
+        }
+
+        .invitation-title {
+            font-size: 42px;
+            color: #91593B;
+            font-family: "laurentine";
+            margin-bottom: 10px;
+        }
+
+        .invitation-description {
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            color: #464646;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 20px;
+
+
+
+        }
+
+        .invitation-address {
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            color: #464646;
+            max-width: 240px;
+            line-height: 1.4;
+            font-weight: 500;
+
+            text-align: center;
+            word-break: break-all;
+        }
+
+        .invitation-date {
+            font-size: 20px;
+            color: #464646;
+            font-family: "Poppins", sans-serif;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-top: 1px solid #91593ba1;
+            border-bottom: 1px solid #91593ba1;
+            padding: 10px 0px;
+            max-width: 220px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 26px;
+            margin-bottom: 20px;
+        }
+
+        .following-party {
+            color: #464646;
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+
+        }
+
+        .groom-bride-section {
+            text-align: center;
+
+        }
+
+        .invitation-time {
+            font-size: 16px;
+            font-family: "Poppins", sans-serif;
+            color: #464646;
+            font-weight: 500;
+
+            word-break: break-all;
+        }
+
+        .your-name,
+        .partner-name {
+            font-size: 36px;
+            font-family: "Playfair Display", serif;
+            color: #000000;
+            font-weight: 500;
+            letter-spacing: 1px;
+
+        }
+
+        .and {
+            font-size: 24px;
+            font-family: "laurentine";
+            color: #000000;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-top: 15px;
+        }
+
+        .couple-img {
+            background-position: center;
+        }
+
+        .your-parent-name,
+        .partner-parent-name {
+
+            font-family: "Poppins", sans-serif;
+
+            margin: 0 auto;
+            font-size: 16px;
+            color: #464646;
+        }
+
+
+
+        @media screen and (max-width: 562px) {
+            .invitation-card {
+                min-height: 100vh;
+        background-image: url("https://ecsiondevstorage.blob.core.windows.net/wedding-storage/3A85841E-44BF-4ED4-82C9-DF6FBA03E9F1.png");
+            }
+
+            .invitation-title {
+                font-size: 32px;
+            }
+
+            .your-parent-name,
+            .partner-parent-name,
+            .invitation-description,
+            .invitation-time,
+            .invitation-address,
+            .following-party {
+                font-size: 14px;
+            }
+
+            .your-name,
+            .partner-name {
+                font-size: 26px;
+
+            }
+
+            .and {
+                font-size: 20px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="invitation-card"
+        >
+        <div>
+            <img src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/80AD28B7-6243-45F1-9A23-23F72689BEFD.png"
+                class="img-fluid" alt="Invitation Image">
+        </div>
+
+        <div class="invitation-title mt-3">
+            <!-- ${contentJson["invitation-title"]} -->
+            Wedding Invitation
+        </div>
+        <div class="your-parent-name">
+            <!-- ${contentJson["your-parent-name"]} -->
+            Smt. Rupa Devi & shri Radhey Shyam
+
+        </div>
+        <div class="invitation-description">
+            <!-- ${contentJson["invitation-description"]} -->
+            Request your gracious presence at the Wedding of their daughter
+        </div>
+        <div class=" couple-img"
+            style="background-image: url('https://ecsiondevstorage.blob.core.windows.net/wedding-storage/B7DAE4D1-4D07-40C4-9DCA-6031FA0BBC90.png');">
+            <div class="groom-bride-section ">
+
+                <div>
+                    <div class="your-name">
+                        <!-- ${contentJson["your-name"]} -->
+                        EESHA
+                    </div>
+                    <div class="your-parent-name">
+                        <!-- ${contentJson["your-parent-name"]} -->
+                        Smt. Rupa Devi & shri Radhey Shyam
+                    </div>
+                </div>
+                <div class="and">With</div>
+                <div>
+                    <div class="partner-name">
+                        <!-- ${contentJson["partner-name"]} -->
+                        CHIRAG
+                    </div>
+                    <div class="partner-parent-name mb-3">
+                        <!-- ${contentJson["partner-parent-name"]} -->
+                        (D/O Smt. Parvati & Shri Mohan Bajoria)
+                    </div>
+                </div>
+            </div>
+            <div class="invitation-date">
+                <!-- ${contentJson["invitation-full-date"]} -->
+                23 AUGUST 2027
+
+            </div>
+        </div>
+        <div class="invitation-time mt-2">
+            <!-- ${contentJson["invitation-time"]} -->
+            From 4:00pm Saturday onwards
+
+        </div>
+        <div class="invitation-address mt-4">
+            <!-- ${contentJson["invitation-address"]} -->
+            Ceremony Sta. Mery Church Reception Hotel Palace
+
+        </div>
+        <div class="following-party mt-4">
+            <!-- ${contentJson["following-party"]} -->
+            FOLLOWING THE PARTY
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

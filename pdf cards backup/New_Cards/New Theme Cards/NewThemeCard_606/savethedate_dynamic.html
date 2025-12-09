@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+        /* :root {
+            --primary-color: #eeeded;
+            --secondary-color: #FFCE00;
+            --font-color: #FFFFFF;
+            --primary-font: "Playfair Display";
+            --secondary-font: "abrilfatfaceRegular";
+            --body-font: "georgia";
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-color);
+            font-family: var(--primary-font);
+        } */
+
+        .invitation-card {
+            max-width: 562px;
+            width: 100%;
+            height: 787px;
+            flex-direction: column;
+            display: flex;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            padding: 20px 30px;
+            justify-content: center;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            background-image: url("\${contentJson['bgImage']}");
+        }
+
+        .invitation-title {
+            font-size: 50px;
+            color: ${contentJson['textColor']};
+            font-family: ${contentJson['secondaryFont']};
+            font-weight: 500;
+            max-width: 452px;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 5px;
+             letter-spacing: 5px;
+        }
+
+        .invitation-venue {
+            font-size: 22px;
+           color: ${contentJson['textColor']};
+            font-family: ${contentJson['secondaryFont']};
+            font-weight: 600;
+            max-width: 450px;
+            line-height: 1.5;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        .invitation-address {
+            font-size: 18px;
+            color: ${contentJson['textColor']};
+            font-family: ${contentJson['secondaryFont']};
+            font-weight: 500;
+            max-width: 450px;
+            line-height: 1.5;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .groom-bride-section {
+               margin: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+           
+        }
+
+        .your-name {
+            font-size: 36px;
+            color: ${contentJson['textColor']};
+            font-family: ${contentJson['secondaryFont']};
+            font-weight: 500;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 15px 0px;
+             letter-spacing: 2px;
+        }
+
+        .and {
+          font-size: 20px;
+            color: ${contentJson['textColor']};
+            font-family: ${contentJson['tertiaryFont']};
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+
+        .partner-name {
+            font-size: 36px;
+             color: ${contentJson['textColor']};
+            font-family: ${contentJson['secondaryFont']};
+            font-weight: 500;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 15px 0px;
+             letter-spacing: 2px;
+        }
+
+
+
+        .invitation-date-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .invitation-full-date {
+            font-size: 18px;
+             color: ${contentJson['textColor']};
+            font-family: ${contentJson['secondaryFont']};
+            text-transform: uppercase;
+          
+            font-weight: 500;
+            text-align: center;
+            padding: 5px 0;
+            word-spacing: 2px;
+        }
+
+        .invitation-time {
+             color: ${contentJson['textColor']};
+            font-family: ${contentJson['secondaryFont']};
+            font-size: 20px;
+            font-weight: 500;
+            padding: 5px 0;
+            text-transform: uppercase;
+        }
+
+        .your-parent-name {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 500;
+            max-width: 500px;
+            color: ${contentJson['textColor']};
+            font-family: ${contentJson['secondaryFont']};
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+             .divider {
+            border: 1px solid ${contentJson['textColor']};
+            width: 80px;
+            margin-top: 20px;
+        }
+
+
+        @media (max-width: 562px) {
+            .invitation-card {
+                min-height: 100vh;
+                padding: 15px;
+                background-image: url("\${contentJson['bgResponsiveImage']}");
+
+            }
+
+            .your-name,
+            .partner-name {
+                font-size: 24px;
+            }
+
+             .invitation-title{
+ font-size: 32px;
+        max-width: 350px;
+        letter-spacing: 5px;
+            }
+
+            .and {
+                font-size: 24px;
+            }
+
+          
+            .invitation-address {
+                font-size: 20px;
+            }
+
+            .groom-bride-section {
+                width: 500px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="invitation-card">
+        <div class="invitation-title">
+            ${contentJson["invitation-title"]}
+           <!-- SAVE THE DATE -->
+        </div>
+
+       
+
+        <div class="groom-bride-section">
+            <div class="your-name">
+                ${contentJson["your-name"]}
+                <!-- Mithali -->
+            </div>
+            <div class="and">&</div>
+            <div class="partner-name">
+                 ${contentJson["partner-name"]}
+                <!-- CHIRAG -->
+            </div>
+        </div>
+
+        <div class="divider"></div>
+        <div class="invitation-date-section">
+            <div class="invitation-full-date">
+                ${contentJson["invitation-full-date"]}
+                <!-- 23 August 2017 -->
+            </div>
+        </div>
+
+      
+        <div class="invitation-address">
+            ${contentJson["invitation-address"]}
+            <!-- Nagpur Maharastra -->
+        </div>
+    </div>
+
+</body>
+
+</html>

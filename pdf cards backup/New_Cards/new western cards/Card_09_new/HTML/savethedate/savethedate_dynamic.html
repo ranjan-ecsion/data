@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+    <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <title>Invitation</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+     @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alex+Brush&family=Bonheur+Royale&family=Charmonman:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Italianno&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+        .invitation-card {
+            max-width: 562px;
+            width: 100%;
+            height: 787px;
+            display: flex;
+            flex-direction: column;
+            vertical-align: middle;
+            border-radius: 10px;
+            padding: 50px 30px;
+            margin: 0 auto;
+        }
+ 
+        .heart-img {
+            width: 20px;
+        }
+ 
+        .couple-img {
+            width: 100%;
+            background-color: #dedad9;
+            padding: 25px;
+            rotate: 5deg;
+        }
+ 
+        .couple-img img {
+            width: 450px;
+      height: 300px;
+            object-fit: cover;
+        }
+ 
+        .invitation-date {
+             font-size: 14px;
+            letter-spacing: 2px;
+            margin-top: 15px;
+            color: ${contentJson['textColor']};
+            font-family: ${contentJson['secondaryFont']};
+            font-weight: 500;
+        }
+ 
+        .heart-grp {
+            width: 50px;
+            position: absolute;
+        }
+ 
+        .invitation-title {
+              color: ${contentJson['primaryColor']};
+            font-family: ${contentJson['primaryFont']};
+            letter-spacing: 3px;
+            word-spacing: 2px;
+            font-size: 40px;
+            line-height: 0.8;
+            margin-top: 20px;
+           letter-spacing: 6px;
+           font-weight: 400;
+        }
+ 
+        .groom-bride-section {
+            text-align: center;
+             color: ${contentJson['primaryColor']};
+            font-family: ${contentJson['tertiaryFont']};
+            font-size: 34px;
+            margin-top: 20px;
+            letter-spacing: 5px;
+        }
+ 
+        .invitation-address {
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-top: 10px;
+            color: ${contentJson['textColor']};
+            font-family: ${contentJson['secondaryFont']};
+            font-weight: 500;
+        }
+ 
+        .hearts-img {
+            position: relative;
+        }
+ 
+        .hearts {
+            position: absolute;
+            width: 50px;
+            left: 82%;
+        }
+
+ 
+ 
+        @media (max-width: 562px) {
+ 
+            .invitation-card {
+                min-height: 100vh;
+            }
+            .invitation-title {
+    font-size: 32px;
+    margin-top: 62px;
+}
+.groom-bride-section {
+    font-size: 22px;
+}
+
+ .couple-img img {
+            width: 100%;
+      height: auto;
+            object-fit: cover;
+        }
+ 
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="invitation-card">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="text-end hearts-img">
+                    <img class="heart-img"
+                        src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/BA404949-627F-4A0C-A403-C2A1C02F2E37.png"
+                        alt="">
+                </div>
+                <div class="couple-img">
+                    <img id="imgOne" src=${contentJson['couple-img1']}
+                        alt="">
+                </div>
+               
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class=" col-12  ">
+                <div class="hearts-img">
+                    <img class="heart-grp"
+                        src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/A8215DC6-9C7B-4B79-9E53-D2E1809A05BD.png"
+                        alt="">
+                </div>
+                <div class="text-center">
+                    <div class="invitation-title">
+                         ${contentJson["invitation-title"]}
+                        <!-- Save The Date -->
+                    </div>
+                    <div class="groom-bride-section">
+                         <span class="your-name">
+                             ${contentJson["your-name"]}
+                            <!-- Adeline -->
+                        </span>
+                         <span class="and">&</span>
+                        <span class="partner-name">
+                            ${contentJson["partner-name"]}
+                            <!-- Frank -->
+                        </span>
+                    </div>
+                    <div class="invitation-date">
+                        ${contentJson["invitation-full-date"]}
+                        <!-- 19Th August 2028 -->
+                    </div>
+                    <div class="invitation-address">
+                        ${contentJson["invitation-address"]}
+                        <!-- Avenue Napa Valley,California -->
+                    </div>
+ 
+                    <div class="hearts-img">
+                        <img class="hearts"
+                            src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/A8215DC6-9C7B-4B79-9E53-D2E1809A05BD.png"
+                            alt="">
+                    </div>
+                </div>
+ 
+ 
+            </div>
+ 
+ 
+        </div>
+ 
+    </div>
+ 
+ 
+    </div>
+ 
+</body>
+ 
+</html>

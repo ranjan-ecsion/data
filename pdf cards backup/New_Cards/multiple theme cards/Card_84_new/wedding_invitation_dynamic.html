@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Invitation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+  <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+
+    .invitation-card {
+      max-width: 562px;
+      width: 100%;
+      height: 787px;
+      flex-direction: column;
+      display: flex;
+      padding: 30px 20px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      background-color: ${contentJson['bodyColor']};
+      background-image: url("\${contentJson['bgImage']}");
+    }
+
+    .invitation-description {
+      font-size: 16px;
+      font-family: ${contentJson['secondaryFont']};
+      color: ${contentJson['textColor']};
+      max-width: 300px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .invitation-time {
+      font-size: 16px;
+      font-family: ${contentJson['secondaryFont']};
+      color: ${contentJson['textColor']};
+      font-weight: 500;
+      border-top: 1px solid ${contentJson['textColor']};
+      border-bottom: 1px solid ${contentJson['textColor']};
+      padding: 3px 0px;
+      margin-top: 15px;
+    }
+
+
+     .invitation-address {
+      font-size: 16px;
+      font-family: ${contentJson['secondaryFont']};
+      color: ${contentJson['textColor']};
+      font-weight: 500;
+      max-width: 300px;
+       text-align: center;
+
+    }
+
+    .invitation-venue{
+         font-size: 20px;
+      font-family: ${contentJson['secondaryFont']};
+      color: ${contentJson['primaryColor']};
+      line-height: 1.4;
+      font-weight: 600;
+      max-width: 300px;
+      margin-top:15px;
+      margin-bottom:5px;
+    }
+
+    .invitation-title {
+      font-size: 32px;
+      font-family: ${contentJson['primaryFont']};
+      color: ${contentJson['primaryColor']};
+      font-weight: 600;
+      max-width: 370px;
+      text-align: center;
+      letter-spacing: 2px;
+
+    }
+
+    .invitation-date {
+      font-size: 34px;
+      font-family: ${contentJson['secondaryFont']};
+      color: ${contentJson['textColor']};
+      font-weight:500;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .invitation-month {
+      font-size: 16px;
+      font-family: ${contentJson['secondaryFont']};
+      color: ${contentJson['textColor']};
+      font-weight: 500;
+      text-transform: capitalize;
+    
+    }
+
+    .invitation-year {
+      font-size: 16px;
+      font-family: ${contentJson['secondaryFont']};
+      color: ${contentJson['textColor']};
+      font-weight: 500;
+      text-transform: capitalize;
+     
+    }
+
+    .invitation-day{
+      font-size: 16px;
+      font-family: ${contentJson['secondaryFont']};
+      color: ${contentJson['textColor']};
+      font-weight: 600;
+      text-transform: capitalize;
+      border-top: 1px solid ${contentJson['textColor']};
+      border-bottom: 1px solid ${contentJson['textColor']};
+      padding: 3px 0px;
+      margin-top: 15px;
+    }
+
+    .invitation-date-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+     
+    }
+
+    .following-party {
+      font-family: ${contentJson['secondaryFont']};
+      color: ${contentJson['textColor']};
+      font-size: 16px;
+      font-weight: 500;
+       margin:15px 0px
+    }
+
+    .groom-bride-section {
+      line-height: 1.2;
+      padding: 10px 0px;
+    }
+
+    .your-name,
+    .partner-name {
+      font-size: 50px;
+      font-family: ${contentJson['primaryFont']};
+      color: ${contentJson['primaryColor']};
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .and {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      font-family: ${contentJson['primaryFont']};
+      color: ${contentJson['primaryColor']};
+      font-weight: 600;
+      text-align: center;
+      margin: 25px;
+    }
+
+
+
+    .your-parent-name,
+    .partner-parent-name {
+      margin: 7px 0px;
+      font-size: 14px;
+      max-width: 500px;
+      font-family: ${contentJson['secondaryFont']};
+      color: ${contentJson['textColor']};
+    }
+
+    @media screen and (max-width: 562px) {
+      .invitation-card {
+        min-height: 100vh;
+        background-image: url("\${contentJson['bgResponsiveImage']}");
+      }
+
+      .invitation-title {
+        font-size: 36px;
+      }
+
+      .your-name,
+      .partner-name {
+        font-size: 40px;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="invitation-card">
+
+    <div class="invitation-title mt-5">
+      ${contentJson["invitation-title"]}
+      <!-- Wedding Invitation -->
+    </div>
+  
+    <div class="invitation-description ">
+      ${contentJson["invitation-description"]}
+      <!-- Request your grorious oresence at the Wedding of there daugher -->
+    </div>
+    <div class="groom-bride-section ">
+      <div class="your-name">
+        ${contentJson["your-name"]}
+        <!-- Deepika -->
+
+      </div>
+      <div class="your-parent-name">
+        ${contentJson["your-parent-name"]}
+        <!-- (D/O Smt. Rupa Devi & Sri. Radhey Shyam) -->
+      </div>
+      <div class="and">
+           <img 
+  src="https://ecsiondevstorage.blob.core.windows.net/wedding-storage/D464C7A6-CB11-47FF-AEFB-6241F5A951CC.png" 
+  alt="Decorative Image" 
+  style="width: 50px; height: auto;"
+/>
+      </div>
+      <div class="partner-name">
+        ${contentJson["partner-name"]}
+        <!-- Ranbeer -->
+      </div>
+      <div class="partner-parent-name">
+        ${contentJson["partner-parent-name"]}
+        <!-- (S/O Smt. Rupa Devi & Sri. Radhey Shyam) -->
+
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="invitation-day">
+        ${contentJson["invitation-week-day"]}
+        <!-- Saturday -->
+      </div>
+      <div class="invitation-date-section">
+        <div class="invitation-month  ">
+          ${contentJson["invitation-month-text"]}
+          <!-- February -->
+        </div>
+        <div class="invitation-date  ">
+          ${contentJson["invitation-date"]}
+          <!-- 28 -->
+        </div>
+        <div class="invitation-year  ">
+          ${contentJson["invitation-year"]}
+          <!-- 2027 -->
+        </div>
+      </div>
+      <div class="invitation-time ">
+        ${contentJson["invitation-time"]}
+        <!-- At 5 Pm -->
+      </div>
+    </div>
+     <div class="invitation-venue">
+        ${contentJson["invitation-venue"]}
+        <!-- Ceremony Sta. Mery Church Reception Hotel Palace -->
+      </div>
+      <div class="invitation-address">
+        ${contentJson["invitation-address"]}
+        <!-- Ceremony Sta. Mery Church Reception Hotel Palace -->
+      </div>
+    <div class="following-party ">
+      ${contentJson["following-party"]}
+      <!-- Following The Party -->
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

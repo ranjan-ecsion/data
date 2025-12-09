@@ -1,0 +1,20 @@
+[
+    {
+        "primaryColor": "#68173c",
+        "secondaryColor": "#333333",
+        "bodyColor": "#d3d3d300",
+        "textColor": "#68173c",
+        "actionColor": "#E94444",
+        "successColor": "#38cc31",
+        "borderGray": "#ccc",
+        "primaryFont": "winlove",
+        "secondaryFont": "Open Sans",
+        "tertiaryFont": "georgia",
+        "bodyBoldFont": "Open Sans",
+        "headingFont": "BonheurRoyale-Regular",
+        "imageTop": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/4C22A1F6-173A-438E-86C3-F0F742B1099F.png",
+        "imageBottom": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/4A26B024-126E-4B30-A3D3-E96747C3C691.png",
+        "bgImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/FF54E9BF-E39C-4117-A6F6-DA99D9A5657B.png",
+        "bgResponsiveImage": "https://ecsiondevstorage.blob.core.windows.net/wedding-storage/1908DDB6-190E-40AA-8EA9-EB66B5C147B7.png"
+    }
+]

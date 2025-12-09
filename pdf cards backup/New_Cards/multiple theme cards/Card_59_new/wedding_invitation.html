@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://perfectlywed.in/" crossorigin="">
+    <link href="https://perfectlywed.in/wp-content/uploads/fonts/custom-fonts/font-style.css" rel="stylesheet">
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');     
+/* :root {
+            --primary-color: #FFFFFF;
+            --secondary-color: #91593B;
+            --font-color: #464646;
+           --primary-font: "beautyRomantic";
+            --secondary-font: "Open Sans";
+            --body-font: "Open Sans";
+        }  */
+
+        /* :root {
+            --primary-color: #FFFCF0;
+            --secondary-color: #91593B;
+            --font-color: #464646;
+            --primary-font: "beautyRomantic";
+            --secondary-font: "Open Sans";
+            --body-font: "Open Sans";
+        }  */
+
+        /* :root {
+            --primary-color: #3E3A1E;
+            --secondary-color: #FFFFFF;
+            --font-color: #FFFFFF;
+             --primary-font: "beautyRomantic";
+             --secondary-font: "Open Sans";
+            --body-font: "Open Sans";
+        }  */
+
+        :root {
+            --primary-color: #0C2838;
+            --secondary-color: #EDD47C;
+            --font-color: #FFFFFF;
+            --primary-font: "beautyRomantic";
+            --secondary-font: "Open Sans";
+            --body-font: "Open Sans";
+        }
+
+        .invitation-card {
+            max-width: 562px;
+            width: 100%;
+            height: 787px;
+            flex-direction: column;
+            display: flex;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            padding: 20px 30px;
+            justify-content: center;
+            margin: 0 auto;
+            background-color: var(--primary-color);
+            position: relative;
+            overflow: hidden;
+            background-image: url("https://ecsiondevstorage.blob.core.windows.net/wedding-storage/95EA2781-85EA-47CE-A4CF-543A1FD26F78.png");
+
+        }
+
+        .invitation-description {
+            font-size: 14px;
+            font-family: var(--body-font);
+            font-weight: 500;
+            max-width: 280px;
+            text-align: center;
+            color: var(--font-color);
+        }
+
+        .invitation-title {
+            font-size: 40px;
+            color: var(--font-color);
+            font-family: var(--secondary-font);
+            text-transform: capitalize;
+            letter-spacing: 1px;
+        }
+
+        .invitation-address {
+            font-size: 20px;
+            color: var(--font-color);
+            font-family: var(--body-font);
+            font-weight: 600;
+            max-width: 300px;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+             .invitation-address span{
+      font-size: 14px;
+      font-family: var(--body-font);
+      color: var(--font-color);
+     max-width:300px;
+            line-height: 1.5;
+            font-style: italic;
+            text-align: center;
+          font-weight: 400;
+    }
+
+        .groom-bride-section {
+            margin-top: 10px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .your-name {
+            font-size: 28px;
+            color: var(--secondary-color);
+            font-family: var(--body-font);
+            font-weight: 300;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .partner-name {
+            font-size: 28px;
+            color: var(--secondary-color);
+            font-family: var(--body-font);
+            font-weight: 300;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+
+        .and {
+            font-size: 24px;
+            color: var(--secondary-color);
+            font-family: var(--primary-font);
+            font-weight: 300;
+            padding: 10px 0px;
+            letter-spacing: 3px;
+            text-align: center;
+        }
+
+        .invitation-date-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 25px 0px;
+
+        }
+
+        .invitation-date {
+            font-size: 30px;
+            color: var(--font-color);
+            font-family: var(--body-font);
+            text-transform: uppercase;
+            font-weight: 600;
+            text-align: center;
+            border-left: 1px solid var(--font-color);
+            border-right: 1px solid var(--font-color);
+            padding: 5px;
+        }
+
+        .invitation-time {
+            color: var(--font-color);
+            font-size: 14px;
+            font-weight: 500;
+            font-family: var(--body-font);
+
+        }
+
+        .invitation-year {
+            font-size: 16px;
+            color: var(--font-color);
+            font-family: var(--body-font);
+            text-transform: capitalize;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .invitation-month {
+            font-size: 16px;
+            color: var(--font-color);
+            font-family: var(--body-font);
+            text-transform: capitalize;
+            font-weight: 500;
+            text-align: center;
+            border-bottom: 1px solid white;
+        }
+
+        .invitation-day {
+            font-size: 16px;
+            color: var(--font-color);
+            font-family: var(--body-font);
+            text-transform: capitalize;
+            font-weight: 500;
+            text-align: center;
+            border-bottom: 1px solid white;
+        }
+
+        .following-party {
+            font-size: 18px;
+            color: var(--font-color);
+            font-family: var(--body-font);
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .your-parent-name,
+        .partner-parent-name {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            max-width: 500px;
+            color: var(--font-color);
+            font-family: var(--body-font);
+            text-align: center;
+        }
+
+
+
+
+        @media (max-width: 562px) {
+            .invitation-card {
+                background-image: url("https://ecsiondevstorage.blob.core.windows.net/wedding-storage/6935819A-34FF-42A9-8FD9-77518B15F7AF.png");
+                min-height: 100vh;
+            }
+
+            .invitation-title {
+                font-size: 40px;
+                padding: 10px 0px;
+            }
+
+            .your-name,
+            .partner-name {
+                font-size: 26px;
+            }
+
+            .and {
+                font-size: 26px;
+
+            }
+
+            .invitation-description {
+                font-size: 14px;
+                max-width: 250px;
+            }
+
+            .invitation-time,
+            .following-party,
+            .invitation-address {
+                font-size: 14px;
+            }
+
+            .invitation-date {
+                font-size: 32px;
+                width: 48%;
+                margin-bottom: 10px;
+            }
+
+            .groom-bride-section {
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+            .invitation-address {
+                max-width: 200px;
+                padding: 10px 0;
+            }
+
+            .following-party {
+                text-align: center;
+            }
+
+            .your-parent-name, .partner-parent-name {
+    font-size: 12px;
+   
+}
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="invitation-card ">
+        
+        <div class="invitation-title">
+            <!-- ${contentJson["invitation-title"]} -->
+           Wedding Invitation
+        </div>
+        <div class="your-parent-name">
+            <!-- ${contentJson["your-parent-name"]} -->
+            D/O Smt. Rupa Devi & Sri. Radhey Shyam
+        </div>
+        <div class="invitation-description mb-2">
+            <!-- ${contentJson["invitation-description"]} -->
+            Request your gracious presence at the Wedding of their daughter
+        </div>
+        <div class="groom-bride-section ">
+            <div>
+                <div class="your-name">
+                    <!-- ${contentJson["your-name"]} -->
+                    NAMREET KAUR
+                </div>
+                <div class="your-parent-name">
+                    (D/O Smt. Rupa Devi & Sri. Radhey Shyam)
+                    <!-- ${contentJson["your-parent-name"]} -->
+                </div>
+            </div>
+            <div class="and">and</div>
+            <div>
+                <div class="partner-name mb-3">
+                    <!-- ${contentJson["partner-name"]} -->
+                    JASPREET SINGH
+                </div>
+                <div class="partner-parent-name">
+                    (S/O Smt. Rupa Devi & Sri. Radhey Shyam)
+                    <!-- ${contentJson["partner-parent-name"]} -->
+                </div>
+            </div>
+        </div>
+
+        <div class="invitation-date-section ">
+            <div class="d-flex flex-column align-items-center pe-2">
+                <div class="invitation-day">
+                    <!-- ${contentJson["invitation-day"]} -->
+                    Saturday
+                </div>
+                <div class="invitation-time ">
+                    <!-- ${contentJson["invitation-time"]} -->
+                    4:00pm
+                </div>
+            </div>
+            <div class="invitation-date   ">
+                <!-- ${contentJson["invitation-full-date"]} -->
+                28
+            </div>
+            <div class="d-flex flex-column align-items-center ps-2">
+                <div class="invitation-month">
+                    <!-- ${contentJson["invitation-month"]} -->
+                    MARCH
+                </div>
+
+                <div class="invitation-year ">
+                    <!-- ${contentJson["invitation-year"]} -->
+                    2026
+                </div>
+
+            </div>
+
+        </div>
+          <div class="invitation-address">
+      <!-- ${contentJson["invitation-address"]} -->
+      Paradise Homestay Civil Lines<br>
+      <span>Hanuman Gali, Sitabuldi, Nagpur</span>
+    </div>
+        <div class="following-party mt-2">
+            <!-- ${contentJson["following-party"]} -->
+            Folloing The Party
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

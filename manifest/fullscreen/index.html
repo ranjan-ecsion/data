@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+  <!-- iPhone Safari full screen & safe-area handling -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Android Chrome status bar color (set this based on your image dominant color) -->
+  <meta name="theme-color" content="#db0606" />
+
+  <title>Safe Area Test</title>
+
+  <style>
+    /* Full screen + background image */
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url("https://images.pexels.com/photos/1493226/pexels-photo-1493226.jpeg");
+      background-size: cover;       /* covers full screen */
+      background-position: center;  /* centers image */
+      background-repeat: no-repeat;
+      height: 100vh;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Safe-area padding so content doesn’t go under the notch */
+    .content {
+      padding-top: env(safe-area-inset-top);
+      padding-bottom: env(safe-area-inset-bottom);
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <h1>Safe Area Image Test</h1>
+    <p>The background image fills the entire screen & safe area.</p>
+  </div>
+</body>
+
+</html>
